@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  root to: 'top#index'
+  get 'select_jp_language', to: 'select_jp_language#index'
+  get 'select_en_language', to: 'select_en_language#index'
+  get 'select_zh_language', to: 'select_zh_language#index'
 end
