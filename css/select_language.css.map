@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../app/assets/stylesheets/select_language.scss"
+    ],
+    "names": [],
+    "file": "select_language.css"
+}

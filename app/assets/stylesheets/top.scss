@@ -1,0 +1,42 @@
+// Place all the styles related to the top controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.top-image {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	filter: opacity(50%);
+}
+.top_language {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 30px;
+	color: red;
+	font-weight: bold;
+}
+
+
+.top_jp_path {
+	position: absolute;
+	top: 80%;
+	left: 15%;
+	width: 20%;
+	height: 10%;
+}
+.top_en_path {
+	position: absolute;
+	left: 40%;
+	top: 80%;
+	width: 20%;
+	height: 10%;
+}
+
+.top_zh_path {
+	position: absolute;
+	top: 80%;
+	right: 15%;
+	width: 20%;
+	height: 10%;
+}
