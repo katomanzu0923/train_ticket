@@ -1,0 +1,39 @@
+// Place all the styles related to the registrations controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.container {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	filter: opacity(100%);
+}
+
+.nickname_form {
+	position: absolute;
+	top: 150px;
+}
+
+.age_form {
+	position: absolute;
+	top: 250px;
+}
+
+.email_form {
+	position:  absolute;
+	top: 350px;
+}
+
+.password_form {
+	position: absolute;
+	top: 450px;
+}
+
+.password_form_co {
+	position: absolute;
+	top: 550px;
+}
+
+.sign_up_form {
+	position: absolute;
+	top: 650px;
+}
