@@ -14,6 +14,11 @@
         <%= f.text_field :age, autofocus: true, maxlength: "6" %>
       </div>
 
+      <div class="nationality_form">
+        <%= f.label :nationality_id %> #<em>(nationality)</em><br />
+        <%= f.select :nationality_id, [["japan", 1], ["chaina", 2], ["other", "3"]], {}, {} %>
+      </div>
+
       <div class="email_form">
         <%= f.label :email %><br />
         <%= f.email_field :email %>
