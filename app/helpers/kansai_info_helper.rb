@@ -1,0 +1,2 @@
+module KansaiInfoHelper
+end
