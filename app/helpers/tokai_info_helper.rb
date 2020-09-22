@@ -1,0 +1,2 @@
+module TokaiInfoHelper
+end

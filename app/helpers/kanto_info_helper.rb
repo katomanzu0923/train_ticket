@@ -1,0 +1,2 @@
+module KantoInfoHelper
+end
