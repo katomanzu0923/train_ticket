@@ -16,23 +16,28 @@
   top: 250px;
 }
 
-.email_form {
+.nationality_form {
   position: absolute;
   top: 350px;
 }
 
-.password_form {
+.email_form {
   position: absolute;
   top: 450px;
 }
 
-.password_form_co {
+.password_form {
   position: absolute;
   top: 550px;
 }
 
+.password_form_co {
+  position: absolute;
+  top: 700px;
+}
+
 .sign_up_form {
   position: absolute;
-  top: 650px;
+  top: 750px;
 }
 /*# sourceMappingURL=registrations.css.map */
