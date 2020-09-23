@@ -1,80 +1,193 @@
 .area_back-image {
   position: relative;
-  width: 100vw;
-  height: 100vh;
-  -webkit-filter: opacity(0%);
-          filter: opacity(0%);
+  width: 80vw;
+  height: 80vh;
+  -webkit-filter: opacity(100%);
+          filter: opacity(100%);
+}
+
+.ja_select_message {
+  position: absolute;
+  top: 70%;
+  left: 15%;
+  color: red;
+  z-index: 1;
+}
+
+.ja_click_message {
+  position: absolute;
+  top: 70%;
+  left: 15%;
+  color: red;
+  z-index: 1;
 }
 
 .jp_map {
   position: absolute;
-  top: 20%;
-  right: 15%;
-  width: 80%;
-  height: 70%;
+  top: 55%;
+  right: 25%;
+  width: 50%;
+  height: 40%;
 }
 
 .hokkaido_map {
   position: absolute;
-  top: 20%;
-  right: 15%;
-  width: 20%;
+  top: 62%;
+  right: 27%;
+  width: 15%;
+}
+
+.hokkaido_back {
+  position: absolute;
+  width: 90%;
+  height: 50%;
+  right: 5%;
+  top: 5%;
+  -webkit-filter: opacity(0%);
+          filter: opacity(0%);
+}
+
+.tohoku_back {
+  position: absolute;
+  width: 90%;
+  height: 50%;
+  right: 5%;
+  top: 5%;
+  -webkit-filter: opacity(0%);
+          filter: opacity(0%);
+}
+
+.kanto_back {
+  position: absolute;
+  width: 90%;
+  height: 50%;
+  right: 5%;
+  top: 5%;
+  -webkit-filter: opacity(0%);
+          filter: opacity(0%);
+}
+
+.hokuriku_back {
+  position: absolute;
+  width: 90%;
+  height: 50%;
+  right: 5%;
+  top: 5%;
+  -webkit-filter: opacity(0%);
+          filter: opacity(0%);
+}
+
+.tokai_back {
+  position: absolute;
+  width: 90%;
+  height: 50%;
+  right: 5%;
+  top: 5%;
+  -webkit-filter: opacity(0%);
+          filter: opacity(0%);
+}
+
+.kansai_back {
+  position: absolute;
+  width: 90%;
+  height: 50%;
+  right: 5%;
+  top: 5%;
+  -webkit-filter: opacity(0%);
+          filter: opacity(0%);
+}
+
+.chugoku_back {
+  position: absolute;
+  width: 90%;
+  height: 50%;
+  right: 5%;
+  top: 5%;
+  -webkit-filter: opacity(0%);
+          filter: opacity(0%);
+}
+
+.sikoku_back {
+  position: absolute;
+  width: 90%;
+  height: 50%;
+  right: 5%;
+  top: 5%;
+  -webkit-filter: opacity(0%);
+          filter: opacity(0%);
+}
+
+.kyusyu_back {
+  position: absolute;
+  width: 90%;
+  height: 50%;
+  right: 5%;
+  top: 5%;
+  -webkit-filter: opacity(0%);
+          filter: opacity(0%);
 }
 
 .tohoku_map {
   position: absolute;
-  top: 50%;
-  right: 28%;
-  width: 15%;
-  height: 17%;
+  top: 72%;
+  right: 34%;
+  width: 8%;
+  height: 10%;
 }
 
 .kanto_map {
   position: absolute;
-  top: 70%;
-  right: 15%;
-  width: 20%;
+  top: 81%;
+  right: 37%;
+  height: 4%;
+  width: 7%;
 }
 
 .hokuriku_map {
   position: absolute;
-  top: 30%;
-  right: 70%;
-  width: 20%;
+  top: 78%;
+  right: 40%;
+  height: 7%;
+  width: 11%;
 }
 
 .tokai_map {
   position: absolute;
-  top: 50%;
-  right: 15%;
-  width: 20%;
+  top: 82%;
+  right: 42%;
+  height: 6%;
+  width: 8%;
 }
 
 .kansai_map {
   position: absolute;
-  top: 30%;
-  right: 90%;
-  width: 20%;
+  top: 84%;
+  right: 48%;
+  height: 4%;
+  width: 7%;
 }
 
 .chugoku_map {
   position: absolute;
-  top: 10%;
-  right: 15%;
-  width: 20%;
+  top: 84%;
+  right: 54%;
+  height: 3%;
+  width: 9%;
 }
 
 .sikoku_map {
   position: absolute;
-  top: 30%;
-  right: 5%;
-  width: 20%;
+  top: 86%;
+  right: 53%;
+  height: 4%;
+  width: 7%;
 }
 
 .kyusyu_map {
   position: absolute;
-  top: 70%;
-  right: 70%;
-  width: 20%;
+  top: 87%;
+  right: 60%;
+  height: 8%;
+  width: 13%;
 }
 /*# sourceMappingURL=area.css.map */

@@ -1,32 +1,64 @@
 <div class='area_top'>
-  <%= image_tag 'top-background.png',class: "area_back-image" %>
-	<%= image_tag 'jp_map.png',class: "jp_map" %>
-	<%= link_to (hokkaido_info_path) do %>
-	  <%= image_tag 'hokkaido_map.png', class: "hokkaido_map" %>
-	<% end %>
-	<%= link_to (tohoku_info_path) do %>
-	  <%= image_tag 'tohoku_map.png', class: "tohoku_map" %>
-	<% end %>
-	<%= link_to (kanto_info_path) do %>
-	  <%= image_tag 'kanto_map.png', class: "kanto_map" %>
-	<% end %>
-	<%= link_to (hokuriku_info_path) do %>
-	  <%= image_tag 'hokuriku_map.png', class: "hokuriku_map" %>
-	<% end %>
-	<%= link_to (tokai_info_path) do %>
-	  <%= image_tag 'tokai_map.png', class: "tokai_map" %>
-	<% end %>
-	<%= link_to (kansai_info_path) do %>
-	  <%= image_tag 'kansai_map.png', class: "kansai_map" %>
-	<% end %>
-	<%= link_to (chugoku_info_path) do %>
-	  <%= image_tag 'chugoku_map.png', class: "chugoku_map" %>
-	<% end %>
-	<%= link_to (sikoku_info_path) do %>
-	  <%= image_tag 'sikoku_map.png', class: "sikoku_map" %>
-	<% end %>
-	<%= link_to (kyusyu_info_path) do %>
-	  <%= image_tag 'kyusyu_map.png', class: "kyusyu_map" %>
-	<% end %>
-
+  <div class='message'>
+	  <%  if current_user.nationality_id == 1 %> 
+	    <div class='ja_select_message'>
+		    エリアを選択してください 
+		  </div>
+			<div class='ja_click_message'>
+			  そのままクリック！
+			</div>
+    <% elsif current_user.nationality_id == 2 %> 
+	    <div　class='zh_area_message'> 
+		    请选择一个地区 
+		  </div> 
+	  <% else current_user.nationality_id == 3 %>
+	     <div class='en_area_message'>
+		    please select the area
+		   </div> 
+	  <% end %> 
+  </div>
+	<div class='map'> 
+	  <div class='area_map'> 
+       <%= image_tag 'top-background.png',class: "area_back-image" %> 
+			 <%= image_tag 'hokkaido_back.png', class: "hokkaido_back"%>
+			 <%= image_tag 'tohoku_back.png', class: "tohoku_back"%>
+			 <%= image_tag 'kanto_back.png', class: "kanto_back"%>
+			 <%= image_tag 'hokuriku_back.png', class: "hokuriku_back"%>
+			 <%= image_tag 'tokai_back.png', class: "tokai_back"%>
+			 <%= image_tag 'kansai_back.png', class: "kansai_back"%>
+			 <%= image_tag 'chugoku_back.png', class: "chugoku_back"%>
+			 <%= image_tag 'sikoku_back.png', class: "sikoku_back"%>
+			 <%= image_tag 'kyusyu_back.png', class: "kyusyu_back"%>
+	     <%= image_tag 'jp_map.png',class: "jp_map" %>
+		</div> 
+		<div>
+	    <%= link_to (hokkaido_info_path) do %>
+	      <%= image_tag 'hokkaido_map.png', class: "hokkaido_map" %> 
+	    <% end  %>
+	    <%= link_to (tohoku_info_path) do %>
+	      <%= image_tag 'tohoku_map.png', class: "tohoku_map" %>
+	    <% end %>
+	    <%= link_to (kanto_info_path) do %>
+	      <%= image_tag 'kanto_map.png', class: "kanto_map" %>
+	    <% end %>
+	    <%= link_to (hokuriku_info_path) do %>
+	      <%= image_tag 'hokuriku_map.png', class: "hokuriku_map" %>
+	    <% end %>
+	    <%= link_to (tokai_info_path) do %>
+	      <%= image_tag 'tokai_map.png', class: "tokai_map" %>
+	    <% end %>
+	    <%= link_to (kansai_info_path) do %>
+	      <%= image_tag 'kansai_map.png', class: "kansai_map" %>
+	    <% end %>
+	    <%= link_to (chugoku_info_path) do %> 
+	      <%= image_tag 'chugoku_map.png', class: "chugoku_map" %> 
+	    <% end %> 
+	    <%= link_to (sikoku_info_path) do %>
+	      <%= image_tag 'sikoku_map.png', class: "sikoku_map" %>
+	    <% end %>
+	    <%= link_to (kyusyu_info_path) do %>
+	      <%= image_tag 'kyusyu_map.png', class: "kyusyu_map" %>
+	    <% end %>
+	  </div>
+	</div>
 </div>
