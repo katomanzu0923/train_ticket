@@ -1,7 +1,19 @@
 .area_back-image {
   position: relative;
-  width: 80vw;
-  height: 80vh;
+  width: 90vw;
+  height: 50vh;
+  left: 5px;
+  top: 5px;
+  -webkit-filter: opacity(0%);
+          filter: opacity(0%);
+}
+
+.area_top_back-image {
+  position: absolute;
+  width: 90%;
+  height: 50%;
+  right: 5%;
+  top: 5%;
   -webkit-filter: opacity(100%);
           filter: opacity(100%);
 }
@@ -20,6 +32,44 @@
   left: 15%;
   color: red;
   z-index: 1;
+  -webkit-filter: opacity(0%);
+          filter: opacity(0%);
+}
+
+.zh_select_message {
+  position: absolute;
+  top: 70%;
+  left: 15%;
+  color: red;
+  z-index: 1;
+}
+
+.zh_click_message {
+  position: absolute;
+  top: 70%;
+  left: 15%;
+  color: red;
+  z-index: 1;
+  -webkit-filter: opacity(0%);
+          filter: opacity(0%);
+}
+
+.en_select_message {
+  position: absolute;
+  top: 70%;
+  left: 15%;
+  color: red;
+  z-index: 1;
+}
+
+.en_click_message {
+  position: absolute;
+  top: 70%;
+  left: 15%;
+  color: red;
+  z-index: 1;
+  -webkit-filter: opacity(0%);
+          filter: opacity(0%);
 }
 
 .jp_map {
@@ -32,9 +82,10 @@
 
 .hokkaido_map {
   position: absolute;
-  top: 62%;
-  right: 27%;
+  top: 63%;
+  right: 26%;
   width: 15%;
+  height: 10%;
 }
 
 .hokkaido_back {
