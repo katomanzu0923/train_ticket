@@ -2,24 +2,30 @@
   <div class='message'>
 	  <%  if current_user.nationality_id == 1 %> 
 	    <div class='ja_select_message'>
-		    エリアを選択してください 
+		    エリアを選択してください! 
 		  </div>
 			<div class='ja_click_message'>
 			  そのままクリック！
 			</div>
     <% elsif current_user.nationality_id == 2 %> 
-	    <div　class='zh_area_message'> 
-		    请选择一个地区 
-		  </div> 
+	    <div class='zh_select_message'> 
+		    请选择一个地区
+		  </div>
+			<div class='zh_click_message'> 
+		    只需点击！
+		  </div>  
 	  <% else current_user.nationality_id == 3 %>
-	     <div class='en_area_message'>
+	     <div class='en_select_message'>
 		    please select the area
 		   </div> 
+			 <div class='en_click_message'>
+		    Just click!
 	  <% end %> 
   </div>
 	<div class='map'> 
 	  <div class='area_map'> 
        <%= image_tag 'top-background.png',class: "area_back-image" %> 
+			 <%= image_tag 'top-background.png',class: "area_top_back-image" %>
 			 <%= image_tag 'hokkaido_back.png', class: "hokkaido_back"%>
 			 <%= image_tag 'tohoku_back.png', class: "tohoku_back"%>
 			 <%= image_tag 'kanto_back.png', class: "kanto_back"%>
@@ -29,7 +35,7 @@
 			 <%= image_tag 'chugoku_back.png', class: "chugoku_back"%>
 			 <%= image_tag 'sikoku_back.png', class: "sikoku_back"%>
 			 <%= image_tag 'kyusyu_back.png', class: "kyusyu_back"%>
-	     <%= image_tag 'jp_map.png',class: "jp_map" %>
+	     <%= image_tag 'reve_jp_map.png',class: "jp_map" %>
 		</div> 
 		<div>
 	    <%= link_to (hokkaido_info_path) do %>
