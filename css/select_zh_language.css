@@ -1,0 +1,20 @@
+.select_zh_background {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  left: 0%;
+  top: 0%;
+}
+
+.select_zh_message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: red;
+  font-weight: bold;
+  z-index: 1;
+}
+/*# sourceMappingURL=select_zh_language.css.map */

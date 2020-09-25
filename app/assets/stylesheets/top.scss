@@ -1,13 +1,31 @@
 // Place all the styles related to the top controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.back-image {
+.top_jp_background {
 	position: relative;
 	width: 100vw;
 	height: 100vh;
-	filter: opacity(50%);
+	filter: opacity(100%);
+	z-index: 0;
 }
-.top_language {
+.top_en_background {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0%;
+	top: 0%;
+	z-index: -1;
+}
+
+.top_zh_background {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0%;
+	top: 0%;
+	z-index: -1;
+}
+.top_jp_message {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -17,6 +35,31 @@
 	font-weight: bold;
 }
 
+.top_en_message {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 30px;
+	color: red;
+	font-weight: bold;
+	filter: opacity(0%);
+}
+
+.top_zh_message {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 30px;
+	color: red;
+	font-weight: bold;
+	filter: opacity(0%);
+}
+
+.select_zh_message {
+	
+}
 
 .top_jp_path {
 	position: absolute;
@@ -24,7 +67,16 @@
 	left: 15%;
 	width: 20%;
 	height: 10%;
+	//box-shadow: 0 10px 25px 0 rgba(60, 194, 235, 0.5);
 }
+/*.click_jp_top {
+	position: absolute; 
+	bottom: 0; 
+	top: 90%;
+	left: 15%;
+	width: 20%;
+	height: 10%;
+}*/
 .top_en_path {
 	position: absolute;
 	left: 40%;
@@ -39,4 +91,9 @@
 	right: 15%;
 	width: 20%;
 	height: 10%;
+}
+
+.top_logout_path {
+	position: absolute;
+	top: 30%;
 }
