@@ -1,13 +1,16 @@
-<div class="top">
-  <%= image_tag 'top-background.png',class: "top-image" %>
-    <div class="top_language">
+<div class="select">
+  <div class="select_background">
+    <%= image_tag 'top_en_background.png',class: "select_en_background" %>
+  </div>
+  <div class="select_message">
+    <div class="select_en_message">
       The suport of travel in Japan !
     </div>
     <div class="select_path">
-		  <%= link_to (select_jp_language_path) do %> 
+		  <%= link_to (new_user_session_path) do %> 
         <%= image_tag 'login_en_path.png', size: '185x50' ,class: "top_jp_path" %>
       <% end %>
-	    <%= link_to (select_en_language_path) do %> 
+	    <%= link_to (new_user_registration_path) do %> 
         <%= image_tag 'registaraion_en_path.png', size: '185x50' ,class: "top_en_path" %>
       <% end %>
 	    <%= link_to (select_zh_language_path) do %> 

@@ -1,12 +1,24 @@
 <div class="top">
-  <%= image_tag 'top-background.png',class: "back-image" %>
-    <div class="top_language">
+  <div class="top_background">
+    <%= image_tag 'top_jp_background.png', class: "top_jp_background" %>
+    <%= image_tag 'top_en_background.png', class: "top_en_background" %>
+    <%= image_tag 'top_zh_background.png', class: "top_zh_background" %>
+  </div>
+  <div class="top_message">
+    <div class="top_jp_message">
       日本の旅をサポート
+    </div>
+    <div class="top_en_message">
+      support a trip of japan
+    </div>
+    <div class="top_zh_message">
+      支援日本的旅途
     </div>
     <div class="select_path">
 		  <%= link_to (select_jp_language_path) do %> 
         <%= image_tag 'top_jp_path_image.png', size: '185x50' ,class: "top_jp_path" %>
       <% end %>
+      <%#= image_tag 'click_jp_top.png', class: "click_jp_top" %>
 	    <%= link_to (select_en_language_path) do %> 
         <%= image_tag 'top_en_path.png', size: '185x50' ,class: "top_en_path" %>
       <% end %>
@@ -14,5 +26,8 @@
         <%= image_tag 'top_zh_path.png', size: '185x50' ,class: "top_zh_path" %>
       <% end %>
 		</div>
-		<%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+    <div class="top_logout_path">
+		   <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+     </div>
+  </div>  
 </div>
