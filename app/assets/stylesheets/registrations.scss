@@ -1,44 +1,120 @@
 // Place all the styles related to the registrations controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.container {
-	position: relative;
+.registration {
 	width: 100vw;
 	height: 100vh;
-	filter: opacity(100%);
+
+} 
+
+.select_back {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	top: 0%;
+	left: 0%;
+	filter: opacity(30%);
+}
+
+.private_form {
+	position: absolute;
+	width: 60%;
+  height: 70%;
+  margin: 60px auto 0;
+  border-radius: 10px;
+	border: double rgb(255, 255, 255);
+	background-color: rgb(206, 224, 245);
+	top: 5%;
+	left: 20%;
+	filter: opacity(90%);
+}
+
+.private_form_message {
+	position: absolute;
+	border-bottom: groove rgb(140, 140, 233) 5px;
+	left: 40%;
+	top: 5%;
+}
+
+input[type="text"] {
+	position: absolute;
+	width: 80%;
+	height: 80%;
 }
 
 .nickname_form {
 	position: absolute;
-	top: 150px;
+	top: 15%;
+	width: 60%;
+	left: 25%;
 }
 
 .age_form {
 	position: absolute;
-	top: 250px;
+	top: 25%;
+	width: 30%;
+	left: 25%;
 }
 
 .nationality_form {
 	position: absolute;
-	top: 350px;
+	top: 35%;
+	width: 40%;
+	left: 25%;
+}
+
+.nationality_select {
+	position: absolute;
+	top: 100%;
+	width: 80%;
+	border-radius: 10px;
 }
 
 .email_form {
-	position:  absolute;
-	top: 450px;
+	position: absolute;
+	top: 45%;
+	width: 60%;
+	left: 25%;
+}
+
+input[type="email"] {
+	width: 80%;
+	height: 80%;
+	border-radius: 10px;
 }
 
 .password_form {
 	position: absolute;
-	top: 550px;
+	top: 55%;
+	width: 60%;
+	left: 25%;
 }
 
-.password_form_co {
+.password_form_con {
 	position: absolute;
-	top: 700px;
+	top: 65%;
+	width: 60%;
+	left: 25%;
+}
+
+input[type="text"] {
+	position: absolute;
+	width: 80%;
+	height: 80%;
+	border-radius: 10px;
+}
+
+input[type="password"] { 
+	position: absolute;
+	width: 80%;
+	height: 80%;
+	border-radius: 10px;
 }
 
 .sign_up_form {
 	position: absolute;
-	top: 750px;
+	width: 30%;
+	top: 70%;
+	left: 45%;
+	border-radius: 10px;
 }

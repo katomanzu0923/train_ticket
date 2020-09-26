@@ -1,4 +1,5 @@
 class TokaiInfoController < ApplicationController
-  def index
+	def index
+		#@info = Info.new
 	end
 end

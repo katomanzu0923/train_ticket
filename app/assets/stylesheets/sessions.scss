@@ -1,3 +1,71 @@
 // Place all the styles related to the sessions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.select_back {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	top: 0%;
+	left: 0%;
+	filter: blur(80%);
+}
+
+.sessions_form {
+	position: absolute;
+	width: 60%;
+  height: 70%;
+  margin: 60px auto 0;
+  border-radius: 10px;
+	border: double rgb(255, 255, 255);
+	background-color: rgb(206, 224, 245);
+	top: 5%;
+	left: 20%;
+	filter: opacity(90%);
+}
+
+.session_message {
+	position: absolute;
+	border-bottom: groove rgb(153, 153, 255);
+	left: 40%;
+	top: 10%;
+}
+
+.email_field {
+	position: absolute;
+	top: 30%;
+	left: 25%;
+	width: 60%;
+}
+
+input[type="email"] {
+	width: 80%;
+	height: 80%;
+	border-radius: 10px;
+}
+
+
+.password_field {
+	position: absolute;
+	top: 50%;
+	left: 25%;
+	width: 60%;
+}
+
+input[type="email"] {
+	width: 80%;
+	height: 80%;
+	border-radius: 10px;
+}
+
+.remember_field {
+	position: absolute;
+	top: 70%;
+	left: 25%;
+	width: 60%;
+}
+
+.login_form {
+	position: absolute;
+	top: 85%;
+	left: 45%;
+}
