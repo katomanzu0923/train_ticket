@@ -1,43 +1,94 @@
-.container {
-  position: relative;
+.registration {
   width: 100vw;
   height: 100vh;
-  -webkit-filter: opacity(100%);
-          filter: opacity(100%);
+}
+
+.select_back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  -webkit-filter: opacity(30%);
+          filter: opacity(30%);
+}
+
+/*.private_form {
+	position: relative;
+	width: 30vw;
+  height: 30vh;
+  margin: 60px auto 0;
+  border-radius: 10px;
+	border: double blue;
+	background-color: rgb(131, 131, 190);
+}*/
+input[type="text"] {
+  position: absolute;
+  width: 80%;
 }
 
 .nickname_form {
   position: absolute;
-  top: 150px;
+  top: 10%;
+  width: 80%;
 }
 
 .age_form {
   position: absolute;
-  top: 250px;
+  top: 30%;
+  width: 30%;
 }
 
 .nationality_form {
   position: absolute;
-  top: 350px;
+  top: 50%;
+  width: 40%;
+}
+
+.nationality_select {
+  position: absolute;
+  width: 80%;
+}
+
+.session_form {
+  position: relative;
+  width: 30vw;
+  height: 30vh;
+  margin: 60px auto 0;
+  border-radius: 10px;
+  border: double red;
+  background-color: palevioletred;
+  -webkit-box-shadow: red;
+          box-shadow: red;
+}
+
+input[type="email"] {
+  width: 80%;
+}
+
+input[type="password"] {
+  width: 80%;
+}
+
+.session_form_message {
+  position: absolute;
 }
 
 .email_form {
   position: absolute;
-  top: 450px;
+  top: 10%;
+  width: 80%;
 }
 
 .password_form {
   position: absolute;
-  top: 550px;
+  top: 30%;
+  width: 80%;
 }
 
-.password_form_co {
+.password_form_con {
   position: absolute;
-  top: 700px;
-}
-
-.sign_up_form {
-  position: absolute;
-  top: 750px;
+  top: 60%;
+  width: 80%;
 }
 /*# sourceMappingURL=registrations.css.map */
