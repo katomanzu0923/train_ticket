@@ -1,3 +1,30 @@
 // Place all the styles related to the tokai_info controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.lists {
+	width: 100vw;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	//margin: 10%;
+}
+
+.list {
+	width: 40%;
+	height: 30%;
+	margin: 20px;
+	background-color: rgb(190, 140, 140);
+}
+
+.lists::after {
+	display: block;
+	content: "";
+	width: 40%;
+	margin: 20px;
+}
+
+.jp_name {
+	display: flex;
+	margin: 10px;
+}
