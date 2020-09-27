@@ -1,1 +1,42 @@
-test
+<div class="info">
+  <div class="info_message">
+	  <% if current_user.nationality_id == 1 %>
+	    ようこそ！！<%= current_user.nickname %>さんにおすすめなのはこちらです！
+	  <% elsif current_user.nationality_id == 2 %>
+		  thanks<%= current_user.nickname %>.this is the reccomend info for you
+		<% else current_user.nationality_id == 3%>
+		  thanks!!  <%= current_user.nickname %>!!!this is the reccomended info for you
+		<% end %>
+	</div>
+  <div class="info_index">
+		  <div class="lists">
+		    <% @tokai.each do |tokai| %>
+				  <div class="list">
+				    <% if current_user.nationality_id == 1 %>
+              <div class="jp_name">
+                <%= tokai.jp_name %>
+              </div>
+						<% elsif current_user.nationality_id == 2 %>
+						  <div class="en_name">
+                ticketname::<%= tokai.en_name %>
+              </div>
+						<% else current_user.nationality_id == 3 %>
+						  <div class="en_name">
+                <%= tokai.en_name %>
+              </div>
+						<% end %>
+					    <div class="price">
+                price<span><%= tokai.price %>円</span>
+              </div>
+						  <div class="info">
+						    <%= tokai.info %>
+						  </div>
+						  <div>
+					      詳細はこちら→<%= tokai.detail %>
+						  </div>
+					</div>
+
+        <% end %> 
+			</div>
+  </div>
+</div>

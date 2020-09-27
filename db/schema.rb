@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_22_060224) do
+ActiveRecord::Schema.define(version: 2020_09_26_071101) do
+
+  create_table "tokais", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "jp_name", null: false
+    t.string "en_name", null: false
+    t.integer "price", null: false
+    t.string "info", null: false
+    t.string "detail", null: false
+    t.string "age", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "email", default: "", null: false

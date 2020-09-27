@@ -1,7 +1,16 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+Tokai.create(jp_name:'お得A', en_name:'gooda', price: '2000', info: '伊勢神宮', detail: 'httt', age: 'young')
+Tokai.create(jp_name:'お得B', en_name:'goodb', price: '3000', info: '伊勢神宮', detail: 'htttp', age: 'young')
+Tokai.create(jp_name:'お得c', en_name:'goodc', price: '1500', info: '伊勢神宮', detail: 'httt', age: 'all')
+Tokai.create(jp_name:'お得d', en_name:'goodd', price: '4000', info: '伊勢神宮', detail: 'htttp', age: 'all')
+Tokai.create(jp_name:'お得e', en_name:'goodf', price: '2000', info: '伊勢神宮', detail: 'httt', age: 'all')
+Tokai.create(jp_name:'お得f', en_name:'goodd', price: '3000', info: '伊勢神宮', detail: 'htttp', age: 'old')
+Tokai.create(jp_name:'お得g', en_name:'goode', price: '5000', info: '伊勢神宮', detail: 'httt', age: 'young')
+Tokai.create(jp_name:'お得h', en_name:'goodg', price: '2500', info: '伊勢神宮', detail: 'htttp', age: 'old')
+Tokai.create(jp_name:'お得i', en_name:'goodh', price: '2200', info: '伊勢神宮', detail: 'httt', age: 'young')
+Tokai.create(jp_name:'お得j', en_name:'goodi', price: '2400', info: '伊勢神宮', detail: 'htttp', age: 'young')
+Tokai.create(jp_name:'お得k', en_name:'goodj', price: '2300', info: '伊勢神宮', detail: 'httt', age: 'old')
+Tokai.create(jp_name:'お得l', en_name:'goodk', price: '2050', info: '伊勢神宮', detail: 'htttp', age: 'young')
+Tokai.create(jp_name:'お得n', en_name:'goodl', price: '2200', info: '伊勢神宮', detail: 'httt', age: 'young')
+Tokai.create(jp_name:'お得o', en_name:'goodm', price: '1500', info: '伊勢神宮', detail: 'htttp', age: 'old')
+Tokai.create(jp_name:'お得p', en_name:'goodn', price: '2000', info: '伊勢神宮', detail: 'httt', age: 'young')
+Tokai.create(jp_name:'お得q', en_name:'goodo', price: '2000', info: '伊勢神宮', detail: 'htttp',age: 'young')
