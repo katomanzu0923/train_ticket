@@ -1,21 +1,22 @@
-<div class="session">
+<%= render "shared/jp_header" %>
+<div class="top">
   <div class="session_back">
-    <%= image_tag 'top_en_background.png', class: "session_en_background" %>
+    <%= image_tag 'top_jp_back.png', class: "session_en_background" %>
   </div>
   <div class="session_form">
     <%= form_with model: @user, url: user_session_path, class: 'new_user', local: true do |f| %>
       <div class="sessions_form">
         <div class="session_message">
-          ログイン
+          Login
         </div> 
         <div class="email_field">
-          <%= f.label :email %><br />
-          <%= f.email_field :email, autofocus: true %>
+          <%= f.label :email %><br/>
+          <%= f.email_field :email, placeholder: "enter your Email", autofocus: true, class: "bbb" %>
         </div>
 
         <div class="password_field">
           <%= f.label :password %><br />
-          <%= f.password_field :password, autocomplete: "off" %>
+          <%= f.password_field :password, placeholder: "enter your Password", autocomplete: "off" %>
         </div>
 
         <% if devise_mapping.rememberable? %>

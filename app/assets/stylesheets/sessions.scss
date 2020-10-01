@@ -20,14 +20,19 @@
 	background-color: rgb(206, 224, 245);
 	top: 5%;
 	left: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	filter: opacity(90%);
 }
 
 .session_message {
 	position: absolute;
+	font-size: 20px;
 	border-bottom: groove rgb(153, 153, 255);
-	left: 40%;
 	top: 10%;
+	display: flex;
+	text-align: center;
 }
 
 .email_field {
@@ -68,4 +73,26 @@ input[type="email"] {
 	position: absolute;
 	top: 85%;
 	left: 45%;
+}
+
+.error{
+  display:none;
+  position:absolute;
+  top:-60px;
+  font-size:12px;
+  background-color:rgba(255,0,0,0.7);
+  color:#fff;
+  padding:10px;
+  text-align:center;
+}
+.error::before{
+  content:"";
+  position:absolute;
+  bottom:-10px;
+  left:10px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 6px 0 6px;
+  border-color: rgba(255,0,0,0.7) transparent transparent transparent;
 }
