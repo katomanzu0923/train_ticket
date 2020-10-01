@@ -1,33 +1,44 @@
+<%= render "shared/jp_header" %>
 <div class="top">
   <div class="top_background">
-    <%= image_tag 'top_jp_background.png', class: "top_jp_background" %>
-    <%= image_tag 'top_en_background.png', class: "top_en_background" %>
-    <%= image_tag 'top_zh_background.png', class: "top_zh_background" %>
+    <%= image_tag 'top_jp_back.png', class: "top_jp_background" %> 
+    <%= image_tag 'top_en_back.png', class: "top_en_background" %> 
+    <%= image_tag 'top_zh_back.png', class: "top_zh_background" %> 
   </div>
   <div class="top_message">
-    <div class="top_jp_message">
-      日本の旅をサポート
+    <div class="top_jp_main_message">
+      旅の指南書
     </div>
-    <div class="top_en_message">
-      support a trip of japan
+    <div class="top_jp_sub_message">
+      あなたのパーソナリティにあった鉄道旅を
     </div>
-    <div class="top_zh_message">
-      支援日本的旅途
+    <div class="top_en_main_message">
+      The guidance of trip in Japan
+    </div>
+    <div class="top_en_sub_message">
+      Offer a suitable trip for you
+    </div>
+    <div class="top_zh_main_message">
+      日本旅行的指南
+    </div>
+    <div class="top_zh_sub_message">
+      被你提供适宜的日本的铁道旅途
     </div>
     <div class="select_path">
 		  <%= link_to (select_jp_language_path) do %> 
-        <%= image_tag 'top_jp_path_image.png', size: '185x50' ,class: "top_jp_path" %>
+        <%= image_tag 'top_jp_path.png', size: '185x50' ,class: "top_jp_path" %>
+        <%= image_tag 'top_jp_click_path.png', size: '185x50' ,class: "top_jp_click_path"%>
       <% end %>
-      <%#= image_tag 'click_jp_top.png', class: "click_jp_top" %>
+      
+      <%# <%= image_tag 'click_jp_top.png', class: "click_jp_top" %>
 	    <%= link_to (select_en_language_path) do %> 
         <%= image_tag 'top_en_path.png', size: '185x50' ,class: "top_en_path" %>
+        <%= image_tag 'top_en_click_path.png', size: '185x50' ,class: "top_en_click_path" %>
       <% end %>
 	    <%= link_to (select_zh_language_path) do %> 
         <%= image_tag 'top_zh_path.png', size: '185x50' ,class: "top_zh_path" %>
+        <%= image_tag 'top_zh_click_path.png', size: '185x50' ,class: "top_zh_click_path" %>
       <% end %>
 		</div>
-    <div class="top_logout_path">
-		   <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
-     </div>
   </div>  
 </div>

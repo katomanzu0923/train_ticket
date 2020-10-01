@@ -1,0 +1,16 @@
+<div class="zh_header">
+  <%= link_to (select_jp_language_path) do %> 
+	  <%= image_tag 'top_zh_icon_2.png', size: '185x50' ,class: "select_zh_icon" %>
+  <% end %>
+  <span class="zh_nav_toggle">
+    <i></i>
+    <i></i>
+    <i></i>
+  </span>
+  <nav class="zh_nav">
+    <ul class="zh_nav_menu_li">
+      <li class="zh_nav_menu_li_1"><%= link_to "登出", destroy_user_session_path, class: 'zh_aaa', method: :delete  %></li>
+      <li class="zh_nav_menu_li_2"><%= link_to "咨询", contact_path, class: 'zh_aaa', method: :get %></li>
+    </ul>
+  </nav>
+</div>

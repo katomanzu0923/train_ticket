@@ -1,22 +1,29 @@
+<%= render "shared/header" %>
 <div class="select">
   <div class="select_background">
     <div class="select_jp_background">
-      <%= image_tag 'top_jp_background.png',class: "select_jp_background" %>
+      <%= image_tag 'top_jp_back.png',class: "select_jp_background" %>
     </div>
   </div>
   <div class="select_message">
-    <div class="select_jp_message">
-      日本の旅をサポート
+    <div class="select_jp_main_message">
+      旅の指南書
+    </div>
+    <div class="select_jp_sub_message">
+      下から選択してください
     </div>
     <div class="select_path">
 		  <%= link_to (new_user_session_path) do %> 
-        <%= image_tag 'select_jp_path.png', size: '185x50' ,class: "top_jp_path" %>
+        <%= image_tag 'login_jp_path.png', size: '185x50' ,class: "login_jp_path" %>
+        <%= image_tag 'top_jp_click_path.png', size: '185x50' ,class: "login_jp_click_path"%>
       <% end %>
 	    <%= link_to (new_user_registration_path) do %> 
-        <%= image_tag 'select_registaraion_jp_path.png', size: '185x50' ,class: "top_en_path" %>
+        <%= image_tag 'registration_jp_path.png', size: '185x50' ,class: "registration_jp_path" %>
+        <%= image_tag 'top_jp_click_path.png', size: '185x50' ,class: "registration_jp_click_path"%>
       <% end %>
 	    <%= link_to (area_path), data: {"turbolinks" => false} do %> 
-        <%= image_tag 'select_no_login_jp_path.png', size: '185x50' ,class: "top_zh_path" %>
+        <%= image_tag 'no_login_jp_path.png', size: '185x50' ,class: "no_login_jp_path" %>
+        <%= image_tag 'top_jp_click_path.png', size: '185x50' ,class: "no_login_click_jp_path"%>
       <% end %>
 		</div>
   </div>

@@ -1,6 +1,86 @@
 // Place all the styles related to the top controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.jp_header {
+	position: absolute;
+	width: 80%;
+	padding: 2% 10% 3%;
+	z-index: 1;
+	background-color: transparent;
+	display: flex;
+	align-items: center;
+	border-bottom: thick double rgba(0, 0, 128, 0.295);
+	text-decoration: none;
+}
+.top_jp_icon {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 10%;
+	height: 100%;
+	//border-right: solid rgba(0, 0, 128, 0.384);
+}
+
+.top_en_icon {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 10%;
+	height: 100%;
+	filter: opacity(0);
+}
+
+.top_zh_icon {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 10%;
+	height: 100%;
+	filter: opacity(0);
+}
+.aaa {
+	text-decoration: none;
+	color: navy;
+}
+
+.header_title {
+	position: absolute;
+	left: 0%;
+	z-index: 1;
+	height: 2%;
+	text-decoration: none;
+}
+
+.header_menu {
+	position: absolute;
+	z-index: 1;
+	right: 2%;
+	height: 2%;
+	display: block;
+	text-decoration: none;
+}
+
+.header_quest {
+	position: absolute;
+	margin: 1px;
+	right: 80%;
+}
+
+.top_logout_path {
+	position: absolute;
+	position: fixed;
+	top: 10%;
+	right: 5%;
+	padding: 1%;
+	z-index: 1;
+	margin: 1px;
+	background-color: transparent;
+}
+.top_fil {
+	filter: blur(3px);
+}
+
 .top_jp_background {
 	position: relative;
 	width: 100vw;
@@ -25,17 +105,102 @@
 	top: 0%;
 	z-index: -1;
 }
-.top_jp_message {
+
+.top_jp_main_message {
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-size: 30px;
+	top: 14%;
+	width: 80%;
+	font-size: 40px;
+	margin: auto;
+	left: 0;
+	right: 0;
+	color: navy;
+	border-bottom: solid navy;
+	font-weight: bold;
+	display: block;
+	text-align: center;
+}
+.top_jp_sub_message {
+	position: absolute;
+	top: 21%;
+	width: 80%;
+	font-size: 20px;
+	margin: auto;
+	left: 0;
+	right: 0;
+	letter-spacing: 0.1em;
+	color: navy;
+	font-weight: bold;
+	display: block;
+	text-align: center;
+}
+.top_en_main_message {
+	position: absolute;
+	top: 15%;
+	width: 80%;
+	height: 20%;
+	font-size: 40px;
+	margin: auto;
+	left: 0;
+	right: 0;
+	letter-spacing: 0.01em;
 	color: red;
 	font-weight: bold;
+	display: block;
+	text-align: center;
+	filter: opacity(0%);
+}
+.top_en_sub_message {
+	position: absolute;
+	top: 21%;
+	left: 20%;
+	height: 20%;
+  width: 80%;
+	font-size: 20px;
+	margin: auto;
+	left: 0;
+	right: 0;
+	color: red;
+	border-top: solid red;
+	font-weight: bolder;
+	filter: opacity(0%);
+	display: block;
+	text-align: center;
 }
 
-.top_en_message {
+.top_zh_main_message {
+	position: absolute;
+	top: 15%;
+	width: 100%;
+	font-size: 40px;
+	letter-spacing: 0.05em;
+	color: yellow;
+	font-weight: bold;
+	margin: auto;
+	left: 0;
+	right: 0;
+	display: block;
+	text-align: center;
+	filter: opacity(0%);
+}
+
+.top_zh_sub_message {
+	position: absolute;
+	top: 21%;
+	left: 20%;
+  width: 60%;
+	font-size: 20px;
+	color: yellow;
+	border-top: solid yellow;
+	font-weight: bolder;
+	margin: auto;
+	left: 0;
+	right: 0;
+	filter: opacity(0%);
+	display: block;
+	text-align: center;
+}
+/*.top_en_message {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -44,7 +209,7 @@
 	color: red;
 	font-weight: bold;
 	filter: opacity(0%);
-}
+}*/
 
 .top_zh_message {
 	position: absolute;
@@ -57,17 +222,42 @@
 	filter: opacity(0%);
 }
 
-.select_zh_message {
-	
-}
-
 .top_jp_path {
 	position: absolute;
-	top: 80%;
+	top: 85%;
 	left: 15%;
 	width: 20%;
-	height: 10%;
+	height: 7%;
+	z-index: 1;
+	border-right: solid 4px rgb(46, 46, 46);
+	border-bottom: solid 4px rgb(46, 46, 46);
 	//box-shadow: 0 10px 25px 0 rgba(60, 194, 235, 0.5);
+}
+
+.top_jp_click_path {
+	position: absolute;
+	top: 85%;
+	left: 15%;
+	width: 20%;
+	height: 7%;
+	z-index: 0;
+	border-right: solid 4px rgb(46, 46, 46);
+	border-bottom: solid 4px rgb(46, 46, 46);
+}
+
+.top_jp_click_path:active {
+	-webkit-transform: translateY(4px);
+  transform: translateY(4px);
+}
+
+.select_jp_path {
+	position: absolute;
+	top: 82%;
+	left: 21%;
+	width: 30%;
+	font-size: x-large;
+	font-weight: bold;
+	z-index: 1;
 }
 /*.click_jp_top {
 	position: absolute; 
@@ -80,20 +270,114 @@
 .top_en_path {
 	position: absolute;
 	left: 40%;
-	top: 80%;
+	top: 85%;
 	width: 20%;
-	height: 10%;
+	height: 7%;
+	border-right: solid 4px rgb(46, 46, 46);
+	border-bottom: solid 4px rgb(46, 46, 46);
+	z-index: 1;
+}
+
+.top_en_click_path {
+	position: absolute;
+	left: 40%;
+	top: 85%;
+	width: 20%;
+	height: 7%;
+	border-right: solid 4px rgb(46, 46, 46);
+	border-bottom: solid 4px rgb(46, 46, 46);
+	filter: opacity(0%);
+	z-index: 0;
 }
 
 .top_zh_path {
 	position: absolute;
-	top: 80%;
+	top: 85%;
 	right: 15%;
 	width: 20%;
-	height: 10%;
+	height: 7%;
+	border-right: solid 4px rgb(46, 46, 46);
+	border-bottom: solid 4px rgb(46, 46, 46);
+	z-index: 1;
 }
 
-.top_logout_path {
+.top_zh_click_path {
 	position: absolute;
+	top: 85%;
+	right: 15%;
+	width: 20%;
+	height: 7%;
+	border-right: solid 4px rgb(46, 46, 46);
+	border-bottom: solid 4px rgb(46, 46, 46);
+	filter: opacity(0%);
+	z-index: 0;
+}
+//ハンバーグメニュー
+.nov_toggle {
+	display: block;
+	position: relative;
+	width: 1.75rem;
+	height: 1.5rem;
+}
+
+.nav_toggle i {
+	display: block;
+	width: 5%;
+	height: 2px;
+	right: 3%;
+	background-color: rgba(0, 0, 128, 0.295);
+	position: absolute;
+	transition: transform .5s, opacity .5s;
+}
+.nav_toggle i:nth-child(1) {
 	top: 30%;
+}
+.nav_toggle i:nth-child(2) {
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+.nav_toggle i:nth-child(3) {
+	bottom: 30%;
+}
+
+.nav_toggle.show i:nth-child(1) {
+	transform: translateY(10px) rotate(-45deg);
+}
+.nav_toggle.show i:nth-child(2) {
+	opacity: 0;
+}
+.nav_toggle.show i:nth-child(3) {
+	transform: translateY(-12px) rotate(45deg);
+}
+
+.nav {
+	position: fixed;
+	top: 3rem;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 1rem;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity .5s, visibility .5s;
+	z-index: 3;
+}
+.nav.show {
+	opacity: 1;
+	visibility: visible;
+	z-index: 3;
+}
+
+.nav_menu_li {
+	position: absolute;
+	top: 25%;
+	right: 25%;
+	width: 50%;
+	height: 20%;
+	background-color: rgba(255, 255, 255, 0.651);
+	border: solid rgba(0, 0, 255, 0.199);
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
 }

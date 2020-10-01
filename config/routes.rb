@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'select_jp_language', to: 'select_jp_language#index'
   get 'select_en_language', to: 'select_en_language#index'
   get 'select_zh_language', to: 'select_zh_language#index'
+  get 'contact', to: 'contact#index'
   get 'season', to:'season#index'
   get 'area', to: 'area#index'
   get 'hokkaido_info', to: 'hokkaido_info#index'

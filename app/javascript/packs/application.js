@@ -9,6 +9,8 @@ require("@rails/activestorage").start()
 require("channels")
 require('jquery')
 require('../area')
+require('../registrations')
+require('../select')
 require('../top')
 
 
