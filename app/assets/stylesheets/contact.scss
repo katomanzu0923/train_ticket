@@ -1,0 +1,29 @@
+// Place all the styles related to the contact controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.contact_back {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	top: 0%;
+	left: 0%;
+	filter: opacity(40%);
+}
+
+.contact_message {
+	position: absolute;
+	top: 20%;
+}
+
+.contact_form {
+	position: absolute;
+	width: 60%;
+  height: 70%;
+  margin: 60px auto 0;
+  border-radius: 10px;
+	border: double rgb(255, 255, 255);
+	background-color: rgb(206, 224, 245);
+	top: 5%;
+	left: 20%;
+	filter: opacity(90%);
+}

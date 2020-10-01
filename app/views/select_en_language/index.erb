@@ -1,20 +1,27 @@
+<%= render "shared/en_header" %>
 <div class="select">
   <div class="select_background">
-    <%= image_tag 'top_en_background.png',class: "select_en_background" %>
+    <%= image_tag 'top_en_back.png',class: "select_en_background" %>
   </div>
   <div class="select_message">
-    <div class="select_en_message">
-      The suport of travel in Japan !
+    <div class="select_en_main_message">
+      The guidance of trip in Japan
+    </div>
+    <div class="select_en_sub_message">
+      select a bottun 
     </div>
     <div class="select_path">
 		  <%= link_to (new_user_session_path) do %> 
-        <%= image_tag 'login_en_path.png', size: '185x50' ,class: "top_jp_path" %>
+        <%= image_tag 'login_en_path.png', size: '185x50' ,class: "login_en_path" %>
+        <%= image_tag 'top_en_click_path.png', size: '185x50' ,class: "login_en_click_path"%>
       <% end %>
 	    <%= link_to (new_user_registration_path) do %> 
-        <%= image_tag 'registaraion_en_path.png', size: '185x50' ,class: "top_en_path" %>
+        <%= image_tag 'registration_en_path.png', size: '185x50' ,class: "registration_en_path" %>
+        <%= image_tag 'top_en_click_path.png', size: '185x50' ,class: "registration_en_click_path" %>
       <% end %>
 	    <%= link_to (select_zh_language_path) do %> 
-        <%= image_tag 'no_login_en_path.png', size: '185x50' ,class: "top_zh_path" %>
+        <%= image_tag 'no_login_en_path.png', size: '185x50' ,class: "no_login_en_path" %>
+        <%= image_tag 'top_en_click_path.png', size: '185x50' ,class: "no_login_click_en_path" %>
       <% end %>
 		</div>
 </div>

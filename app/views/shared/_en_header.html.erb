@@ -1,0 +1,16 @@
+<div class="en_header">
+  <%= link_to (select_jp_language_path) do %> 
+	  <%= image_tag 'top_en_icon_2.png', size: '185x50' ,class: "select_en_icon" %>
+  <% end %>
+  <span class="en_nav_toggle">
+    <i></i>
+    <i></i>
+    <i></i>
+  </span>
+  <nav class="en_nav">
+    <ul class="en_nav_menu_li">
+      <li class="en_nav_menu_li_1"><%= link_to "logut", destroy_user_session_path, class: 'en_aaa', method: :delete  %></li>
+      <li class="en_nav_menu_li_2"><%= link_to "contact us", contact_path, class: 'en_aaa', method: :get %></li>
+    </ul>
+  </nav>
+</div>

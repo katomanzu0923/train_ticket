@@ -1,0 +1,18 @@
+<div class="jp_header">
+  <%= link_to (select_jp_language_path) do %> 
+    <%= image_tag 'top_jp_icon_2.png', size: '185x50' ,class: "top_jp_icon" %>
+		<%= image_tag 'top_en_icon_2.png', size: '185x50' ,class: "top_en_icon" %>
+		<%= image_tag 'top_zh_icon_2.png', size: '185x50' ,class: "top_zh_icon" %>
+  <% end %>
+  <span class="nav_toggle">
+    <i></i>
+    <i></i>
+    <i></i>
+  </span>
+  <nav class="nav">
+    <ul class="nav_menu_li">
+      <li class="nav_menu_li_1"><%= link_to "ログアウト", destroy_user_session_path, class: 'aaa', method: :delete  %></li>
+      <li class="nav_menu_li_2"><%= link_to "お問い合わせ", contact_path, class: 'aaa', method: :get %></li>
+    </ul>
+  </nav>
+</div>

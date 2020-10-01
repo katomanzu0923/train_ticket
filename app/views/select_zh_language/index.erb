@@ -1,20 +1,27 @@
-<div class="top">
+<%= render "shared/zh_header" %>
+<div class="select">
   <div class="select_background">
-    <%= image_tag 'top_zh_background.png',class: "select_zh_background" %>
+    <%= image_tag 'top_zh_back.png',class: "select_zh_background" %>
   </div>
   <div class="select_message">
-    <div class="select_zh_message">
-      支持日本旅行！
+    <div class="select_zh_main_message">
+      日本旅行的指南
+    </div>
+    <div class="select_zh_sub_message">
+      请在下边的按钮中间选择
     </div>
     <div class="select_path">
 		  <%= link_to (new_user_session_path) do %> 
-        <%= image_tag 'login_zh_path.png', size: '185x50' ,class: "top_jp_path" %>
+        <%= image_tag 'login_zh_path.png', size: '185x50' ,class: "login_zh_path" %>
+        <%= image_tag 'top_zh_click_path.png', size: '185x50' ,class: "login_zh_click_path"%>
       <% end %>
 	    <%= link_to (new_user_registration_path) do %> 
-        <%= image_tag 'registaraion_zh_path.png', size: '185x50' ,class: "top_en_path" %>
+        <%= image_tag 'registration_zh_path.png', size: '185x50' ,class: "registration_zh_path" %>
+        <%= image_tag 'top_zh_click_path.png', size: '185x50' ,class: "registration_zh_click_path"%>
       <% end %>
 	    <%= link_to (select_zh_language_path) do %> 
-        <%= image_tag 'no_login_zh_path.png', size: '185x50' ,class: "top_zh_path" %>
+        <%= image_tag 'no_login_zh_path.png', size: '185x50' ,class: "no_login_zh_path" %>
+        <%= image_tag 'top_zh_click_path.png', size: '185x50' ,class: "no_login_click_zh_path"%>
       <% end %>
 		</div>
   </div>
