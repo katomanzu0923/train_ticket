@@ -1,31 +1,111 @@
+<% if current_user.nationality_id == 1 %>
+  <%= render "shared/jp_header" %>
+<% elsif current_user.nationality_id == 2 %>	
+  <%= render "shared/zh_header" %>
+<% else current_user.nationality_id == 3 %>
+  <%= render "shared/en_header" %>
+<% end %>
 <div class='area_top'>
-  <div class='message'>
+  <div class='area_message'>
 	  <%  if current_user.nationality_id == 1 %> 
 	    <div class='ja_select_message'>
 		    エリアを選択してください! 
 		  </div>
-			<div class='ja_click_message'>
-			  そのままクリック！
+			<div class='ja_hokkaido_click_message'>
+			  北海道へクリック！
+			</div>
+			<div class='ja_tohoku_click_message'>
+			  東北へクリック！
+			</div>
+			<div class='ja_kanto_click_message'>
+			  関東へクリック！
+			</div>
+			<div class='ja_hokuriku_click_message'>
+			  北陸へクリック！
+			</div>
+			<div class='ja_tokai_click_message'>
+			  東海へクリック！
+			</div>
+			<div class='ja_kansai_click_message'>
+			  関西へクリック！
+			</div>
+			<div class='ja_chugoku_click_message'>
+			  中国へクリック！
+			</div>
+			<div class='ja_sikoku_click_message'>
+			  四国へクリック！
+			</div>
+			<div class='ja_kyusyu_click_message'>
+			  九州へクリック！
 			</div>
     <% elsif current_user.nationality_id == 2 %> 
 	    <div class='zh_select_message'> 
 		    请选择一个地区
 		  </div>
-			<div class='zh_click_message'> 
-		    只需点击！
-		  </div>  
+			<div class='zh_hokkaido_click_message'>
+			  到北海道点击！
+			</div>
+			<div class='zh_tohoku_click_message'>
+			  到東北点击！
+			</div>
+			<div class='zh_kanto_click_message'>
+			  到関東点击！
+			</div>
+			<div class='zh_hokuriku_click_message'>
+			  到北陸点击！
+			</div>
+			<div class='zh_tokai_click_message'>
+			  到東海点击！
+			</div>
+			<div class='zh_kansai_click_message'>
+			  到関西点击！
+			</div>
+			<div class='zh_chugoku_click_message'>
+			  到中国点击！
+			</div>
+			<div class='zh_sikoku_click_message'>
+			 到四国点击！
+			</div>
+			<div class='zh_kyusyu_click_message'>
+			  到九州点击！
+			</div>
 	  <% else current_user.nationality_id == 3 %>
 	     <div class='en_select_message'>
-		    please select the area
+		    please select the area !
 		   </div> 
-			 <div class='en_click_message'>
-		    Just click!
+			 <div class='en_hokkaido_click_message'>
+		    Just click for hokkaido !
+			</div>
+			<div class='en_tohoku_click_message'>
+		    Just click for tohoku !
+			</div>
+			<div class='en_kanto_click_message'>
+		    Just click for kanto !
+			</div>
+			<div class='en_hokuriku_click_message'>
+		    Just click for hokuriku !
+			</div>
+			<div class='en_tokai_click_message'>
+		    Just click for tokai !
+			</div>
+			<div class='en_kansai_click_message'>
+		    Just click for kansai !
+			</div>
+			<div class='en_chugoku_click_message'>
+		    Just click for chugoku !
+			</div>
+			<div class='en_sikoku_click_message'>
+		    Just click for sikoku !
+			</div>
+			<div class='en_kyusyu_click_message'>
+		    Just click for kyusyu !
+			</div>
 	  <% end %> 
   </div>
-	<div class='map'> 
-	  <div class='area_map'> 
-       <%= image_tag 'top_jp_background.png',class: "area_back-image" %> 
-			 <%= image_tag 'top_jp_background.png',class: "area_top_back-image" %>
+	<div class='area_map'> 
+	  <div class='area_back_map'> 
+       <%#= image_tag 'top_jp_background.png',class: "area_back-image" %> 
+			 <%= image_tag 'top_jp_background.png',class: "area_top_back" %> 
 			 <%= image_tag 'hokkaido_back.png', class: "hokkaido_back"%>
 			 <%= image_tag 'tohoku_back.png', class: "tohoku_back"%>
 			 <%= image_tag 'kanto_back.png', class: "kanto_back"%>
@@ -35,10 +115,10 @@
 			 <%= image_tag 'chugoku_back.png', class: "chugoku_back"%>
 			 <%= image_tag 'sikoku_back.png', class: "sikoku_back"%>
 			 <%= image_tag 'kyusyu_back.png', class: "kyusyu_back"%>
-	     <%= image_tag 'reve_jp_map.png',class: "jp_map" %>
 		</div> 
-		<div>
-	    <%= link_to (hokkaido_info_path) do %>
+		<div class="area_select_map">
+		  <%= image_tag 'reve_jp_map.png',class: "jp_map" %>
+			<%= link_to (hokkaido_info_path) do %>
 	      <%= image_tag 'hokkaido_map.png', class: "hokkaido_map" %> 
 	    <% end  %>
 	    <%= link_to (tohoku_info_path) do %>
@@ -64,7 +144,7 @@
 	    <% end %>
 	    <%= link_to (kyusyu_info_path) do %>
 	      <%= image_tag 'kyusyu_map.png', class: "kyusyu_map" %>
-	    <% end %>
+	    <% end %>  
 	  </div>
 	</div>
 </div>
