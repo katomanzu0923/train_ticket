@@ -10,17 +10,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_26_071101) do
+ActiveRecord::Schema.define(version: 2020_10_03_042037) do
+
+  create_table "days", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "day", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "tokais", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "jp_name", null: false
+    t.string "zh_name", null: false
     t.string "en_name", null: false
-    t.integer "price", null: false
-    t.string "info", null: false
-    t.string "detail", null: false
+    t.string "price", null: false
+    t.string "jp_info", null: false
+    t.string "zh_info", null: false
+    t.string "en_info", null: false
+    t.string "jp_area", null: false
+    t.string "zh_area", null: false
+    t.string "en_area", null: false
+    t.string "jp_day", null: false
+    t.string "zh_day", null: false
+    t.string "en_day", null: false
     t.string "age", null: false
+    t.bigint "day_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["day_id"], name: "index_tokais_on_day_id"
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -38,4 +54,5 @@ ActiveRecord::Schema.define(version: 2020_09_26_071101) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "tokais", "days"
 end
