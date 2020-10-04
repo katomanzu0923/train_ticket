@@ -96,6 +96,7 @@ $(function() {
 $(function(){
 	$(".nav_toggle").on("click", function () {
 		$(".nav_toggle, .nav").toggleClass("show")
+    $(".nav_toggle").toggleClass("change_color")
 		$(".top").toggleClass("top_fil")
 	})
 });

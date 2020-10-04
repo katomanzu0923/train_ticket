@@ -328,6 +328,10 @@
 	position: absolute;
 	transition: transform .5s, opacity .5s;
 }
+
+.change_color {
+	background-color: red;
+}
 .nav_toggle i:nth-child(1) {
 	top: 30%;
 }

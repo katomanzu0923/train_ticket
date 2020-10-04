@@ -44,7 +44,15 @@
 	border: solid rgba(0, 0, 0, 0.384);
 	background-color: silver;
 	filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.397));
+  opacity : 0;
+  transform : translate(0, 50px);
+  transition:all 0.5s;
 }
+.list.scrollin {
+    opacity : 1;
+    transform : translate(0, 0);
+}
+
 
 .lists::after {
 	display: block;
