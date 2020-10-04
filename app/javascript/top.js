@@ -28,6 +28,8 @@ $(function() {
 		$(".top_en_sub_message").css({"filter": "opacity(100%)"})
 		$(".top_jp_icon").css({"filter": "opacity(0%)"})
 		$(".top_en_icon").css({"filter": "opacity(100%)"})
+		$(".top_jp_2_icon").css({"filter": "opacity(0%)"})
+		$(".top_en_2_icon").css({"filter": "opacity(100%)"})	
 		$(".nav_toggle i").css({"background-color":"rgba(255, 0, 0, 0.438)"})
 		$(".jp_header").css({"border-bottom": "thick double rgba(255, 0, 0, 0.438)"})
 		$(".top_jp_background").fadeOut(0);
@@ -44,6 +46,8 @@ $(function() {
 		$(".top_en_sub_message").css({"filter": "opacity(0%)"})
 		$(".top_jp_icon").css({"filter": "opacity(100%)"})
 		$(".top_en_icon").css({"filter": "opacity(0%)"})
+		$(".top_jp_2_icon").css({"filter": "opacity(100%)"})
+		$(".top_en_2_icon").css({"filter": "opacity(0%)"})
 		$(".nav_toggle i").css({"background-color":"rgba(0, 0, 128, 0.295)"})
 		$(".jp_header").css({"border-bottom": "thick double rgba(0, 0, 128, 0.295)"})
 		$(".top_jp_background").fadeIn(0);
@@ -64,7 +68,9 @@ $(function() {
 		$(".top_zh_main_message").css({"filter": "opacity(100%)"})
 		$(".top_zh_sub_message").css({"filter": "opacity(100%)"})
 		$(".top_jp_icon").css({"filter": "opacity(0%)"})
+		$(".top_jp_2_icon").css({"filter": "opacity(0%)"})
 		$(".top_zh_icon").css({"filter": "opacity(100%)"})
+		$(".top_zh_2_icon").css({"filter": "opacity(100%)"})
 		$(".nav_toggle i").css({"background-color":"rgba(255, 255, 0, 0.452)"})
 		$(".jp_header").css({"border-bottom": "thick double rgba(255, 255, 0, 0.452)"})
 		$(".top_jp_background").fadeOut(0);
@@ -78,7 +84,9 @@ $(function() {
 		$(".top_zh_main_message").css({"filter": "opacity(0%)"})
 		$(".top_zh_sub_message").css({"filter": "opacity(0%)"})
 		$(".top_jp_icon").css({"filter": "opacity(100%)"})
+		$(".top_jp_2_icon").css({"filter": "opacity(100%)"})
 		$(".top_zh_icon").css({"filter": "opacity(0%)"})
+		$(".top_zh_2_icon").css({"filter": "opacity(0%)"})
 		$(".nav_toggle i").css({"background-color":"rgba(0, 0, 128, 0.295)"})
 		$(".jp_header").css({"border-bottom": "thick double rgba(0, 0, 128, 0.295)"})
 		$(".top_jp_background").fadeIn(0);

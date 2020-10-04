@@ -5,6 +5,7 @@
 .jp_header {
 	position: absolute;
 	width: 80%;
+	height: 5%;
 	padding: 2% 10% 3%;
 	z-index: 1;
 	background-color: transparent;
@@ -17,16 +18,38 @@
 	position: absolute;
 	top: 0%;
 	left: 0%;
-	width: 10%;
+	width: 15%;
 	height: 100%;
 	//border-right: solid rgba(0, 0, 128, 0.384);
+}
+
+
+
+.top_jp_2_icon  {
+	position: absolute;
+	top: 0%;
+	left: 40%;
+	width: 15%;
+	height: 100%;
+	height: 100%;
 }
 
 .top_en_icon {
 	position: absolute;
 	top: 0%;
 	left: 0%;
-	width: 10%;
+	width: 15%;
+	height: 100%;
+	height: 100%;
+	filter: opacity(0);
+}
+
+.top_en_2_icon  {
+	position: absolute;
+	top: 0%;
+	left: 40%;
+	width: 15%;
+	height: 100%;
 	height: 100%;
 	filter: opacity(0);
 }
@@ -35,10 +58,21 @@
 	position: absolute;
 	top: 0%;
 	left: 0%;
-	width: 10%;
+	width: 15%;
 	height: 100%;
 	filter: opacity(0);
 }
+
+.top_zh_2_icon {
+	position: absolute;
+	top: 0%;
+	left: 40%;
+	width: 15%;
+	height: 100%;
+	filter: opacity(0);
+}
+
+
 .aaa {
 	text-decoration: none;
 	color: navy;
