@@ -1,7 +1,7 @@
 // Place all the styles related to the top controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
+//ヘッダー
 .jp_header {
 	position: absolute;
 	width: 80%;
@@ -20,10 +20,7 @@
 	left: 0%;
 	width: 15%;
 	height: 100%;
-	//border-right: solid rgba(0, 0, 128, 0.384);
 }
-
-
 
 .top_jp_2_icon  {
 	position: absolute;
@@ -71,10 +68,11 @@
 	height: 100%;
 	filter: opacity(0);
 }
-
-
-.aaa {
+//ヘッダー終わり
+//@ハンバーガーメニュー
+.header_menu_message {
 	text-decoration: none;
+  font-size: 1.5rem;
 	color: navy;
 }
 
@@ -115,6 +113,8 @@
 	filter: blur(3px);
 }
 
+//ハンバーガーメニュー終わり
+//メイン
 .top_jp_background {
 	position: relative;
 	width: 100vw;
@@ -130,7 +130,6 @@
 	top: 0%;
 	z-index: -1;
 }
-
 .top_zh_background {
 	position: absolute;
 	width: 100%;
@@ -139,17 +138,17 @@
 	top: 0%;
 	z-index: -1;
 }
-
 .top_jp_main_message {
 	position: absolute;
 	top: 14%;
 	width: 80%;
+  height: 30%;
 	font-size: 40px;
 	margin: auto;
 	left: 0;
 	right: 0;
 	color: navy;
-	border-bottom: solid navy;
+	//border-bottom: solid navy;
 	font-weight: bold;
 	display: block;
 	text-align: center;
@@ -163,6 +162,7 @@
 	left: 0;
 	right: 0;
 	letter-spacing: 0.1em;
+	border-top: solid navy;
 	color: navy;
 	font-weight: bold;
 	display: block;
@@ -201,7 +201,6 @@
 	display: block;
 	text-align: center;
 }
-
 .top_zh_main_message {
 	position: absolute;
 	top: 15%;
@@ -217,7 +216,6 @@
 	text-align: center;
 	filter: opacity(0%);
 }
-
 .top_zh_sub_message {
 	position: absolute;
 	top: 21%;
@@ -234,17 +232,6 @@
 	display: block;
 	text-align: center;
 }
-/*.top_en_message {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-size: 30px;
-	color: red;
-	font-weight: bold;
-	filter: opacity(0%);
-}*/
-
 .top_zh_message {
 	position: absolute;
 	top: 50%;
@@ -255,92 +242,71 @@
 	font-weight: bold;
 	filter: opacity(0%);
 }
-
+.select_path {
+	
+}
 .top_jp_path {
 	position: absolute;
 	top: 85%;
 	left: 15%;
-	width: 20%;
-	height: 7%;
+	width: 15%;
+	height: 5%;
 	z-index: 1;
 	border-right: solid 4px rgb(46, 46, 46);
 	border-bottom: solid 4px rgb(46, 46, 46);
-	//box-shadow: 0 10px 25px 0 rgba(60, 194, 235, 0.5);
 }
 
 .top_jp_click_path {
 	position: absolute;
 	top: 85%;
 	left: 15%;
-	width: 20%;
-	height: 7%;
+	width: 15%;
+	height: 5%;
 	z-index: 0;
 	border-right: solid 4px rgb(46, 46, 46);
 	border-bottom: solid 4px rgb(46, 46, 46);
 }
-
 .top_jp_click_path:active {
 	-webkit-transform: translateY(4px);
   transform: translateY(4px);
 }
-
-.select_jp_path {
-	position: absolute;
-	top: 82%;
-	left: 21%;
-	width: 30%;
-	font-size: x-large;
-	font-weight: bold;
-	z-index: 1;
-}
-/*.click_jp_top {
-	position: absolute; 
-	bottom: 0; 
-	top: 90%;
-	left: 15%;
-	width: 20%;
-	height: 10%;
-}*/
 .top_en_path {
 	position: absolute;
-	left: 40%;
+	left: 42%;
 	top: 85%;
-	width: 20%;
-	height: 7%;
+	width: 15%;
+	height: 5%;
 	border-right: solid 4px rgb(46, 46, 46);
 	border-bottom: solid 4px rgb(46, 46, 46);
 	z-index: 1;
 }
-
 .top_en_click_path {
 	position: absolute;
-	left: 40%;
+	left: 42%;
 	top: 85%;
-	width: 20%;
-	height: 7%;
+	width: 15%;
+	height: 5%;
 	border-right: solid 4px rgb(46, 46, 46);
 	border-bottom: solid 4px rgb(46, 46, 46);
 	filter: opacity(0%);
 	z-index: 0;
 }
-
 .top_zh_path {
 	position: absolute;
 	top: 85%;
 	right: 15%;
-	width: 20%;
-	height: 7%;
+	width: 15%;
+	height: 5%;
 	border-right: solid 4px rgb(46, 46, 46);
 	border-bottom: solid 4px rgb(46, 46, 46);
 	z-index: 1;
 }
-
 .top_zh_click_path {
 	position: absolute;
 	top: 85%;
 	right: 15%;
-	width: 20%;
-	height: 7%;
+	width: 15%;
+	height: 5%;
 	border-right: solid 4px rgb(46, 46, 46);
 	border-bottom: solid 4px rgb(46, 46, 46);
 	filter: opacity(0%);
@@ -353,13 +319,12 @@
 	width: 1.75rem;
 	height: 1.5rem;
 }
-
 .nav_toggle i {
 	display: block;
 	width: 5%;
-	height: 2px;
+	height: 4px;
 	right: 3%;
-	background-color: rgba(0, 0, 128, 0.295);
+	background-color: navy;
 	position: absolute;
 	transition: transform .5s, opacity .5s;
 }
@@ -374,7 +339,6 @@
 .nav_toggle i:nth-child(3) {
 	bottom: 30%;
 }
-
 .nav_toggle.show i:nth-child(1) {
 	transform: translateY(10px) rotate(-45deg);
 }
@@ -384,7 +348,6 @@
 .nav_toggle.show i:nth-child(3) {
 	transform: translateY(-12px) rotate(45deg);
 }
-
 .nav {
 	position: fixed;
 	top: 3rem;
@@ -402,7 +365,6 @@
 	visibility: visible;
 	z-index: 3;
 }
-
 .nav_menu_li {
 	position: absolute;
 	top: 25%;
