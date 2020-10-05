@@ -45,21 +45,47 @@
               </div>
 						<% end %>
 						<% if current_user.nationality_id == 1 %>
-					    <div class="price">
-                 金額  ▶️  <span><%= tokai.price %>￥</span>
-              </div>
-						<% elsif current_user.nationality_id == 2 %>
 						  <div class="price">
+						    <div class="jp_price_area">
+							    金額
+							  </div>
+					      <div class="jp_price">
+                  <span><%= tokai.price %>円</span>
+                </div>
+							</div>
+						<% elsif current_user.nationality_id == 2 %>
+						  <div class="zh_price">
                 金额  ▶️  <span><%= tokai.price %>円</span>
               </div>
 						<% else current_user.nationality_id == 3 %>
-						  <div class="price">
+						  <div class="en_price">
                 Price  ▶️  <span><%= tokai.price %>円</span>
               </div>
             <% end %> 
 						<% if current_user.nationality_id == 1 %>
+						  <div class="info_area">
+							  <div class="jp_areas">
+								  エリア
+								</div>
+					      <div class="jp_area">
+                  <span><%= tokai.jp_area %></span>
+                </div>
+							</div>
+						<% elsif current_user.nationality_id == 2 %>
+						  <div class="zh_area">
+                <span><%= tokai.zh_area %>円</span>
+              </div>
+						<% else current_user.nationality_id == 3 %>
+						  <div class="en_area">
+                <span><%= tokai.en_area %>円</span>
+              </div>
+            <% end %> 
+							<% if current_user.nationality_id == 1 %>
+							<div class="jp_info2">   
+							  ちょっと一言
+							</div>
 					    <div class="jp_info">
-                <span><%= tokai.jp_info %></span>
+								<span><%= tokai.jp_info %></span>
               </div>
 						<% elsif current_user.nationality_id == 2 %>
 						  <div class="en_info">
@@ -68,19 +94,6 @@
 						<% else current_user.nationality_id == 3 %>
 						  <div class="price">
                 <span><%= tokai.en_info %>円</span>
-              </div>
-            <% end %> 
-						<% if current_user.nationality_id == 1 %>
-					    <div class="jp_area">
-                <span><%= tokai.jp_area %></span>
-              </div>
-						<% elsif current_user.nationality_id == 2 %>
-						  <div class="zh_area">
-                <span><%= tokai.zh_area %>円</span>
-              </div>
-						<% else current_user.nationality_id == 3 %>
-						  <div class="en_area">
-                <span><%= tokai.en_area %>円</span>
               </div>
             <% end %> 
 						<% if current_user.nationality_id == 1 %>
