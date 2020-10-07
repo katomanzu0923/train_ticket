@@ -1,8 +1,8 @@
 //北海道エリア
 $(function () {
   $(".hokkaido_map").on("mouseover", function () {
-		$(".ja_select_message").css({"filter": "opacity(0%)"})
-		$(".ja_hokkaido_click_message").css({"filter": "opacity(100%)"})
+		$(".jp_select_message").css({"filter": "opacity(0%)"})
+		$(".jp_hokkaido_click_message").css({"filter": "opacity(100%)"})
 		$(".zh_select_message").css({"filter": "opacity(0%)"})
 		$(".zh_hokkaido_click_message").css({"filter": "opacity(100%)"})
 		$(".en_select_message").css({"filter": "opacity(0%)"})
@@ -12,8 +12,8 @@ $(function () {
 		$(this).css({ "filter": "opacity(0%)"})
 		$(".hokkaido_back").css({ "filter": "opacity(100%)"})
   }).on("mouseout", function () {
-		$(".ja_select_message").css({"filter": "opacity(100%)"})
-		$(".ja_hokkaido_click_message").css({"filter": "opacity(0%)"})
+		$(".jp_select_message").css({"filter": "opacity(100%)"})
+		$(".jp_hokkaido_click_message").css({"filter": "opacity(0%)"})
 		$(".zh_select_message").css({"filter": "opacity(100%)"})
 		$(".zh_hokkaido_click_message").css({"filter": "opacity(0%)"})
 		$(".en_select_message").css({"filter": "opacity(100%)"})
@@ -28,8 +28,8 @@ $(function () {
 //東北エリア
 $(function () {
   $(".tohoku_map").on("mouseover", function () {
-		$(".ja_select_message").css({"filter": "opacity(0%)"})
-		$(".ja_tohoku_click_message").css({"filter": "opacity(100%)"})
+		$(".jp_select_message").css({"filter": "opacity(0%)"})
+		$(".jp_tohoku_click_message").css({"filter": "opacity(100%)"})
 		$(".zh_select_message").css({"filter": "opacity(0%)"})
 		$(".zh_tohoku_click_message").css({"filter": "opacity(100%)"})
 		$(".en_select_message").css({"filter": "opacity(0%)"})
@@ -39,8 +39,8 @@ $(function () {
 		$(this).css({"filter": "opacity(0%)"})
 		$(".tohoku_back").css({ "filter": "opacity(100%)"})
   }).on("mouseout", function () {
-		$(".ja_select_message").css({"filter": "opacity(100%)"})
-		$(".ja_tohoku_click_message").css({"filter": "opacity(0%)"})
+		$(".jp_select_message").css({"filter": "opacity(100%)"})
+		$(".jp_tohoku_click_message").css({"filter": "opacity(0%)"})
 		$(".zh_select_message").css({"filter": "opacity(100%)"})
 		$(".zh_tohoku_click_message").css({"filter": "opacity(0%)"})
 		$(".en_select_message").css({"filter": "opacity(100%)"})
@@ -54,8 +54,8 @@ $(function () {
 //関東エリア
 $(function () {
   $(".kanto_map").on("mouseover", function () {
-		$(".ja_select_message").css({"filter": "opacity(0%)"})
-		$(".ja_kanto_click_message").css({"filter": "opacity(100%)"})
+		$(".jp_select_message").css({"filter": "opacity(0%)"})
+		$(".jp_kanto_click_message").css({"filter": "opacity(100%)"})
 		$(".zh_select_message").css({"filter": "opacity(0%)"})
 		$(".zh_kanto_click_message").css({"filter": "opacity(100%)"})
 		$(".en_select_message").css({"filter": "opacity(0%)"})
@@ -65,8 +65,8 @@ $(function () {
 		$(this).css({"filter": "opacity(0%)"})
 		$(".kanto_back").css({ "filter": "opacity(100%)"})
   }).on("mouseout", function () {
-		$(".ja_select_message").css({"filter": "opacity(100%)"})
-		$(".ja_kanto_click_message").css({"filter": "opacity(0%)"})
+		$(".jp_select_message").css({"filter": "opacity(100%)"})
+		$(".jp_kanto_click_message").css({"filter": "opacity(0%)"})
 		$(".zh_select_message").css({"filter": "opacity(100%)"})
 		$(".zh_kanto_click_message").css({"filter": "opacity(0%)"})
 		$(".en_select_message").css({"filter": "opacity(100%)"})
@@ -80,8 +80,8 @@ $(function () {
 //北陸エリア
 $(function () {
   $(".hokuriku_map").on("mouseover", function () {
-		$(".ja_select_message").css({"filter": "opacity(0%)"})
-		$(".ja_hokuriku_click_message").css({"filter": "opacity(100%)"})
+		$(".jp_select_message").css({"filter": "opacity(0%)"})
+		$(".jp_hokuriku_click_message").css({"filter": "opacity(100%)"})
 		$(".zh_select_message").css({"filter": "opacity(0%)"})
 		$(".zh_hokuriku_click_message").css({"filter": "opacity(100%)"})
 		$(".en_select_message").css({"filter": "opacity(0%)"})
@@ -91,8 +91,8 @@ $(function () {
 		$(this).css({"filter": "opacity(0%)"})
 		$(".hokuriku_back").css({ "filter": "opacity(100%)"})
   }).on("mouseout", function () {
-		$(".ja_select_message").css({"filter": "opacity(100%)"})
-		$(".ja_hokuriku_click_message").css({"filter": "opacity(0%)"})
+		$(".jp_select_message").css({"filter": "opacity(100%)"})
+		$(".jp_hokuriku_click_message").css({"filter": "opacity(0%)"})
 		$(".zh_select_message").css({"filter": "opacity(100%)"})
 		$(".zh_hokuriku_click_message").css({"filter": "opacity(0%)"})
 		$(".en_select_message").css({"filter": "opacity(100%)"})
@@ -106,8 +106,8 @@ $(function () {
 //東海エリア
 $(function () {
   $(".tokai_map").on("mouseover", function () {
-		$(".ja_select_message").css({"filter": "opacity(0%)"})
-		$(".ja_tokai_click_message").css({"filter": "opacity(100%)"})
+		$(".jp_select_message").css({"filter": "opacity(0%)"})
+		$(".jp_tokai_click_message").css({"filter": "opacity(100%)"})
 		$(".zh_select_message").css({"filter": "opacity(0%)"})
 		$(".zh_tokai_click_message").css({"filter": "opacity(100%)"})
 		$(".en_select_message").css({"filter": "opacity(0%)"})
@@ -116,8 +116,8 @@ $(function () {
 		$(this).css({ "filter": "opacity(0%)"})
 		$(".tokai_back").css({ "filter": "opacity(100%)"})
   }).on("mouseout", function () {
-		$(".ja_select_message").css({"filter": "opacity(100%)"})
-		$(".ja_tokai_click_message").css({"filter": "opacity(0%)"})
+		$(".jp_select_message").css({"filter": "opacity(100%)"})
+		$(".jp_tokai_click_message").css({"filter": "opacity(0%)"})
 		$(".zh_select_message").css({"filter": "opacity(100%)"})
 		$(".zh_tokai_click_message").css({"filter": "opacity(0%)"})
 		$(".en_select_message").css({"filter": "opacity(100%)"})
@@ -131,8 +131,8 @@ $(function () {
 //関西エリア
 $(function () {
   $(".kansai_map").on("mouseover", function () {
-		$(".ja_select_message").css({"filter": "opacity(0%)"})
-		$(".ja_kansai_click_message").css({"filter": "opacity(100%)"})
+		$(".jp_select_message").css({"filter": "opacity(0%)"})
+		$(".jp_kansai_click_message").css({"filter": "opacity(100%)"})
 		$(".zh_select_message").css({"filter": "opacity(0%)"})
 		$(".zh_kansai_click_message").css({"filter": "opacity(100%)"})
 		$(".en_select_message").css({"filter": "opacity(0%)"})
@@ -142,8 +142,8 @@ $(function () {
 		$(this).css({"filter": "opacity(0%)"})
 		$(".kansai_back").css({ "filter": "opacity(100%)"})
   }).on("mouseout", function () {
-		$(".ja_select_message").css({"filter": "opacity(100%)"})
-		$(".ja_kansai_click_message").css({"filter": "opacity(0%)"})
+		$(".jp_select_message").css({"filter": "opacity(100%)"})
+		$(".jp_kansai_click_message").css({"filter": "opacity(0%)"})
 		$(".zh_select_message").css({"filter": "opacity(100%)"})
 		$(".zh_kansai_click_message").css({"filter": "opacity(0%)"})
 		$(".en_select_message").css({"filter": "opacity(100%)"})
@@ -157,8 +157,8 @@ $(function () {
 //中国エリア
 $(function () {
   $(".chugoku_map").on("mouseover", function () {
-		$(".ja_select_message").css({"filter": "opacity(0%)"})
-		$(".ja_chugoku_click_message").css({"filter": "opacity(100%)"})
+		$(".jp_select_message").css({"filter": "opacity(0%)"})
+		$(".jp_chugoku_click_message").css({"filter": "opacity(100%)"})
 		$(".zh_select_message").css({"filter": "opacity(0%)"})
 		$(".zh_chugoku_click_message").css({"filter": "opacity(100%)"})
 		$(".en_select_message").css({"filter": "opacity(0%)"})
@@ -168,8 +168,8 @@ $(function () {
 		$(this).css({"filter": "opacity(0%)"})
 		$(".chugoku_back").css({ "filter": "opacity(100%)"})
   }).on("mouseout", function () {
-		$(".ja_select_message").css({"filter": "opacity(100%)"})
-		$(".ja_chugoku_click_message").css({"filter": "opacity(0%)"})
+		$(".jp_select_message").css({"filter": "opacity(100%)"})
+		$(".jp_chugoku_click_message").css({"filter": "opacity(0%)"})
 		$(".zh_select_message").css({"filter": "opacity(100%)"})
 		$(".zh_chugoku_click_message").css({"filter": "opacity(0%)"})
 		$(".en_select_message").css({"filter": "opacity(100%)"})
@@ -183,8 +183,8 @@ $(function () {
 //四国エリア
 $(function () {
   $(".sikoku_map").on("mouseover", function () {
-		$(".ja_select_message").css({"filter": "opacity(0%)"})
-		$(".ja_sikoku_click_message").css({"filter": "opacity(100%)"})
+		$(".jp_select_message").css({"filter": "opacity(0%)"})
+		$(".jp_sikoku_click_message").css({"filter": "opacity(100%)"})
 		$(".zh_select_message").css({"filter": "opacity(0%)"})
 		$(".zh_sikoku_click_message").css({"filter": "opacity(100%)"})
 		$(".en_select_message").css({"filter": "opacity(0%)"})
@@ -194,8 +194,8 @@ $(function () {
 		$(this).css({"filter": "opacity(0%)"})
 		$(".sikoku_back").css({ "filter": "opacity(100%)"})
   }).on("mouseout", function () {
-		$(".ja_select_message").css({"filter": "opacity(100%)"})
-		$(".ja_sikoku_click_message").css({"filter": "opacity(0%)"})
+		$(".jp_select_message").css({"filter": "opacity(100%)"})
+		$(".jp_sikoku_click_message").css({"filter": "opacity(0%)"})
 		$(".zh_select_message").css({"filter": "opacity(100%)"})
 		$(".zh_sikoku_click_message").css({"filter": "opacity(0%)"})
 		$(".en_select_message").css({"filter": "opacity(100%)"})
@@ -209,8 +209,8 @@ $(function () {
 //九州エリア
 $(function () {
   $(".kyusyu_map").on("mouseover", function () {
-		$(".ja_select_message").css({"filter": "opacity(0%)"})
-		$(".ja_kyusyu_click_message").css({"filter": "opacity(100%)"})
+		$(".jp_select_message").css({"filter": "opacity(0%)"})
+		$(".jp_kyusyu_click_message").css({"filter": "opacity(100%)"})
 		$(".zh_select_message").css({"filter": "opacity(0%)"})
 		$(".zh_kyusyu_click_message").css({"filter": "opacity(100%)"})
 		$(".en_select_message").css({"filter": "opacity(0%)"})
@@ -220,8 +220,8 @@ $(function () {
 		$(this).css({"filter": "opacity(0%)"})
 		$(".kyusyu_back").css({ "filter": "opacity(100%)"})
   }).on("mouseout", function () {
-		$(".ja_select_message").css({"filter": "opacity(100%)"})
-		$(".ja_kyusyu_click_message").css({"filter": "opacity(0%)"})
+		$(".jp_select_message").css({"filter": "opacity(100%)"})
+		$(".jp_kyusyu_click_message").css({"filter": "opacity(0%)"})
 		$(".zh_select_message").css({"filter": "opacity(100%)"})
 		$(".zh_kyusyu_click_message").css({"filter": "opacity(0%)"})
 		$(".en_select_message").css({"filter": "opacity(100%)"})
@@ -232,3 +232,4 @@ $(function () {
 		$(".kyusyu_back").css({ "filter": "opacity(0%)"})
 	})
 });
+//ハンバーガーメニュー(area)

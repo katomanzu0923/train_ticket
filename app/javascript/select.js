@@ -146,11 +146,14 @@ $(function() {
 		$(".no_login_click_zh_path").css({"filter": "opacity(0%)"})
 	})
 });
+
 //ハンバーグメニュー（英語）
 $(function(){
 	$(".en_nav_toggle").on("click", function () {
 		$(".en_nav_toggle, .en_nav").toggleClass("show")
 		$(".select").toggleClass("top_fil")
+		$(".area_top").toggleClass("top_fil")
+		$(".info_top").toggleClass("top_fil")
 	})
 });
 //ハンバーグメニュー（中国語）
@@ -158,6 +161,7 @@ $(function(){
 	$(".zh_nav_toggle").on("click", function () {
 		$(".zh_nav_toggle, .zh_nav").toggleClass("show")
 		$(".select").toggleClass("top_fil")
+		$(".area_top").toggleClass("top_fil")
 	})
 });
 
