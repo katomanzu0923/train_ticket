@@ -53,11 +53,75 @@ input[type="text"] {
 	left: 25%;
 }
 
+.nickname_ok {
+	position: absolute;
+	z-index: 3;
+	top: 18%;
+	right: 20%;
+	filter: opacity(0);
+}
+.nickname_ok_re {
+  filter: opacity(100);
+}
+
+.nickname_error {
+	position: absolute;
+	color: rgba(255, 0, 0, 0.801);
+	top: 15%;
+	left: 43%;
+	z-index: 2;
+	filter: opacity(0);
+}
+
+.revise_errors {
+	filter: opacity(100);
+}
+
 .age_form {
 	position: absolute;
 	top: 25%;
 	width: 30%;
 	left: 25%;
+}
+
+.age_ok {
+	position: absolute;
+	z-index: 3;
+	top: 28%;
+	right: 45%;
+	z-index: 1;
+	filter: opacity(0);
+}
+.age_ok_re {
+  filter: opacity(100);
+}
+
+.age_error {
+	position: absolute;
+	top: 25%;
+	width: 60%;
+	left: 35%;
+	color: rgba(255, 0, 0, 0.801);
+	z-index: 2;
+	filter: opacity(0);
+}
+
+.age_errors {
+	filter: opacity(100);
+}
+
+.nationality_error {
+	position: absolute;
+	top: 25%;
+	width: 60%;
+	left: 35%;
+	color: rgba(255, 0, 0, 0.801);
+	z-index: 2;
+	filter: opacity(0);
+}
+
+.nationality_errors {
+	filter: opacity(100);
 }
 
 .nationality_form {
@@ -74,6 +138,20 @@ input[type="text"] {
 	border-radius: 10px;
 }
 
+.nationality_error {
+	position: absolute;
+	top: 25%;
+	width: 60%;
+	left: 35%;
+	color: rgba(255, 0, 0, 0.801);
+	z-index: 2;
+	filter: opacity(0);
+}
+
+.nationality_errors {
+	filter: opacity(100);
+}
+
 .email_form {
 	position: absolute;
 	top: 45%;
@@ -87,11 +165,63 @@ input[type="email"] {
 	border-radius: 10px;
 }
 
+.email_ok {
+	position: absolute;
+	z-index: 3;
+	top: 49%;
+	right: 20%;
+	z-index: 1;
+	filter: opacity(0);
+}
+.email_ok_re {
+  filter: opacity(100);
+}
+
+.email_error {
+	position: absolute;
+	top: 45%;
+	width: 60%;
+	left: 35%;
+	color: rgba(255, 0, 0, 0.801);
+	z-index: 2;
+	filter: opacity(0);
+}
+
+.email_errors {
+	filter: opacity(100);
+}
+
 .password_form {
 	position: absolute;
 	top: 55%;
 	width: 60%;
 	left: 25%;
+}
+
+.password_ok {
+	position: absolute;
+	z-index: 3;
+	top: 59%;
+	right: 20%;
+	z-index: 1;
+	filter: opacity(0);
+}
+.password_ok_re {
+  filter: opacity(100);
+}
+
+.password_error {
+	position: absolute;
+	top: 55%;
+	width: 60%;
+	left: 42%;
+	color: rgba(255, 0, 0, 0.801);
+	z-index: 2;
+	filter: opacity(0);
+}
+
+.password_errors {
+	filter: opacity(100);
 }
 
 .password_form_con {
@@ -113,6 +243,32 @@ input[type="password"] {
 	width: 80%;
 	height: 80%;
 	border-radius: 10px;
+}
+
+.password_com_ok {
+	position: absolute;
+	z-index: 3;
+	top: 69%;
+	right: 20%;
+	z-index: 1;
+	filter: opacity(0);
+}
+.password_com_ok_re {
+  filter: opacity(100);
+}
+
+.password_com_error {
+	position: absolute;
+	top: 65%;
+	width: 60%;
+	left: 42%;
+	color: rgba(255, 0, 0, 0.801);
+	z-index: 2;
+	filter: opacity(0);
+}
+
+.password_com_errors {
+	filter: opacity(100);
 }
 
 .sign_up_form {

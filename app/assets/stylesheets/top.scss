@@ -5,7 +5,7 @@
 .jp_header {
 	position: absolute;
 	width: 80%;
-	height: 5%;
+	height: 4vh;
 	padding: 2% 10% 3%;
 	z-index: 1;
 	background-color: transparent;
@@ -111,6 +111,8 @@
 }
 .top_fil {
 	filter: blur(3px);
+	width: 100vw;
+	height: 100vh;
 }
 
 //ハンバーガーメニュー終わり
@@ -140,44 +142,42 @@
 }
 .top_jp_main_message {
 	position: absolute;
-	top: 14%;
+	top: 20vh;
 	width: 80%;
   height: 30%;
-	font-size: 40px;
+	font-size: 4vw;
 	margin: auto;
 	left: 0;
 	right: 0;
 	color: navy;
-	//border-bottom: solid navy;
 	font-weight: bold;
 	display: block;
 	text-align: center;
 }
 .top_jp_sub_message {
 	position: absolute;
-	top: 21%;
+	top: 29vh;
 	display: inline-block;
-	border-top: solid navy;
-	width: 500px;
-	//max-width: 500px;
-	font-size: 20px;
+	border-top: solid rgb(0, 0, 128);
+	width: 60vw;
+	font-size: 2vw;
 	margin: auto;
 	left: 0;
 	right: 0;
 	letter-spacing: 0.1em;
 	display: inline-block;
 	border-top: solid navy;
-	color: navy;
+	color: rgba(0, 0, 128, 0.733);
 	font-weight: bold;
 	//display: block;
 	text-align: center;
 }
 .top_en_main_message {
 	position: absolute;
-	top: 15%;
+	top: 20vh;
 	width: 80%;
 	height: 20%;
-	font-size: 40px;
+	font-size: 4vw;
 	margin: auto;
 	left: 0;
 	right: 0;
@@ -190,11 +190,11 @@
 }
 .top_en_sub_message {
 	position: absolute;
-	top: 21%;
+	top: 29vh;
 	left: 20%;
 	height: 20%;
   width: 80%;
-	font-size: 20px;
+	font-size: 2vw;
 	margin: auto;
 	left: 0;
 	right: 0;
@@ -207,9 +207,9 @@
 }
 .top_zh_main_message {
 	position: absolute;
-	top: 15%;
+	top: 20vh;
 	width: 100%;
-	font-size: 40px;
+	font-size: 4vw;
 	letter-spacing: 0.05em;
 	color: yellow;
 	font-weight: bold;
@@ -222,10 +222,10 @@
 }
 .top_zh_sub_message {
 	position: absolute;
-	top: 21%;
+	top: 29vh;
 	left: 20%;
   width: 60%;
-	font-size: 20px;
+	font-size: 2vw;
 	color: yellow;
 	border-top: solid yellow;
 	font-weight: bolder;

@@ -13,6 +13,9 @@
           <%= f.label :email %><br/>
           <%= f.email_field :email, placeholder: "enter your Email", autofocus: true, class: "bbb" %>
         </div>
+        <div class="email_error">
+          @を含んでください
+        </div>
 
         <div class="password_field">
           <%= f.label :password %><br />

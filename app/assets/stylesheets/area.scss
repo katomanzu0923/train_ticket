@@ -1,6 +1,10 @@
 // Place all the styles related to the area controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.area_top_on {
+	filter: blur(3px);
+	z-index: 4;
+}
 .area_back-image {
 	position: relative;
 	width: 90vw;
@@ -29,119 +33,118 @@
 }
 
 //エリアメッセージ（日本語）
-.ja_select_message {
+.jp_select_message {
 	position: absolute;
-	top: 10%;
+	top: 15vh;
 	color: navy;
 	font-size: 4vw;
-	left: 27%;
+	left: 25%;
 	z-index: 1;
 }
-.ja_hokkaido_click_message {
+.jp_hokkaido_click_message {
   position: absolute;
-	top: 20%;
+	top: 17vh;
 	color: navy;
-	font-size: 4vw;
-	left: 20%;
-	z-index: 1;
-	filter: opacity(0%);
-}
-.ja_tohoku_click_message {
-  position: absolute;
-	top: 20%;
-	color: navy;
-	font-size: 4vw;
-	left: 20%;
+	font-size: 3vw;
+	left: 22%;
 	z-index: 1;
 	filter: opacity(0%);
 }
-.ja_kanto_click_message {
+.jp_tohoku_click_message {
   position: absolute;
-	top: 20%;
+	top: 17vh;
 	color: navy;
-	font-size: 4vw;
-	left: 20%;
+	font-size: 3vw;
+	left: 22%;
 	z-index: 1;
 	filter: opacity(0%);
 }
-.ja_hokuriku_click_message {
+.jp_kanto_click_message {
   position: absolute;
-	top: 20%;
+	top: 17vh;
 	color: navy;
-	font-size: 4vw;
-	left: 20%;
+	font-size: 3vw;
+	left: 22%;
 	z-index: 1;
 	filter: opacity(0%);
 }
-.ja_tokai_click_message {
+.jp_hokuriku_click_message {
   position: absolute;
-	top: 20%;
+	top: 17vh;
 	color: navy;
-	font-size: 4vw;
-	left: 20%;
+	font-size: 3vw;
+	left: 22%;
+	filter: opacity(0%);
+}
+.jp_tokai_click_message {
+  position: absolute;
+	top: 17vh;
+	color: navy;
+	font-size: 3vw;
+	left: 22%;
 	z-index: 1;
 	filter: opacity(0%);
 }
-.ja_kansai_click_message {
+.jp_kansai_click_message {
   position: absolute;
-	top: 20%;
+	top: 17vh;
 	color: navy;
-	font-size: 4vw;
-	left: 20%;
+	font-size: 3vw;
+	left: 22%;
 	z-index: 1;
 	filter: opacity(0%);
 }
-.ja_chugoku_click_message {
+.jp_chugoku_click_message {
   position: absolute;
-	top: 20%;
+	top: 17vh;
 	color: navy;
-	font-size: 4vw;
-	left: 20%;
+	font-size: 3vw;
+	left: 22%;
 	z-index: 1;
 	filter: opacity(0%);
 }
-.ja_sikoku_click_message {
+.jp_sikoku_click_message {
   position: absolute;
-	top: 20%;
+	top: 17vh;
 	color: navy;
-	font-size: 4vw;
-	left: 20%;
+	font-size: 3vw;
+	left: 22%;
 	z-index: 1;
 	filter: opacity(0%);
 }
-.ja_kyusyu_click_message {
+.jp_kyusyu_click_message {
   position: absolute;
-	top: 20%;
+	top: 17vh;
 	color: navy;
-	font-size: 4vw;
-	left: 20%;
+	font-size: 3vw;
+	left: 22%;
 	z-index: 1;
 	filter: opacity(0%);
 }
 //エリアメッセージ（中国語）
 .zh_select_message {
 	position: absolute;
-	top: 17%;
-	color:yellow;
+	top: 15%;
+	color:rgb(180, 180, 0);
 	font-size: 4vw;
-	left: 27%;
+	left: 35%;
 	z-index: 1;
 }
 .zh_click_message {
 	position: absolute;
 	top: 17%;
-	color:yellow;
-	font-size: 4vw;
-	left: 27%;
+	color:rgb(180, 180, 0);
+	font-size: 3vw;
+	left: 22%;
 	z-index: 1;
 }
 
 .zh_hokkaido_click_message {
   position: absolute;
 	top: 17%;
-	color:yellow;
-	font-size: 4vw;
-	left: 24%;
+	color:rgb(180, 180, 0);
+	font-size: 3vw;
+	left: 25%;
 	z-index: 1;
 	filter: opacity(0%);
 }
@@ -149,9 +152,9 @@
 .zh_tohoku_click_message {
   position: absolute;
 	top: 17%;
-	color:yellow;
-	font-size: 4vw;
-	left: 24%;
+	color:rgb(180, 180, 0);
+	font-size: 3vw;
+	left: 27%;
 	z-index: 1;
 	filter: opacity(0%);
 }
@@ -159,9 +162,9 @@
 .zh_kanto_click_message {
   position: absolute;
 	top: 17%;
-	color:yellow;
-	font-size: 4vw;
-	left: 24%;
+	color:rgb(180, 180, 0);
+	font-size: 3vw;
+	left: 27%;
 	z-index: 1;
 	filter: opacity(0%);
 }
@@ -169,9 +172,9 @@
 .zh_hokuriku_click_message {
   position: absolute;
 	top: 17%;
-	color:yellow;
-	font-size: 4vw;
-	left: 24%;
+	color:rgb(180, 180, 0);
+	font-size: 3vw;
+	left: 27%;
 	z-index: 1;
 	filter: opacity(0%);
 }
@@ -179,9 +182,9 @@
 .zh_tokai_click_message {
   position: absolute;
 	top: 17%;
-	color:yellow;
-	font-size: 4vw;
-	left: 24%;
+	color:rgb(180, 180, 0);
+	font-size: 3vw;
+	left: 27%;
 	z-index: 1;
 	filter: opacity(0%);
 }
@@ -189,9 +192,9 @@
 .zh_kansai_click_message {
   position: absolute;
 	top: 17%;
-	color:yellow;
-	font-size: 4vw;
-	left: 24%;
+	color:rgb(180, 180, 0);
+	font-size: 3vw;
+	left: 27%;
 	z-index: 1;
 	filter: opacity(0%);
 }
@@ -199,9 +202,9 @@
 .zh_chugoku_click_message {
   position: absolute;
 	top: 17%;
-	color:yellow;
-	font-size: 4vw;
-	left: 24%;
+	color:rgb(180, 180, 0);
+	font-size: 3vw;
+	left: 27%;
 	z-index: 1;
 	filter: opacity(0%);
 }
@@ -209,9 +212,9 @@
 .zh_sikoku_click_message {
   position: absolute;
 	top: 17%;
-	color:yellow;
-	font-size: 4vw;
-	left: 24%;
+	color:rgb(180, 180, 0);
+	font-size: 3vw;
+	left: 27%;
 	z-index: 1;
 	filter: opacity(0%);
 }
@@ -219,9 +222,9 @@
 .zh_kyusyu_click_message {
   position: absolute;
 	top: 17%;
-	color:yellow;
-	font-size: 4vw;
-	left: 24%;
+	color:rgb(180, 180, 0);
+	font-size: 3vw;
+	left: 27%;
 	z-index: 1;
 	filter: opacity(0%);
 }
@@ -347,8 +350,8 @@
 
 .hokkaido_back {
 	position: absolute;
-	width: 60%;
-	height: 35%;
+	width: 60vw;
+	height: 35vh;
 	left: 5%;
 	top: 25%;
 	filter: opacity(0%);

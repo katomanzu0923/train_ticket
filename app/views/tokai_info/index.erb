@@ -7,7 +7,7 @@
   <%= render "shared/en_header" %>
 <% end %> 
 
-<div class="top">
+<div class="info_top">
   <div class="info_message">
 	  <% if current_user.nationality_id == 1 %>
 	    <div class="info_first_message">
@@ -17,52 +17,38 @@
 			  <%= current_user.nickname %>さんにおすすめなきっぷはこちらです！
 			</div>	
 	  <% elsif current_user.nationality_id == 2 %>
-		  thanks<%= current_user.nickname %>.this is the reccomend info for you
+		  <div class="zh_info_first_message">
+		    thanks!!  <%= current_user.nickname %>!!!
+			</div>
+			<div class="zh_info_second_message">
+			  this is the reccomended info for you
+			</div>	
 		<% else current_user.nationality_id == 3%>
-		  <div class="info_first_message">
+		  <div class="en_info_first_message">
 		  thanks!!  <%= current_user.nickname %>!!!
 			</div>
-			<div class="info_second_message">
+			<div class="en_info_second_message">
 			  this is the reccomended info for you
 			</div>	
 		<% end %>
 	</div>
   <div class="info_index">
-		  <div class="lists">
-		    <% @tokai.each do |tokai| %>
-				  <div class="list">
-				    <% if current_user.nationality_id == 1 %><%#名前%>
-              <div class="jp_name">
-                <%= tokai.jp_name %>
+	  <% if current_user.nationality_id == 1 %>
+		  <div class="jp_info_list">
+			  <div class="lists">
+		      <% @tokai.each do |tokai| %>
+				   <div class="list">
+               <div class="jp_name">
+                 <%= tokai.jp_name %>
               </div>
-						<% elsif current_user.nationality_id == 2 %>
-						  <div class="en_name">
-                ticketname::<%= tokai.en_name %>
-              </div>
-						<% else current_user.nationality_id == 3 %>
-						  <div class="en_name">
-                <%= tokai.en_name %>
-              </div>
-						<% end %>
-						<% if current_user.nationality_id == 1 %>
-						  <div class="price">
+						  <div class="price_area">
 						    <div class="jp_price_area">
 							    金額
 							  </div>
 					      <div class="jp_price">
                   <span><%= tokai.price %>円</span>
                 </div>
-							</div>
-						<% elsif current_user.nationality_id == 2 %>
-						  <div class="zh_price">
-                金额  ▶️  <span><%= tokai.price %>円</span>
-              </div>
-						<% else current_user.nationality_id == 3 %>
-						  <div class="en_price">
-                Price  ▶️  <span><%= tokai.price %>円</span>
-              </div>
-            <% end %> 
-						<% if current_user.nationality_id == 1 %>
+							</div>	
 						  <div class="info_area">
 							  <div class="jp_areas">
 								  エリア
@@ -71,47 +57,93 @@
                   <span><%= tokai.jp_area %></span>
                 </div>
 							</div>
-						<% elsif current_user.nationality_id == 2 %>
-						  <div class="zh_area">
-                <span><%= tokai.zh_area %>円</span>
-              </div>
-						<% else current_user.nationality_id == 3 %>
-						  <div class="en_area">
-                <span><%= tokai.en_area %>円</span>
-              </div>
-            <% end %> 
-							<% if current_user.nationality_id == 1 %>
 							<div class="jp_info2">   
 							  ちょっと一言
 							</div>
 					    <div class="jp_info">
 								<span><%= tokai.jp_info %></span>
               </div>
-						<% elsif current_user.nationality_id == 2 %>
-						  <div class="en_info">
-                <span><%= tokai.zh_info %>円</span>
-              </div>
-						<% else current_user.nationality_id == 3 %>
-						  <div class="price">
-                <span><%= tokai.en_info %>円</span>
-              </div>
-            <% end %> 
-						<% if current_user.nationality_id == 1 %>
 					    <div class="jp_day">
                 <span><%= tokai.jp_day %></span>
               </div>
-						<% elsif current_user.nationality_id == 2 %>
-						  <div class="zh_day">
-                <span><%= tokai.zh_day %>円</span>
-              </div>
-						<% else current_user.nationality_id == 3 %>
-						  <div class="en_day">
-                <span><%= tokai.en_day %>円</span>
-              </div>
-            <% end %> 
-					</div>
-
-        <% end %> 
+					 </div>
+         <% end %> 
+			  </div>
 			</div>
+		<% elsif current_user.nationality_id == 2 %>
+		  <div class="zh_info_list">
+			  <div class="lists">
+		      <% @tokai.each do |tokai| %>
+				    <div class="list">
+              <div class="zh_name">
+                <%= tokai.zh_name %>
+              </div>
+						  <div class="price_area">
+						    <div class="zh_price_area">
+							    price
+							  </div>
+					      <div class="zh_price">
+                  <span>＄<%= tokai.price %></span>
+                </div>
+							</div>	
+						  <div class="info_area">
+							  <div class="zh_areas">
+								  availabe area
+								</div>
+					      <div class="zh_area">
+                  <span><%= tokai.zh_area %></span>
+                </div>
+							</div>
+							<div class="zh_info2">   
+							  one point advise !
+							</div>
+					    <div class="zh_info">
+								<span><%= tokai.zh_info %></span>
+              </div>
+					    <div class="zh_day">
+                <span><%= tokai.zh_day %></span>
+              </div>
+				    </div>
+          <% end %> 
+				</div>	
+			</div>
+		<% else current_user.nationality_id == 3 %>	
+		  <div class="en_info_list">
+			  <div class="lists">
+		      <% @tokai.each do |tokai| %>
+				    <div class="list">
+              <div class="en_name">
+                <%= tokai.en_name %>
+              </div>
+						  <div class="price_area">
+						    <div class="en_price_area">
+							    price
+							  </div>
+					      <div class="en_price">
+                  <span>＄<%= tokai.price %></span>
+                </div>
+							</div>	
+						  <div class="info_area">
+							  <div class="en_areas">
+								  availabe area
+								</div>
+					      <div class="en_area">
+                  <span><%= tokai.en_area %></span>
+                </div>
+							</div>
+							<div class="en_info2">   
+							  one point advise !
+							</div>
+					    <div class="en_info">
+								<span><%= tokai.en_info %></span>
+              </div>
+					    <div class="en_day">
+                <span><%= tokai.en_day %></span>
+              </div>
+				    </div>
+          <% end %> 
+				</div>	
+			</div> 
+		<% end %>	
   </div>
 </div>
