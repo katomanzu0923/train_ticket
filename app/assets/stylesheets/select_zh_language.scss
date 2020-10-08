@@ -84,33 +84,39 @@
 
 .select_zh_main_message {
 	position: absolute;
-	top: 20%;
-	width: 100%;
+	top: 20%;	
 	font-size: 4vw;
-	letter-spacing: 0.05em;
-	color: yellow;
-	font-weight: bold;
 	margin: auto;
-	left: 0;
-	right: 0;
-	display: block;
-	text-align: center;
+	font-weight: bold;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	color: yellow;
 }
 
 .select_zh_sub_message {
 	position: absolute;
-	top: 29%;
-	left: 20%;
-  width: 60%;
+	top: 26%;
+	display: flex;
+	justify-content: center;
+	width: 100%;
 	font-size: 2vw;
-	color: yellow;
-	border-top: solid yellow;
-	font-weight: bolder;
 	margin: auto;
-	left: 0;
-	right: 0;
-	display: block;
-	text-align: center;
+//	letter-spacing: 0.1em;
+  color: yellow; 
+	font-weight: bold;
+  text-align: center;
+}
+
+.select_zh_sub_message::before {
+	content:"";
+	display:flex;
+	justify-content: center;
+	width:40%;
+	height:3px;
+	background-color: yellow;
+	position:absolute;
+	top:-10px;
 }
 /*.select_path {
 	display: flex;
