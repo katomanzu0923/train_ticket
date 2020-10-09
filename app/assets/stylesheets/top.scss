@@ -5,7 +5,7 @@
 .jp_header {
 	position: absolute;
 	width: 80%;
-	height: 4vh;
+	height: 2%;
 	padding: 2% 10% 3%;
 	z-index: 1;
 	background-color: transparent;
@@ -146,21 +146,21 @@
 	font-size: 4vw;
 	margin: auto;
 	color: navy;
-	font-weight: bold;
+	//font-weight: bold;
 	display: flex;
 	width: 100%;
 	justify-content: center;
 }
 .top_jp_sub_message {
 	position: absolute;
-	top: 26%;
+	top: 30%;
 	display: flex;
 	justify-content: center;
 	width: 100%;
 	font-size: 2vw;
 	margin: auto;
-//	letter-spacing: 0.1em;
-	color: rgba(0, 0, 128, 0.733);
+  letter-spacing: 0.1em;
+	color: rgba(0, 0, 128, 0.671);
 	font-weight: bold;
 	text-align: center;
 }
@@ -173,7 +173,7 @@
    height:3px;
    background-color: rgb(0, 0, 128);
 	 position:absolute;
-   top:-10px;
+   top:-2px;
 }
 .top_en_main_message {
 	position: absolute;
@@ -192,7 +192,7 @@
 }
 .top_en_sub_message {
 	position: absolute;
-	top: 26%;
+	top: 30%;
 	display: flex;
 	justify-content: center;
 	//border-top: solid rgb(0, 0, 128);
@@ -200,10 +200,10 @@
 	font-size: 2vw;
 	margin: auto;
 
-//	letter-spacing: 0.1em;
+	letter-spacing: 0.1em;
 
 //	border-top: solid navy;
-	color: red;
+	color: rgba(255, 0, 0, 0.753);
 	font-weight: bold;
   
 	text-align: center;
@@ -218,7 +218,7 @@
    height:3px;
    background-color: rgb(255, 0, 0);
 	 position:absolute;
-	 top:-10px;
+	 top:-2px;
 	 
 }
 .top_zh_main_message {
@@ -238,7 +238,7 @@
 }
 .top_zh_sub_message {
 	position: absolute;
-	top: 26%;
+	top: 30%;
 	display: flex;
 	justify-content: center;
 	//border-top: solid rgb(0, 0, 128);
@@ -263,7 +263,7 @@
    height:3px;
    background-color: yellow;
 	 position:absolute;
-   top:-10px;
+   top:-2px;
 }
 .top_zh_message {
 	position: absolute;
@@ -284,7 +284,7 @@
 	position: absolute;
 	top: 85%;
 	left: 15%;
-	width: 15%;
+	width: 13%;
 	height: 5%;
 	z-index: 1;
 	border-right: solid 4px rgb(46, 46, 46);
@@ -295,7 +295,7 @@
 	position: absolute;
 	top: 85%;
 	left: 15%;
-	width: 15%;
+	width: 13%;
 	height: 5%;
 	z-index: 0;
 	border-right: solid 4px rgb(46, 46, 46);
@@ -309,7 +309,7 @@
 	position: absolute;
 	left: 42%;
 	top: 85%;
-	width: 15%;
+	width: 13%;
 	height: 5%;
 	border-right: solid 4px rgb(46, 46, 46);
 	border-bottom: solid 4px rgb(46, 46, 46);
@@ -319,7 +319,7 @@
 	position: absolute;
 	left: 42%;
 	top: 85%;
-	width: 15%;
+	width: 13%;
 	height: 5%;
 	border-right: solid 4px rgb(46, 46, 46);
 	border-bottom: solid 4px rgb(46, 46, 46);
@@ -330,7 +330,7 @@
 	position: absolute;
 	top: 85%;
 	right: 15%;
-	width: 15%;
+	width: 13%;
 	height: 5%;
 	border-right: solid 4px rgb(46, 46, 46);
 	border-bottom: solid 4px rgb(46, 46, 46);
@@ -340,7 +340,7 @@
 	position: absolute;
 	top: 85%;
 	right: 15%;
-	width: 15%;
+	width: 13%;
 	height: 5%;
 	border-right: solid 4px rgb(46, 46, 46);
 	border-bottom: solid 4px rgb(46, 46, 46);

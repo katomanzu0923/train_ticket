@@ -23,7 +23,7 @@
   margin: 60px auto 0;
   border-radius: 10px;
 	border: double rgb(255, 255, 255);
-	background-color: rgb(206, 224, 245);
+	background-color: rgb(245, 206, 206);
 	top: 10%;
 	left: 20%;
 	display: flex;
@@ -34,7 +34,7 @@
 
 .private_form_message {
 	position: absolute;
-	border-bottom: groove rgba(32, 32, 231, 0.603) 5px;
+	border-bottom: groove rgba(231, 32, 32, 0.603) 5px;
 	top: 5%;
 	display: flex;
 	text-align: center;
@@ -87,8 +87,8 @@ input[type="text"] {
 .age_ok {
 	position: absolute;
 	z-index: 3;
-	top: 28%;
-	right: 45%;
+	top: 29%;
+	right: 48%;
 	z-index: 1;
 	filter: opacity(0);
 }
