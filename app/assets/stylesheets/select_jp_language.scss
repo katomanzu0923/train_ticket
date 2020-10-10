@@ -11,39 +11,34 @@
 
 .select_jp_main_message {
 	position: absolute;
-  top: 20%;	
-	font-size: 4vw;
-	margin: auto;
-	color: navy;
-	font-weight: bold;
-	display: flex;
+	top: 25%;
+	text-align: center;
+	font-size: 6vh;
 	width: 100%;
-	justify-content: center;
+	left: 0%;
+	color: blue;
 }
 
 .select_jp_sub_message {
 	position: absolute;
-	top: 26%;
-	display: flex;
-	justify-content: center;
-	width: 100%;
-	font-size: 2vw;
-	margin: auto;
-//	letter-spacing: 0.1em;
-	color: rgba(0, 0, 128, 0.733);
-	font-weight: bold;
+	top: 33%;
 	text-align: center;
+	font-size: 3vh;
+	width: 100%;
+	left: 0;
+	color: blue;
 }
 
 .select_jp_sub_message::before {
-	 content:"";
-	 display:flex;
-	 justify-content: center;
-   width:40%;
-   height:3px;
-   background-color: rgb(0, 0, 128);
-	 position:absolute;
-   top:-10px;
+	content:"";
+	text-align: center;
+	width: 50%;
+	//min-width: 80%;
+	left: 25%;
+	height:2px;
+  background-color: blue;
+	position:absolute;
+  top:2px;
 }
 
 .login_jp_path {

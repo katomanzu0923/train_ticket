@@ -5,7 +5,7 @@
 .zh_header {
 	position: absolute;
 	width: 80%;
-	height: 5%;
+	height: 2%;
 	padding: 2% 10% 3%;
 	z-index: 1;
 	background-color: rgba(255, 255, 0, 0.1000);
@@ -85,39 +85,34 @@
 
 .select_zh_main_message {
 	position: absolute;
-	top: 20%;	
-	font-size: 4vw;
-	margin: auto;
-	font-weight: bold;
-	display: flex;
+	top: 25%;
+	text-align: center;
+	font-size: 6vh;
 	width: 100%;
-	justify-content: center;
+	left: 0%;
 	color: yellow;
 }
 
 .select_zh_sub_message {
 	position: absolute;
-	top: 26%;
-	display: flex;
-	justify-content: center;
+	top: 33%;
+	text-align: center;
+	font-size: 3vh;
 	width: 100%;
-	font-size: 2vw;
-	margin: auto;
-//	letter-spacing: 0.1em;
-  color: yellow; 
-	font-weight: bold;
-  text-align: center;
+	left: 0;
+	color: yellow;
 }
 
 .select_zh_sub_message::before {
 	content:"";
-	display:flex;
-	justify-content: center;
-	width:40%;
-	height:3px;
-	background-color: yellow;
+	text-align: center;
+	width: 60%;
+	//min-width: 80%;
+	left: 20%;
+	height:2px;
+  background-color: yellow;
 	position:absolute;
-	top:-10px;
+  top:-2px;
 }
 /*.select_path {
 	display: flex;
