@@ -62,3 +62,7 @@ gem 'jquery-rails'
 gem 'active_hash'
 
 gem 'ransack'
+
+group :production do
+  gem 'rails_12factor'
+end
