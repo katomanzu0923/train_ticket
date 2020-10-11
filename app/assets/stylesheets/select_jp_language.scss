@@ -1,32 +1,32 @@
 // Place all the styles related to the select_jp_language controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+//select_main
 .select_jp_background {
 	position: relative;
 	width: 100vw;
 	height: 100vh;
 	left: 0%;
 	top: 0%;
+	filter: opacity(80%);
 }
-
-.select_jp_main_message {
+//select_main_message
+//select_jp_message_@mixin
+@mixin select_jp_message($position,$font_size) {
 	position: absolute;
-	top: 25%;
+	top: $position;
 	text-align: center;
-	font-size: 6vh;
+	font-size: $font_size;
 	width: 100%;
 	left: 0%;
 	color: blue;
 }
-
+.select_jp_main_message {
+	@include select_jp_message(25%,6vh);
+}
+//
 .select_jp_sub_message {
-	position: absolute;
-	top: 33%;
-	text-align: center;
-	font-size: 3vh;
-	width: 100%;
-	left: 0;
-	color: blue;
+  @include select_jp_message(33%,3vh);
 }
 
 .select_jp_sub_message::before {
@@ -40,72 +40,40 @@
 	position:absolute;
   top:2px;
 }
-
-.login_jp_path {
+//select_jp_path_@mixin
+@mixin select_jp_path($position,$z) {
 	position: absolute;
 	top: 85%;
-	left: 15%;
+	left: $position;
 	width: 13%;
 	height: 5%;
-	z-index: 1;
+	z-index: $z;
 	border-right: solid 4px rgb(46, 46, 46);
 	border-bottom: solid 4px rgb(46, 46, 46);
 }
+.login_jp_path {
+	@include select_jp_path(15%,1);
+}
 
 .login_jp_click_path {
-	position: absolute;
-	top: 85%;
-	left: 15%;
-	width: 13%;
-	height: 5%;
-	z-index: 0;
-	border-right: solid 4px rgb(46, 46, 46);
-	border-bottom: solid 4px rgb(46, 46, 46);
+	@include select_jp_path(15%,0);
 	filter: opacity(0%);
 }
 
 .registration_jp_path {
-	position: absolute;
-	left: 44%;
-	top: 85%;
-	width: 13%;
-	height: 5%;
-	border-right: solid 4px rgb(46, 46, 46);
-	border-bottom: solid 4px rgb(46, 46, 46);
-	z-index: 1;
+	@include select_jp_path(44%,1);
 }
 
 .registration_jp_click_path {
-	position: absolute;
-	left: 44%;
-	top: 85%;
-	width: 13%;
-	height: 5%;
-	border-right: solid 4px rgb(46, 46, 46);
-	border-bottom: solid 4px rgb(46, 46, 46);
+	@include select_jp_path(44%,0);
 	filter: opacity(0%);
-	z-index: 0;
 }
 
 .no_login_jp_path {
-	position: absolute;
-	top: 85%;
-	right: 15%;
-	width: 13%;
-	height: 5%;
-	border-right: solid 4px rgb(46, 46, 46);
-	border-bottom: solid 4px rgb(46, 46, 46);
-	z-index: 1;
+	@include select_jp_path(72%,1);
 }
 
 .no_login_click_jp_path {
-	position: absolute;
-	top: 85%;
-	right: 15%;
-	width: 13%;
-	height: 5%;
-	border-right: solid 4px rgb(46, 46, 46);
-	border-bottom: solid 4px rgb(46, 46, 46);
+	@include select_jp_path(72%,0);
 	filter: opacity(0%);
-	z-index: 0;
 }
