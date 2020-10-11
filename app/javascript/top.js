@@ -33,8 +33,7 @@ $(function() {
 		$(".nav_toggle i").css({"background-color":"red"})
 		$(".jp_header").css({"border-bottom": "thick double rgba(255, 0, 0, 0.438)"})
 		$(".top_jp_background").fadeOut(0);
-		$(".top_zh_background").fadeOut(0);
-		$(".top_en_background").fadeIn(0);
+		$(".top_en_background").css({"filter": "opacity(70%)"});
 	}).on("mouseout", function() {
 		$(this).css({"filter": "opacity(300%)"})
 		$(".top_jp_path").css({"filter": "opacity(100%)"})
@@ -51,7 +50,7 @@ $(function() {
 		$(".nav_toggle i").css({"background-color":"navy"})
 		$(".jp_header").css({"border-bottom": "thick double rgba(0, 0, 128, 0.295)"})
 		$(".top_jp_background").fadeIn(0);
-		$(".top_en_background").fadeOut(0);
+		$(".top_en_background").css({"filter": "opacity(0%)"});
 	})
 });
 //中国語ボタン
@@ -74,7 +73,7 @@ $(function() {
 		$(".nav_toggle i").css({"background-color":"yellow"})
 		$(".jp_header").css({"border-bottom": "thick double rgba(255, 255, 0, 0.452)"})
 		$(".top_jp_background").fadeOut(0);
-		$(".top_zh_background").fadeIn(0);
+		$(".top_zh_background").css({"filter": "opacity(70%)"});
 	}).on("mouseout", function() {
 		$(this).css({"filter": "opacity(300%)"})
 		$(".top_jp_path").css({"filter": "opacity(100%)"})
@@ -90,6 +89,7 @@ $(function() {
 		$(".nav_toggle i").css({"background-color":"navy"})
 		$(".jp_header").css({"border-bottom": "thick double rgba(0, 0, 128, 0.295)"})
 		$(".top_jp_background").fadeIn(0);
+		$(".top_zh_background").css({"filter": "opacity(0%)"});
 	})
 });
 //ハンバーガーメニュー

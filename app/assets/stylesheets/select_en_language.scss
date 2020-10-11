@@ -1,7 +1,7 @@
 // Place all the styles related to the select_en_language controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-//ヘッダー（英語）
+//select_en_header
 .en_header {
 	position: absolute;
 	width: 80%;
@@ -74,35 +74,32 @@
 .top_fil {
 	filter: blur(3px);
 }
-
+//select_en_message
 .select_en_background {
 	position: relative;
 	width: 100vw;
 	height: 100vh;
 	left: 0%;
 	top: 0%;
+	filter: opacity(70%);
 }
-
-.select_en_main_message {
+//select_en_message
+//select_en_message_@mixin
+@mixin select_en_message($position,$font_size,$font_color) {
 	position: absolute;
-	top: 26%;
+	top: $position;
 	text-align: center;
-	font-size: 5vh;
+	font-size: $font_size;
 	width: 100%;
 	left: 0%;
-	color: rgb(255, 0, 0);
+	color: $font_color;
+}
+.select_en_main_message {
+	@include select_en_message(26%,5vh,rgb(255, 0, 0));
 }
 
 .select_en_sub_message {
-	position: absolute;
-	top: 33%;
-	text-align: center;
-	font-size: 2.5vh;
-	width: 100%;
-	left: 0;
-	letter-spacing: 0.1em;
-//	border-top: solid navy;
-	color: rgba(255, 0, 0, 0.753);
+	@include select_en_message(33%,2.5vh,rgba(255, 0, 0, 0.753));
 }
 
 .select_en_sub_message::before {
@@ -115,73 +112,39 @@
 	position:absolute;
 	top:-2px;
 }
-
-.login_en_path {
+//select_en_path_@mixin
+@mixin select_en_path($position,$z) {
 	position: absolute;
 	top: 85%;
-	left: 15%;
+	left: $position;
 	width: 13%;
 	height: 5%;
-	z-index: 1;
+	z-index: $z;
 	border-right: solid 4px rgb(46, 46, 46);
 	border-bottom: solid 4px rgb(46, 46, 46);
+}
+.login_en_path {
+	@include select_en_path(15%,1);
 }
 
 .login_en_click_path {
-	position: absolute;
-	top: 85%;
-	left: 15%;
-	width: 13%;
-	height: 5%;
-	z-index: 0;
-	border-right: solid 4px rgb(46, 46, 46);
-	border-bottom: solid 4px rgb(46, 46, 46);
+	@include select_en_path(15%,0);
 }
 
 .registration_en_path {
-	position: absolute;
-	left: 44%;
-	top: 85%;
-	width: 13%;
-	height: 5%;
-	border-right: solid 4px rgb(46, 46, 46);
-	border-bottom: solid 4px rgb(46, 46, 46);
-	z-index: 1;
+	@include select_en_path(44%,1);
 }
 
 .registration_en_click_path {
-	position: absolute;
-	left: 44%;
-	top: 85%;
-	width: 13%;
-	height: 5%;
-	border-right: solid 4px rgb(46, 46, 46);
-	border-bottom: solid 4px rgb(46, 46, 46);
-	filter: opacity(0%);
-	z-index: 0;
+	@include select_en_path(44%,0);
 }
 
 .no_login_en_path {
-	position: absolute;
-	top: 85%;
-	right: 15%;
-	width: 13%;
-	height: 5%;
-	border-right: solid 4px rgb(46, 46, 46);
-	border-bottom: solid 4px rgb(46, 46, 46);
-	z-index: 1;
+	@include select_en_path(72%,1);
 }
 
 .no_login_click_en_path {
-	position: absolute;
-	top: 85%;
-	right: 15%;
-	width: 13%;
-	height: 5%;
-	border-right: solid 4px rgb(46, 46, 46);
-	border-bottom: solid 4px rgb(46, 46, 46);
-	filter: opacity(0%);
-	z-index: 0;
+	@include select_en_path(72%,0);
 }
 
 en_nov_toggle {

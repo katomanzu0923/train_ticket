@@ -74,7 +74,7 @@
 .top_fil {
 	filter: blur(3px);
 }
-
+//select_zh_message
 .select_zh_background {
 	position: relative;
 	width: 100vw;
@@ -82,25 +82,22 @@
 	left: 0%;
 	top: 0%;
 }
-
-.select_zh_main_message {
+//select_zh_message_@mixin
+@mixin select_zh_message($position,$font_size,$font_color) {
 	position: absolute;
-	top: 25%;
+	top: $position;
 	text-align: center;
-	font-size: 6vh;
+	font-size: $font_size;
 	width: 100%;
 	left: 0%;
-	color: yellow;
+	color: $font_color;
+}
+.select_zh_main_message {
+	@include select_zh_message(25%,6vh,yellow);
 }
 
 .select_zh_sub_message {
-	position: absolute;
-	top: 33%;
-	text-align: center;
-	font-size: 3vh;
-	width: 100%;
-	left: 0;
-	color: yellow;
+	@include select_zh_message(33%,3vh,yellow);
 }
 
 .select_zh_sub_message::before {
@@ -114,77 +111,39 @@
 	position:absolute;
   top:-2px;
 }
-/*.select_path {
-	display: flex;
-	justify-content: space-evenly;
-}*/
-.login_zh_path {
+//select_zh_path_@mixin
+@mixin select_zh_path($position,$z) {
 	position: absolute;
 	top: 85%;
-	left: 15%;
+	left: $position;
 	width: 13%;
 	height: 5%;
-	z-index: 1;
+	z-index: $z;
 	border-right: solid 4px rgb(46, 46, 46);
 	border-bottom: solid 4px rgb(46, 46, 46);
+}
+.login_zh_path {
+	@include select_zh_path(15%,1);
 }
 
 .login_zh_click_path {
-	position: absolute;
-	top: 85%;
-  left: 15%;
-	width: 13%;
-	height: 5%;
-	z-index: 0;
-	border-right: solid 4px rgb(46, 46, 46);
-	border-bottom: solid 4px rgb(46, 46, 46);
-	filter: opacity(0%);
+	@include select_zh_path(15%,0);
 }
 
 .registration_zh_path {
-	position: absolute;
-	top: 85%;
-	left: 44%;
-	width: 13%;
-	height: 5%;
-	border-right: solid 4px rgb(46, 46, 46);
-	border-bottom: solid 4px rgb(46, 46, 46);
-	z-index: 1;
+	@include select_zh_path(44%,1);
 }
 
 .registration_zh_click_path {
-	position: absolute;
-	top: 85%;
-  left: 44%;
-	width: 13%;
-	height: 5%;
-	border-right: solid 4px rgb(46, 46, 46);
-	border-bottom: solid 4px rgb(46, 46, 46);
-	filter: opacity(0%);
-	z-index: 0;
+	@include select_zh_path(44%,0);
 }
 
 .no_login_zh_path {
-	position: absolute;
-	top: 85%;
-  right: 15%;
-	width: 13%;
-	height: 5%;
-	border-right: solid 4px rgb(46, 46, 46);
-	border-bottom: solid 4px rgb(46, 46, 46);
-	z-index: 1;
+	@include select_zh_path(72%,1);
 }
 
 .no_login_click_zh_path {
-	position: absolute;
-	top: 85%;
-  right: 15%;
-	width: 13%;
-	height: 5%;
-	border-right: solid 4px rgb(46, 46, 46);
-	border-bottom: solid 4px rgb(46, 46, 46);
-	filter: opacity(0%);
-	z-index: 0;
+	@include select_zh_path(72%,0);
 }
 //ハンバーグメニュー
 .zh_nov_toggle {
