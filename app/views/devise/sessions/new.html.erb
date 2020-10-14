@@ -11,15 +11,24 @@
         </div> 
         <div class="email_field">
           <%= f.label :email %><br/>
-          <%= f.email_field :email, placeholder: "enter your Email", autofocus: true, class: "bbb" %>
+          <%= f.email_field :email, placeholder: "enter your Email", autofocus: true, class: "email_blank" %>
         </div>
-        <div class="email_error">
+        <div class="session_email_error">
           @を含んでください
+        </div>
+        <div class="session_email_ok">
+          &#x2705;
         </div>
 
         <div class="password_field">
           <%= f.label :password %><br />
-          <%= f.password_field :password, placeholder: "enter your Password", autocomplete: "off" %>
+          <%= f.password_field :password, placeholder: "enter your Password", autocomplete: "off", class: "password_blank" %>
+        </div>
+        <div class="session_password_error">
+          @を含んでください
+        </div>
+        <div class="session_password_ok">
+          &#x2705;
         </div>
 
         <% if devise_mapping.rememberable? %>
