@@ -1,7 +1,6 @@
 $(function () {
   //nicknameバリデーション
   $(".nickname_blank").on("keyup", function () {
-    //let error;
     let value = $(this).val();
     if (value == "" || value.length > 25) {
 			$(".nickname_error").addClass("revise_errors");

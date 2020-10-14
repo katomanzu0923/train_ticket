@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.info_alert {
+.info_en_alert {
 	position: absolute;
 	background-color: rgba(255, 0, 0, 0.788);
 	height: 10%;
@@ -10,7 +10,7 @@
 	box-sizing: border-box;
 	width: 100%;
 }
-.info_alert_main {
+.info_en_alert_main {
 	position: absolute;
 	width: 80%;
 	left: 10%;
@@ -20,7 +20,7 @@
 	//background-color: blue;
 	z-index: 3;
 }
-.info_alert_sub {
+.info_en_alert_sub {
 	position: absolute;
 	bottom: 5%;
 	text-align: center;
