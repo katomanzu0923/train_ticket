@@ -1,7 +1,53 @@
 // Place all the styles related to the tokai_info controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
+.info_zh_alert {
+	position: absolute;
+	background-color: rgba(238, 250, 68, 0.733);
+	height: 10%;
+	z-index: 2;
+	box-sizing: border-box;
+	width: 100%;
+}
+.info_zh_alert_main {
+	position: absolute;
+	width: 80%;
+	left: 10%;
+	top: 10%;
+	color: rgb(0, 0, 0);
+	text-align: center;
+	//background-color: blue;
+	z-index: 3;
+}
+.info_zh_alert_sub {
+	position: absolute;
+	bottom: 5%;
+	text-align: center;
+	width: 10%;
+	left: 45%;
+	padding: none;
+	margin: unset;
+	//border: solid 1px rgb(255, 255, 255);
+}
+.zh_button{
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	padding: 0;
+	appearance: none;
+	color: rgb(0, 0, 0);
+	border: solid 1px rgb(0, 0, 0);
+	border-radius: 10px;
+	width: 100%;
+	height: 50%;
+}
+.zh_button:hover{
+	color: rgba(232, 255, 98, 0.726);
+	border: solid 1px rgba(0, 0, 0, 0.726);
+	box-sizing: border-box;
+	background-color: rgba(0, 0, 0, 0.726);
+}
 .info_en_alert {
 	position: absolute;
 	background-color: rgba(255, 0, 0, 0.788);
@@ -301,6 +347,20 @@ button:hover{
 	color: rgb(94, 128, 0);
 	background-color: silver;
 	border-bottom: dotted rgba(131, 156, 18, 0.247);
+	//background-image: url(zh_icon_info.png);
+	background-repeat: no-repeat;
+	background-size: 20%;
+	background-position: 100% 15%;
+}
+.zh_jp_name {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: block;
+	text-align: center;
+	width: 100%;
+	color: rgb(94, 128, 0);
+	background-color: silver;
+	border-bottom: dotted rgba(131, 156, 18, 0.247);
 	background-image: url(zh_icon_info.png);
 	background-repeat: no-repeat;
 	background-size: 20%;
@@ -329,7 +389,7 @@ button:hover{
 }
 .zh_info2 {
 	text-align: center;
-	padding-top: 5%;
+	padding-top: 2%;
 	display: inline-block;
 	width: 40%;
 	//background-color: navy;
