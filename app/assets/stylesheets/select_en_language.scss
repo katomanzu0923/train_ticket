@@ -4,9 +4,11 @@
 //select_en_header
 .en_header {
 	position: absolute;
-	width: 80%;
-	height: 2%;
-	padding: 2% 10% 3%;
+	box-sizing: border-box;
+	width: 100%;
+	left: 0%;
+	height: 70px;
+	//padding: 50px;
 	z-index: 1;
 	background-color: transparent;
 	display: flex;

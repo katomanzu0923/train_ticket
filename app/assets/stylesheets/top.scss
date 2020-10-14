@@ -5,9 +5,8 @@
 //ヘッダー
 .jp_header {
 	position: absolute;
-	width: 80%;
-	height: 2%;
-	padding: 2% 10% 3%;
+	width: 100%;
+	height: 70px;
 	z-index: 1;
 	background-color: transparent;
 	display: flex;
@@ -26,8 +25,8 @@
 .top_jp_2_icon  {
 	position: absolute;
 	top: 0%;
-	left: 40%;
-	width: 15%;
+	left: 42%;
+	width: 10%;
 	height: 100%;
 	height: 100%;
 }
@@ -45,8 +44,8 @@
 .top_en_2_icon  {
 	position: absolute;
 	top: 0%;
-	left: 40%;
-	width: 15%;
+	left: 42%;
+	width: 10%;
 	height: 100%;
 	height: 100%;
 	filter: opacity(0);
@@ -64,8 +63,8 @@
 .top_zh_2_icon {
 	position: absolute;
 	top: 0%;
-	left: 40%;
-	width: 15%;
+	left: 42%;
+	width: 10%;
 	height: 100%;
 	filter: opacity(0);
 }
@@ -145,84 +144,75 @@
 
 //massage_mixin
 //main_message
-@mixin top_main_message {
+
+
+@mixin top_main_message($top_position,$font,$color) {
 	position: absolute;
-	top: 25%;
+	top: $top_position;
 	text-align: center;
-	font-size: 6vh;
+	font-size: $font;
 	width: 100%;
 	left: 0%;
-}
-//sub_message
-@mixin top_main_message {
-	position: absolute;
-	top: 25%;
-	text-align: center;
-	font-size: 6vh;
-	width: 100%;
-	left: 0%;
-}
-@mixin  top_sub_message {
-	position: absolute;
-	top: 33%;
-	text-align: center;
-	font-size: 3vh;
-	width: 100%;
-	left: 0;
-}
-@mixin top_border_message {
-	content:"";
-	position:absolute;
-  top:2px;
-	text-align: center;
-	width: 60%;
-	left: 20%;
-	height:2px;
+	color: $color;
 }
 .top_jp_main_message {
-	@include top_main_message();
-	color: blue;
+	@include top_main_message(25%,6vh,blue);
 	//background-color: red;
 }
 .top_jp_sub_message {
-	@include top_sub_message();
-	color: blue;
+	@include top_main_message(33%,3vh,rgba(0, 0, 255, 0.534))
 }
-
 .top_jp_sub_message::before {
-	@include top_border_message();
+	content:"";
+	text-align: center;
+	width: 50%;
+	//min-width: 80%;
+	left: 25%;
+	height:2px;
   background-color: blue;
+	position:absolute;
+  top:2px;
 }
 .top_en_main_message {
-	@include top_main_message();
-	color: rgb(255, 0, 0);
-	filter: opacity(0%);
+	@include top_main_message(26%,5vh,rgb(255, 0, 0));
+  filter: opacity(0%);
 }
+
 .top_en_sub_message {
-	@include top_sub_message();
-	letter-spacing: 0.1em;
-	color: rgba(255, 0, 0, 0.753);
+	@include top_main_message(33%,2.5vh,rgba(255, 0, 0, 0.753));
 	filter: opacity(0%);
 }
 
 .top_en_sub_message::before {
-	@include top_border_message();
-   background-color: rgb(255, 0, 0);
-	 
+  content:"";
+	width: 70%;
+	//min-width: 80%;
+	left: 15%;
+	height:2px;
+  background-color: rgb(255, 0, 0);
+	position:absolute;
+	top:-2px;
 }
 .top_zh_main_message {
-	@include top_main_message();
-	color: yellow;
+	@include top_main_message(25%,6vh,yellow);
 	filter: opacity(0%);
 }
+
 .top_zh_sub_message {
-	@include top_sub_message();
-	color: yellow;
-	filter: opacity(0);
+	@include top_main_message(33%,3vh,yellow);
+	filter: opacity(0%);
 }
+
 .top_zh_sub_message::before {
-	@include top_border_message();
+	content:"";
+	text-align: center;
+	width: 60%;
+	//min-width: 80%;
+	left: 20%;
+	height:2px;
   background-color: yellow;
+	position:absolute;
+	top:-2px;
 }
 //top_path
 //top_path_mixin
