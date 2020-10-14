@@ -41,7 +41,7 @@
 			</div>	
 		<% else current_user.nationality_id == 3%>
 		  <div class="en_info_first_message">
-		  thanks!!  <%= current_user.nickname %>!!!
+		   thanks!!  <%= current_user.nickname %>!!!
 			</div>
 			<div class="en_info_second_message">
 			  this is the reccomended info for you
@@ -132,7 +132,10 @@
 		      <% @tokai.each do |tokai| %>
 				    <div class="list">
               <div class="en_name">
-                <%= tokai.en_name %>/<%= tokai.jp_name %>
+                <%= tokai.en_name %>
+							</div>	
+							<div class="en_jp_name">
+								<%= tokai.jp_name %>
               </div>
 						  <div class="price_area">
 						    <div class="en_price_area">
@@ -144,14 +147,14 @@
 							</div>	
 						  <div class="info_area">
 							  <div class="en_areas">
-								  availabe area
+								  availabe day
 								</div>
 					      <div class="en_area">
-                  <span><%= tokai.en_area %></span>
+                  <span><%= tokai.en_area %> day</span>
                 </div>
 							</div>
 							<div class="en_info2">   
-							  one point advise !
+							  Recommended area !
 							</div>
 					    <div class="en_info">
 								<span><%= tokai.en_info %></span>
