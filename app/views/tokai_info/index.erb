@@ -3,12 +3,12 @@
   <%= render "shared/jp_header" %>
 <% elsif current_user.nationality_id == 2 %>	
   <%= render "shared/zh_header" %>
-	<div class="info_alert">
-    <div class="info_alert_main">
+	<div class="info_zh_alert">
+    <div class="info_zh_alert_main">
 	    这张票被翻译成英语。但是，也许名字不正确。因而假如你使用这张票的话，请用日本的名字搜查那个
 	  </div>
-    <div class="info_alert_sub">
-	    <button type="button">关闭</button>
+    <div class="info_zh_alert_sub">
+	    <button type="button", class="zh_button" >关闭</button>
 	  </div>
   </div>
 <% else current_user.nationality_id == 3 %>
@@ -34,10 +34,10 @@
 			</div>	
 	  <% elsif current_user.nationality_id == 2 %>
 		  <div class="zh_info_first_message">
-		    thanks!!  <%= current_user.nickname %>!!!
+		    欢迎光临 <%= current_user.nickname %>!! 
 			</div>
 			<div class="zh_info_second_message">
-			  this is the reccomended info for you
+			  是向你推荐这里的信息!
 			</div>	
 		<% else current_user.nationality_id == 3%>
 		  <div class="en_info_first_message">
@@ -93,25 +93,28 @@
 				    <div class="list">
               <div class="zh_name">
                 <%= tokai.zh_name %>
+							</div>	
+							<div class="zh_jp_name">
+								<%= tokai.jp_name %>
               </div>
 						  <div class="price_area">
 						    <div class="zh_price_area">
-							    price
+							    金额
 							  </div>
 					      <div class="zh_price">
-                  <span>＄<%= tokai.price %></span>
+                  <span><%= tokai.price %></span>
                 </div>
 							</div>	
 						  <div class="info_area">
 							  <div class="zh_areas">
-								  availabe area
+								  能利用期间
 								</div>
 					      <div class="zh_area">
-                  <span><%= tokai.zh_area %></span>
+                  <span><%= tokai.zh_area %>天</span>
                 </div>
 							</div>
 							<div class="zh_info2">   
-							  one point advise !
+							  推荐的要点！
 							</div>
 					    <div class="zh_info">
 								<span><%= tokai.zh_info %></span>
@@ -129,7 +132,7 @@
 		      <% @tokai.each do |tokai| %>
 				    <div class="list">
               <div class="en_name">
-                <%= tokai.en_name %>
+                <%= tokai.en_name %>/<%= tokai.jp_name %>
               </div>
 						  <div class="price_area">
 						    <div class="en_price_area">
