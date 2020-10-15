@@ -62,7 +62,7 @@ Train Ticket
 
 [![Image from Gyazo](https://i.gyazo.com/a000f275d6c0dbf6af1ef40753b66baa.gif)](https://gyazo.com/a000f275d6c0dbf6af1ef40753b66baa)
 
-[![Image from Gyazo](https://i.gyazo.com/e8218b825624e9f3eae1ad76b1c8e4e6.gif)](https://gyazo.com/e8218b825624e9f3eae1ad76b1c8e4e6)
+[![Image from Gyazo](a000f275d6c0dbf6af1ef40753b66baa (1).gif)
 
 [![Image from Gyazo](https://i.gyazo.com/a03133b293bd08ca8d39235979ad1620.gif)](https://gyazo.com/a03133b293bd08ca8d39235979ad1620)
 
