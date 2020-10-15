@@ -59,7 +59,7 @@ Train Ticket
 
 ## 実装した機能についてのGIF
 
-
+###要領の関係でサイズの省略、中国語表示の簡略を行っています。
 [![Image from Gyazo](https://i.gyazo.com/a557419f530c9d5d83994b04159f5a69.gif)](https://gyazo.com/a557419f530c9d5d83994b04159f5a69)
 
 [![Image from Gyazo](a000f275d6c0dbf6af1ef40753b66baa (1).gif)
