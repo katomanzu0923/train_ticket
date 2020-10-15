@@ -18,14 +18,14 @@
 
 .private_form {
 	position: absolute;
-	width: 60%;
+	width: 50%;
   height: 70%;
-  margin: 60px auto 0;
+  margin: 0 auto;
   border-radius: 10px;
 	border: double rgb(255, 255, 255);
 	background-color: rgb(245, 206, 206);
-	top: 10%;
-	left: 20%;
+	top: 20%;
+	left: 25%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -36,7 +36,10 @@
 	position: absolute;
 	border-bottom: groove rgba(231, 32, 32, 0.603) 5px;
 	top: 5%;
-	display: flex;
+	width: 50%;
+	left: 25%;
+	font-size: 20px;
+	//background-color: red;
 	text-align: center;
 }
 
@@ -55,10 +58,9 @@ input[type="text"] {
 
 .nickname_ok {
 	position: absolute;
-	z-index: 3;
-	top: 18%;
-	right: 20%;
-	filter: opacity(0);
+	left: -20px;
+	top: 22px;
+	filter: opacity(0%);
 }
 .nickname_ok_re {
   filter: opacity(100);
@@ -67,10 +69,8 @@ input[type="text"] {
 .nickname_error {
 	position: absolute;
 	color: rgba(255, 0, 0, 0.801);
-	top: 15%;
-	left: 43%;
-	z-index: 2;
 	filter: opacity(0);
+	top: 45px;
 }
 
 .revise_errors {
@@ -86,11 +86,9 @@ input[type="text"] {
 
 .age_ok {
 	position: absolute;
-	z-index: 3;
-	top: 29%;
-	right: 48%;
-	z-index: 1;
-	filter: opacity(0);
+	left: -20px;
+	top: 22px;
+	filter: opacity(0%);
 }
 .age_ok_re {
   filter: opacity(100);
@@ -98,11 +96,8 @@ input[type="text"] {
 
 .age_error {
 	position: absolute;
-	top: 25%;
-	width: 60%;
-	left: 35%;
+	top: 46px;
 	color: rgba(255, 0, 0, 0.801);
-	z-index: 2;
 	filter: opacity(0);
 }
 
@@ -167,11 +162,9 @@ input[type="email"] {
 
 .email_ok {
 	position: absolute;
-	z-index: 3;
-	top: 49%;
-	right: 20%;
-	z-index: 1;
-	filter: opacity(0);
+	left: -20px;
+	top: 25px;
+	filter: opacity(0%);
 }
 .email_ok_re {
   filter: opacity(100);
@@ -179,11 +172,8 @@ input[type="email"] {
 
 .email_error {
 	position: absolute;
-	top: 45%;
-	width: 60%;
-	left: 35%;
+	top: 54px;
 	color: rgba(255, 0, 0, 0.801);
-	z-index: 2;
 	filter: opacity(0);
 }
 
@@ -193,18 +183,16 @@ input[type="email"] {
 
 .password_form {
 	position: absolute;
-	top: 55%;
+	top: 57%;
 	width: 60%;
 	left: 25%;
 }
 
 .password_ok {
 	position: absolute;
-	z-index: 3;
-	top: 59%;
-	right: 20%;
-	z-index: 1;
-	filter: opacity(0);
+	left: -20px;
+	top: 25px;
+	filter: opacity(0%);
 }
 .password_ok_re {
   filter: opacity(100);
@@ -212,11 +200,8 @@ input[type="email"] {
 
 .password_error {
 	position: absolute;
-	top: 55%;
-	width: 60%;
-	left: 42%;
-	color: rgba(255, 0, 0, 0.801);
-	z-index: 2;
+	top: 50px;
+	color: rgba(255, 0, 0, 0.801);	
 	filter: opacity(0);
 }
 
@@ -226,7 +211,7 @@ input[type="email"] {
 
 .password_form_con {
 	position: absolute;
-	top: 65%;
+	top: 68%;
 	width: 60%;
 	left: 25%;
 }
@@ -241,17 +226,14 @@ input[type="text"] {
 input[type="password"] { 
 	position: absolute;
 	width: 80%;
-	height: 80%;
 	border-radius: 10px;
 }
 
 .password_com_ok {
 	position: absolute;
-	z-index: 3;
-	top: 69%;
-	right: 20%;
-	z-index: 1;
-	filter: opacity(0);
+	left: -20px;
+	top: 25px;
+	filter: opacity(0%);
 }
 .password_com_ok_re {
   filter: opacity(100);
@@ -259,11 +241,8 @@ input[type="password"] {
 
 .password_com_error {
 	position: absolute;
-	top: 65%;
-	width: 60%;
-	left: 42%;
+	top: 50px;
 	color: rgba(255, 0, 0, 0.801);
-	z-index: 2;
 	filter: opacity(0);
 }
 
@@ -273,8 +252,7 @@ input[type="password"] {
 
 .sign_up_form {
 	position: absolute;
-	width: 30%;
-	top: 75%;
-	left: 45%;
+	top: 80%;
+	left: 47%;
 	border-radius: 10px;
 }

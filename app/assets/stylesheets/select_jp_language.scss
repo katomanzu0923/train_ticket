@@ -40,11 +40,11 @@
 	position:absolute;
   top:2px;
 }
+
 //select_jp_path_@mixin
-@mixin select_jp_path($position,$z) {
+@mixin select_jp_path($z) {
 	position: absolute;
 	top: 85%;
-	left: $position;
 	width: 13%;
 	height: 5%;
 	z-index: $z;
@@ -52,23 +52,28 @@
 	border-bottom: solid 4px rgb(46, 46, 46);
 }
 .login_jp_path {
-	@include select_jp_path(15%,1);
+	@include select_jp_path(1);
+	left: 25%;
 }
 
 .login_jp_click_path {
-	@include select_jp_path(15%,0);
+	@include select_jp_path(0);
+  left: 25%;
 	filter: opacity(0%);
 }
 
 .registration_jp_path {
-	@include select_jp_path(44%,1);
+	@include select_jp_path(1);
+	right: 25%;
 }
 
 .registration_jp_click_path {
-	@include select_jp_path(44%,0);
+	@include select_jp_path(0);
 	filter: opacity(0%);
+	right: 25%;
 }
 
+/*
 .no_login_jp_path {
 	@include select_jp_path(72%,1);
 }
@@ -76,4 +81,4 @@
 .no_login_click_jp_path {
 	@include select_jp_path(72%,0);
 	filter: opacity(0%);
-}
+}*/
