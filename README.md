@@ -59,12 +59,13 @@ Train Ticket
 
 ## 実装した機能についてのGIF
 
-###要領の関係でサイズの省略、中国語表示の簡略を行っています。
+要領の関係でサイズの省略、中国語表示の簡略を行っています。
+リアルタイム多言語化対応
 [![Image from Gyazo](https://i.gyazo.com/a557419f530c9d5d83994b04159f5a69.gif)](https://gyazo.com/a557419f530c9d5d83994b04159f5a69)
 
-[![Image from Gyazo](a000f275d6c0dbf6af1ef40753b66baa (1).gif)
-
+リアルタイムバリデーション 機能
 [![Image from Gyazo](https://i.gyazo.com/a03133b293bd08ca8d39235979ad1620.gif)](https://gyazo.com/a03133b293bd08ca8d39235979ad1620)
+
 
 [![Image from Gyazo](https://i.gyazo.com/2e12f8e0a3c772b11900d2d067e16b65.gif)](https://gyazo.com/2e12f8e0a3c772b11900d2d067e16b65)
 
