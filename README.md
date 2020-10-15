@@ -60,7 +60,7 @@ Train Ticket
 ## 実装した機能についてのGIF
 
 
-[![Image from Gyazo](https://i.gyazo.com/f4734c55bd67d6cf485a8a992e1d28bc.gif)](https://gyazo.com/f4734c55bd67d6cf485a8a992e1d28bc)
+[![Image from Gyazo](https://i.gyazo.com/91757ea1669f1dc8e8448c08e10b3a5e.gif)](https://gyazo.com/91757ea1669f1dc8e8448c08e10b3a5e)
 
 [![Image from Gyazo](https://i.gyazo.com/e8218b825624e9f3eae1ad76b1c8e4e6.gif)](https://gyazo.com/e8218b825624e9f3eae1ad76b1c8e4e6)
 
