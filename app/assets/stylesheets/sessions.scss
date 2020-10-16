@@ -110,9 +110,10 @@ input[type="password"] {
 	filter: opacity(100);
 }
 .session_email_ok {
-	display: inline;
+	position: absolute;
+	left: -20px;
+	top: 25px;
 	filter: opacity(0%);
-	right: 2px;
 }
 
 .session_password_error {
@@ -127,9 +128,10 @@ input[type="password"] {
 	filter: opacity(100%);
 }
 .session_password_ok {
-	display: inline;
+	position: absolute;
+	left: -20px;
+	top: 25px;
 	filter: opacity(0%);
-	right: 4px;
 }
 
 .session_password_errors {

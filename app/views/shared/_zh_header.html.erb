@@ -1,9 +1,20 @@
 <div class="zh_header">
-  <%= link_to (root_path) do %> 
-	  <%= image_tag 'top_zh_icon.png', size: '185x50' ,class: "select_zh_icon" %>
-  <% end %>
-  <%= link_to (root_path) do %> 
-		<%= image_tag 'top_zh_icon_2.png', size: '185x50' ,class: "select_zh_2_icon" %>
+  <% if user_signed_in? %>
+    <% if current_user.nationality_id == 2 %>
+      <%= link_to (select_zh_language_path) do %> 
+	      <%= image_tag 'top_zh_icon.png', size: '185x50' ,class: "select_zh_icon" %>
+      <% end %>
+      <%= link_to (select_zh_language_path) do %> 
+		    <%= image_tag 'top_zh_icon_2.png', size: '185x50' ,class: "select_zh_2_icon" %>
+      <% end %>
+    <% end %>  
+  <% else %>
+      <%= link_to (root_path) do %> 
+		  <%= image_tag 'top_zh_icon.png', size: '185x50' ,class: "select_zh_icon" %>
+    <% end %>
+    <%= link_to (root_path) do %> 
+		  <%= image_tag 'top_zh_icon_2.png', size: '185x50' ,class: "select_zh_2_icon" %>
+    <% end %>
   <% end %>
   <span class="zh_nav_toggle">
     <i></i>

@@ -31,15 +31,9 @@ $(function () {
   //nationalityバリデーション
   $(".nationality_select").on("change", function () {
     //let error;
-    let value = $(this).val();
-    if (value !== 1 || value !== 2 || value !== 3) {
-      $(".nationality_error").addClass("nationality_errors");
-    }else{
-			$(".nationality_errors").removeClass("nationality_errors");
-		}
-  });
+      $(".nationality_ok").addClass("nationality_ok_re");
+		})
 });
-
 $(function () {
   //emailバリデーション
   $(".email_blank").on("keyup", function () {

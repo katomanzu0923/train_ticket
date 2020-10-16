@@ -1,4 +1,3 @@
-
 <% if current_user.nationality_id == 1 %>
   <%= render "shared/jp_header" %>
 <% elsif current_user.nationality_id == 2 %>	
@@ -54,7 +53,7 @@
 			  <div class="lists">
 		      <% @tokai.each do |tokai| %>
 				   <div class="list">
-               <div class="jp_name">
+              <div class="jp_name">
                  <%= tokai.jp_name %>
               </div>
 						  <div class="price_area">
@@ -67,14 +66,14 @@
 							</div>	
 						  <div class="info_area">
 							  <div class="jp_areas">
-								  エリア
+								  利用可能日
 								</div>
 					      <div class="jp_area">
-                  <span><%= tokai.jp_area %></span>
+                  <span><%= tokai.jp_area %>日間</span>
                 </div>
 							</div>
 							<div class="jp_info2">   
-							  ちょっと一言
+							  行けるところ！
 							</div>
 					    <div class="jp_info">
 								<span><%= tokai.jp_info %></span>

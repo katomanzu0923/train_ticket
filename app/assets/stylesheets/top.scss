@@ -174,7 +174,7 @@
   top:2px;
 }
 .top_en_main_message {
-	@include top_main_message(26%,5vh,rgb(255, 0, 0));
+	@include top_main_message(26%,4vh,rgb(255, 0, 0));
   filter: opacity(0%);
 }
 

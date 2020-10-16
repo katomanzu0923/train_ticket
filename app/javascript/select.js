@@ -162,6 +162,7 @@ $(function(){
 		$(".zh_nav_toggle, .zh_nav").toggleClass("show")
 		$(".select").toggleClass("top_fil")
 		$(".area_top").toggleClass("top_fil")
+		$(".info_top").toggleClass("top_fil")
 	})
 });
 

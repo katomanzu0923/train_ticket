@@ -74,6 +74,7 @@
 .top_fil {
 	filter: blur(3px);
 }
+
 //select_en_message
 .select_en_background {
 	position: relative;
@@ -85,14 +86,19 @@
 }
 //select_en_message
 //select_en_message_@mixin
+
+.select_en_message {
+	//background-color: red;
+	width: 100%;
+}
 @mixin select_en_message($position,$font_size,$font_color) {
 	position: absolute;
 	top: $position;
-	text-align: center;
 	font-size: $font_size;
+	color: $font_color;
 	width: 100%;
 	left: 0%;
-	color: $font_color;
+	text-align: center;
 }
 .select_en_main_message {
 	@include select_en_message(26%,5vh,rgb(255, 0, 0));
@@ -102,15 +108,17 @@
 	@include select_en_message(33%,2.5vh,rgba(255, 0, 0, 0.753));
 }
 
-.select_en_sub_message::before {
-  content:"";
+.select_en_main_message::before {
+	content:"";
+	text-align: center;
 	width: 70%;
-	//min-width: 80%;
+	margin: 0 auto;
+	//min-width: 800px;
 	left: 15%;
 	height:2px;
   background-color: rgb(255, 0, 0);
 	position:absolute;
-	top:-2px;
+	top:95%;
 }
 //select_en_path_@mixin
 @mixin select_en_path($z) {

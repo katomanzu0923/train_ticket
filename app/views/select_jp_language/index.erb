@@ -13,7 +13,17 @@
       下から選択してください
     </div>
     <div class="select_path">
-      
+      <% if user_signed_in? %>
+        <%= link_to (destroy_user_session_path), method: :delete do %> 
+          <%# <%= link_to "ログアウト", destroy_user_session_path, class: 'header_menu_message', method: :delete  %> 
+          <%= image_tag 'registrationl_logout_jp_path.png', size: '185x50' ,class: "login_jp_path" %>
+          <%= image_tag 'top_jp_click_path.png', size: '185x50' ,class: "login_jp_click_path"%>
+        <% end %>
+	      <%= link_to (area_path) do %> 
+          <%= image_tag 'registrationl_area_jp_path.png', size: '185x50' ,class: "registration_jp_path" %>
+          <%= image_tag 'top_jp_click_path.png', size: '185x50' ,class: "registration_jp_click_path"%>
+        <% end %>
+      <% else %>
         <%= link_to (new_user_session_path) do %> 
           <%= image_tag 'login_jp_path.png', size: '185x50' ,class: "login_jp_path" %>
           <%= image_tag 'top_jp_click_path.png', size: '185x50' ,class: "login_jp_click_path"%>
@@ -22,12 +32,7 @@
           <%= image_tag 'registration_jp_path.png', size: '185x50' ,class: "registration_jp_path" %>
           <%= image_tag 'top_jp_click_path.png', size: '185x50' ,class: "registration_jp_click_path"%>
         <% end %>
-      <%# 実装するか迷っているためコメントアウト しています %>
-      <%#
-	    <%= link_to (area_path), data: {"turbolinks" => false} do %> 
-        <%#= image_tag 'no_login_jp_path.png', size: '185x50' ,class: "no_login_jp_path" %>
-        <%#= image_tag 'top_jp_click_path.png', size: '185x50' ,class: "no_login_click_jp_path"%>
-      <%# end %>
+      <% end %>
 		</div>
   </div>
 </div>

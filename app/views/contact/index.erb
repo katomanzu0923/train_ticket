@@ -1,12 +1,22 @@
+<% if current_user.nationality_id == 1 %>
+  <%= render "shared/jp_header" %>
+<% elsif current_user.nationality_id == 2 %>	
+  <%= render "shared/zh_header" %>
+<% else current_user.nationality_id == 3 %>
+  <%= render "shared/en_header" %>
+<% end %> 
 <div class="contact">
   <div class="contact_back">
     <%= image_tag 'top_jp_background.png', class: "session_en_background" %>
   </div>
-	<div class="contact_message">
-	  お問い合わせ
-	</div>
 	<div class="contact_form">
-    このウェブサイトに関して
-		などなど
+	  <div class="contact_message">
+		  <div class="contact_message_main">
+        連絡先
+			</div>
+			<div class="contact_message_sub">me@trip.com</div>
+		</div>
+		
+
   </div>
 </div>

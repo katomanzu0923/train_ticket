@@ -3,28 +3,38 @@
   <div class="select_background">
     <%= image_tag 'top_en_back.png',class: "select_en_background" %>
   </div>
-  <div class="select_message">
-    <div class="select_en_main_message">
-      The guidance of trip in Japan
-    </div>
-    <div class="select_en_sub_message">
-      select a bottun 
-    </div>
-    <div class="select_path">
-		  <%= link_to (new_user_session_path) do %> 
-        <%= image_tag 'login_en_path.png', size: '185x50' ,class: "login_en_path" %>
-        <%= image_tag 'top_en_click_path.png', size: '185x50' ,class: "login_en_click_path"%>
-      <% end %>
-	    <%= link_to (new_user_registration_path) do %> 
-        <%= image_tag 'registration_en_path.png', size: '185x50' ,class: "registration_en_path" %>
-        <%= image_tag 'top_en_click_path.png', size: '185x50' ,class: "registration_en_click_path" %>
-      <% end %>
-      <%# 実装するか迷っているためコメントアウト しています %>
-      <%#
-	    <%= link_to (select_zh_language_path) do %> 
-        <%# <%= image_tag 'no_login_en_path.png', size: '185x50' ,class: "no_login_en_path" %> %>
-        <%# <%= image_tag 'top_en_click_path.png', size: '185x50' ,class: "no_login_click_en_path" %> %>
-      <%# <% end %> 
-      
-		</div>
+  <div class="select_en_main">
+    <div class="select_en_message">
+      <div class="select_en_main_message">
+        The guidance of trip in Japan
+      </div>
+      <div class="select_en_sub_message">
+        select a bottun 
+      </div>
+    </div>  
+    <div>
+      <div class="select_path">
+        <% if user_signed_in? %>
+          <%= link_to (destroy_user_session_path), method: :delete do %> 
+          <%# <%= link_to "ログアウト", destroy_user_session_path, class: 'header_menu_message', method: :delete  %> 
+            <%= image_tag 'logout_en_path.png', size: '185x50' ,class: "login_jp_path" %>
+            <%= image_tag 'top_en_click_path.png', size: '185x50' ,class: "login_jp_click_path"%>
+          <% end %>
+	        <%= link_to (area_path) do %> 
+            <%= image_tag 'toarea_en_path.png', size: '185x50' ,class: "registration_jp_path" %>
+            <%= image_tag 'top_en_click_path.png', size: '185x50' ,class: "registration_jp_click_path"%>
+          <% end %>
+        <% else %>
+		      <%= link_to (new_user_session_path) do %> 
+            <%= image_tag 'login_en.png', size: '185x50' ,class: "login_en_path" %>
+            <%= image_tag 'top_en_click_path.png', size: '185x50' ,class: "login_en_click_path"%>
+          <% end %>
+	        <%= link_to (new_user_registration_path) do %> 
+            <%= image_tag 'registration_en_path.png', size: '185x50' ,class: "registration_en_path" %>
+            <%= image_tag 'top_en_click_path.png', size: '185x50' ,class: "registration_en_click_path" %>
+          <% end %>
+        <% end %>  
+      </div>
+    </div>  
+  </div>  
 </div>
