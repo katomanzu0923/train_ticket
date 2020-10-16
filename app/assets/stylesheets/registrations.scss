@@ -147,6 +147,17 @@ input[type="text"] {
 	filter: opacity(100);
 }
 
+.nationality_ok {
+	position: absolute;
+	left: -20px;
+	top: 20px;
+	filter: opacity(0%);
+}
+
+.nationality_ok_re {
+  filter: opacity(100);
+}
+
 .email_form {
 	position: absolute;
 	top: 45%;

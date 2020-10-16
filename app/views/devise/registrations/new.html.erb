@@ -24,10 +24,8 @@
         </div>
         <div class="nationality_form">
           <%= f.label :nationality %> <em></em><br />
-          <%= f.select :nationality_id, [["japan", 1], ["china", 2], ["other", "3"]], {}, { class: 'nationality_select' , required: true }  %>
-        </div>
-        <div class="nationality_error">
-          select a nationality 
+          <%= f.select :nationality_id, [["japan", 1], ["china", 2], ["other", 3]], {}, { class: 'nationality_select' }  %>
+          <div class="nationality_ok">   &#x2705;</div>
         </div>
         <div class="email_form">
           <%= f.label :email %><br/>

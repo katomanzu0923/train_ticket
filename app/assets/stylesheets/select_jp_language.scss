@@ -56,6 +56,14 @@
 	left: 25%;
 }
 
+.login_jp_path2 {
+	position: absolute;
+	top: 10%;
+	left: 25%;
+	width: 1%;
+}
+
+
 .login_jp_click_path {
 	@include select_jp_path(0);
   left: 25%;

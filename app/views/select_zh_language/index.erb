@@ -12,18 +12,25 @@
     </div>
   </div>
   <div class="select_path">
+    <% if user_signed_in? %>
+      <%= link_to (destroy_user_session_path), method: :delete do %> 
+        <%= image_tag 'logout_zh_path.png', size: '185x50' ,class: "login_jp_path" %>
+        <%= image_tag 'top_zh_click_path.png', size: '185x50' ,class: "login_jp_click_path"%>
+      <% end %>
+	    <%= link_to (area_path) do %> 
+        <%= image_tag 'toarea_zh_path.png', size: '185x50' ,class: "registration_jp_path" %>
+        <%= image_tag 'top_zh_click_path.png', size: '185x50' ,class: "registration_jp_click_path"%>
+      <% end %>
+    <% else %>
 		  <%= link_to (new_user_session_path) do %> 
-        <%= image_tag 'login_zh_path.png', size: '185x50' ,class: "login_zh_path" %>
-        <%= image_tag 'top_zh_click_path.png', size: '185x50' ,class: "login_zh_click_path"%>
+        <%= image_tag 'login_zh_path.png', size: '185x50' ,class: "login_en_path" %>
+        <%= image_tag 'top_zh_click_path.png', size: '185x50' ,class: "login_en_click_path"%>
       <% end %>
 	    <%= link_to (new_user_registration_path) do %> 
-        <%= image_tag 'registration_zh_path.png', size: '185x50' ,class: "registration_zh_path" %>
-        <%= image_tag 'top_zh_click_path.png', size: '185x50' ,class: "registration_zh_click_path"%>
+        <%= image_tag 'registration_zh_path.png', size: '185x50' ,class: "registration_en_path" %>
+        <%= image_tag 'top_zh_click_path.png', size: '185x50' ,class: "registration_en_click_path" %>
       <% end %>
-	    <%= link_to (select_zh_language_path) do %> 
-        <%= image_tag 'no_login_zh_path.png', size: '185x50' ,class: "no_login_zh_path" %>
-        <%= image_tag 'top_zh_click_path.png', size: '185x50' ,class: "no_login_click_zh_path"%>
-      <% end %>
+    <% end %>
 		</div>
   </div>
 </div>

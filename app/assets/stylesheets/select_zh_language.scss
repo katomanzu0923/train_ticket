@@ -80,6 +80,7 @@
 	height: 100vh;
 	left: 0%;
 	top: 0%;
+	filter: opacity(70%);
 }
 //select_zh_message_@mixin
 @mixin select_zh_message($position,$font_size,$font_color) {
@@ -114,7 +115,7 @@
 @mixin select_zh_path($z) {
 	position: absolute;
 	top: 85%;
-	width: 13%;
+	width: 10%;
 	height: 5%;
 	z-index: $z;
 	border-right: solid 4px rgb(46, 46, 46);
@@ -140,13 +141,6 @@
 	right: 25%;
 }
 
-/*.no_login_zh_path {
-	@include select_zh_path(72%,1);
-}
-
-.no_login_click_zh_path {
-	@include select_zh_path(72%,0);
-}*/
 //ハンバーグメニュー
 .zh_nov_toggle {
 	display: block;
