@@ -8,9 +8,12 @@ class TokaiInfoController < ApplicationController
 		else
 			@tokai = Tokai.where(age: "all")
 		end
-	end 
+	end
+
+	
 
 
+  
 	
 
 end

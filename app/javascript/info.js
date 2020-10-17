@@ -29,3 +29,4 @@ $(function(){
 		$(".info_en_alert").slideUp(500);
 	})
 });
+
