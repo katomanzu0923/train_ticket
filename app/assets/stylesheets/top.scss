@@ -1,7 +1,16 @@
 // Place all the styles related to the top controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
+$breakpoints: (
+	m: "only screen and (max-width: 980px)",
+	pc: "only screen and (max-width: 1199px)",
+);
+@mixin media($breakpoint) {
+	@media #{map-get($breakpoints, $breakpoint)} {
+		@content;
+	}
+	
+}
 //ヘッダー
 .jp_header {
 	position: absolute;
@@ -13,6 +22,8 @@
 	align-items: center;
 	border-bottom: thick double rgba(0, 0, 128, 0.295);
 	text-decoration: none;
+	@include media(m) {
+	}
 }
 .top_jp_icon {
 	position: absolute;
@@ -157,21 +168,30 @@
 }
 .top_jp_main_message {
 	@include top_main_message(25%,6vh,blue);
-	//background-color: red;
+	@include media(m) {
+		@include top_main_message(16%,4vh,blue);
+	};
 }
 .top_jp_sub_message {
-	@include top_main_message(33%,3vh,rgba(0, 0, 255, 0.534))
+	@include top_main_message(33%,3vh,rgba(0, 0, 255, 0.534));
+	@include media(m) {
+		@include top_main_message(22%,2vh,blue);
+	};
 }
 .top_jp_sub_message::before {
 	content:"";
 	text-align: center;
 	width: 50%;
-	//min-width: 80%;
 	left: 25%;
 	height:2px;
   background-color: blue;
 	position:absolute;
-  top:2px;
+	top:2px;
+	@include media(m) {
+		top: -10px;
+		width: 90%;
+		left: 5%;
+	};
 }
 .top_en_main_message {
 	@include top_main_message(26%,4vh,rgb(255, 0, 0));
@@ -215,10 +235,10 @@
 }
 //top_path
 //top_path_mixin
-@mixin top_path($value,$position) {
+@mixin top_path($value,$left_position,$top_position) {
 	position: absolute;
-	top: 85%;
-	left: $position;
+	top: $top_position;
+	left: $left_position;
 	width: 13%;
 	height: 5%;
 	z-index: $value;
@@ -226,23 +246,47 @@
 	border-bottom: solid 4px rgb(46, 46, 46);
 }
 .top_jp_path {
-	@include top_path(1,15%);
+	@include top_path(1,15%,85%);
+	@include media(m) {
+		@include top_path(1,37%,45%);
+		width: 25%;
+	};
 }
 
 .top_jp_click_path {
-	@include top_path(0,15%);
+	@include top_path(0,15%,85%);
+	@include media(m) {
+		@include top_path(0,37%,45%);
+		width: 25%;
+	};
 }
 .top_en_path {
-	@include top_path(1,44%)
+	@include top_path(1,44%,85%);
+	@include media(m) {
+		@include top_path(1,37%,65%);
+		width: 25%;
+	};
 }
 .top_en_click_path {
-	@include top_path(0,44%)
+	@include top_path(0,44%,85%);
+	@include media(m) {
+		@include top_path(0,37%,65%);
+		width: 25%;
+	};
 }
 .top_zh_path {
-	@include top_path(1,72%)
+	@include top_path(1,72%,85%);
+	@include media(m) {
+		@include top_path(1,37%,85%);
+		width: 25%;
+	};
 }
 .top_zh_click_path {
-	@include top_path(0,72%)
+	@include top_path(0,72%,85%);
+	@include media(m) {
+		@include top_path(0,37%,85%);
+		width: 25%;
+	};
 }
 //ハンバーグメニュー
 .nov_toggle {

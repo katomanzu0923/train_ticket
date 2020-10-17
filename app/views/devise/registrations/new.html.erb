@@ -12,8 +12,7 @@
         </div>
         <div class="nickname_form">
           <%= f.label :nickname %><br/>
-          <%= f.text_field :nickname, placeholder: "enter the nickname", autofocus: true, class: "nickname_blank" %>
-          <div class="nickname_ok">&#x2705;</div>
+          <div class="nickname_ok">&#x2705;</div><%= f.text_field :nickname, placeholder: "enter the nickname", autofocus: true, class: "nickname_blank" %>
           <div class="nickname_error">maximum 25characters!</div>
         </div>
         <div class="age_form">
@@ -28,7 +27,7 @@
           <div class="nationality_ok">   &#x2705;</div>
         </div>
         <div class="email_form">
-          <%= f.label :email %><br/>
+          <%= f.label :email %>
           <%= f.email_field :email, placeholder: "enter the your email", class: "email_blank" %>
           <div class="email_ok">   &#x2705;</div><br/>
           <div class="email_error">Need @ mark !</div>

@@ -1,10 +1,19 @@
 // Place all the styles related to the registrations controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$breakpoints: (
+	m: "only screen and (max-width: 980px)",
+	pc: "only screen and (max-width: 1199px)",
+);
+@mixin media($breakpoint) {
+	@media #{map-get($breakpoints, $breakpoint)} {
+		@content;
+	}
+}
+
 .registration {
 	width: 100vw;
 	height: 100vh;
-
 } 
 
 .select_back {
@@ -23,13 +32,18 @@
   margin: 0 auto;
   border-radius: 10px;
 	border: double rgb(255, 255, 255);
-	background-color: rgb(245, 206, 206);
+	background-color: rgb(230, 230, 230);
 	top: 20%;
 	left: 25%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	filter: opacity(90%);
+	@include media(m) {
+		width: 80%;
+		left: 10%;
+		top: 15%;
+	}
 }
 
 .private_form_message {
@@ -38,9 +52,15 @@
 	top: 5%;
 	width: 50%;
 	left: 25%;
-	font-size: 20px;
+	font-size: 1.5vw;
 	//background-color: red;
 	text-align: center;
+	@include media(m) {
+		font-size: 2vh;
+		top: 5%;
+		width: 80%;
+		left: 10%;
+	}
 }
 
 input[type="text"] {
@@ -54,13 +74,23 @@ input[type="text"] {
 	top: 15%;
 	width: 60%;
 	left: 25%;
+	@include media(m) {
+		font-size: 1.5vh;
+		top: 15%;
+	}
 }
 
 .nickname_ok {
 	position: absolute;
-	left: -20px;
-	top: 22px;
+	display: block;
+	left: -25px;
+	top: 25px;
 	filter: opacity(0%);
+	@include media(m) {
+		left: -40px;
+		top: 95%;
+		z-index: 2;
+	}
 }
 .nickname_ok_re {
   filter: opacity(100);
@@ -68,9 +98,10 @@ input[type="text"] {
 
 .nickname_error {
 	position: absolute;
+	display: block;
 	color: rgba(255, 0, 0, 0.801);
-	filter: opacity(0);
-	top: 45px;
+	filter: opacity(0%);
+	top: 200%;
 }
 
 .revise_errors {
@@ -80,8 +111,12 @@ input[type="text"] {
 .age_form {
 	position: absolute;
 	top: 25%;
-	width: 30%;
+	width: 50%;
 	left: 25%;
+	@include media(m) {
+		font-size: 1.5vh;
+		top: 25%;
+	}
 }
 
 .age_ok {
@@ -89,6 +124,11 @@ input[type="text"] {
 	left: -20px;
 	top: 22px;
 	filter: opacity(0%);
+	@include media(m) {
+		left: -40px;
+		top: 95%;
+		z-index: 2;
+	}
 }
 .age_ok_re {
   filter: opacity(100);
@@ -96,41 +136,33 @@ input[type="text"] {
 
 .age_error {
 	position: absolute;
-	top: 46px;
+	display: block;
 	color: rgba(255, 0, 0, 0.801);
 	filter: opacity(0);
+	top: 200%;
+	
 }
 
 .age_errors {
 	filter: opacity(100);
 }
 
-.nationality_error {
-	position: absolute;
-	top: 25%;
-	width: 60%;
-	left: 35%;
-	color: rgba(255, 0, 0, 0.801);
-	z-index: 2;
-	filter: opacity(0);
-}
-
-.nationality_errors {
-	filter: opacity(100);
-}
 
 .nationality_form {
 	position: absolute;
 	top: 35%;
 	width: 40%;
 	left: 25%;
+	@include media(m) {
+		font-size: 1.5vh;
+		top: 35%;
+	}
 }
 
 .nationality_select {
 	position: absolute;
 	top: 100%;
 	width: 80%;
-	border-radius: 10px;
 }
 
 .nationality_error {
@@ -152,6 +184,11 @@ input[type="text"] {
 	left: -20px;
 	top: 20px;
 	filter: opacity(0%);
+	@include media(m) {
+		left: -40px;
+		top: 95%;
+		z-index: 2;
+	}
 }
 
 .nationality_ok_re {
@@ -161,14 +198,17 @@ input[type="text"] {
 .email_form {
 	position: absolute;
 	top: 45%;
-	width: 60%;
+	width: 120%;
 	left: 25%;
+	@include media(m) {
+		font-size: 1.5vh;
+		top: 45%;
+	}
 }
 
 input[type="email"] {
-	width: 80%;
-	height: 80%;
-	border-radius: 10px;
+	width: 100%;
+	height: 50%;
 }
 
 .email_ok {
@@ -176,6 +216,11 @@ input[type="email"] {
 	left: -20px;
 	top: 25px;
 	filter: opacity(0%);
+	@include media(m) {
+		left: -40px;
+		top: 35%;
+		z-index: 2;
+	}
 }
 .email_ok_re {
   filter: opacity(100);
@@ -183,9 +228,10 @@ input[type="email"] {
 
 .email_error {
 	position: absolute;
-	top: 54px;
+	display: block;
 	color: rgba(255, 0, 0, 0.801);
-	filter: opacity(0);
+	filter: opacity(0%);
+	top: 65%;
 }
 
 .email_errors {
@@ -195,8 +241,12 @@ input[type="email"] {
 .password_form {
 	position: absolute;
 	top: 57%;
-	width: 60%;
+	width: 110%;
 	left: 25%;
+	@include media(m) {
+		font-size: 1.5vh;
+		top: 55%;
+	}
 }
 
 .password_ok {
@@ -204,6 +254,11 @@ input[type="email"] {
 	left: -20px;
 	top: 25px;
 	filter: opacity(0%);
+	@include media(m) {
+		left: -40px;
+		top: 95%;
+		z-index: 2;
+	}
 }
 .password_ok_re {
   filter: opacity(100);
@@ -211,9 +266,10 @@ input[type="email"] {
 
 .password_error {
 	position: absolute;
-	top: 50px;
-	color: rgba(255, 0, 0, 0.801);	
+	display: block;
+	color: rgba(255, 0, 0, 0.801);
 	filter: opacity(0);
+	top: 200%;
 }
 
 .password_errors {
@@ -223,21 +279,23 @@ input[type="email"] {
 .password_form_con {
 	position: absolute;
 	top: 68%;
-	width: 60%;
+	width: 110%;
 	left: 25%;
+	@include media(m) {
+		font-size: 1.5vh;
+		top: 65%;
+	}
 }
 
 input[type="text"] {
 	position: absolute;
 	width: 80%;
 	height: 80%;
-	border-radius: 10px;
 }
 
 input[type="password"] { 
 	position: absolute;
 	width: 80%;
-	border-radius: 10px;
 }
 
 .password_com_ok {
@@ -245,6 +303,11 @@ input[type="password"] {
 	left: -20px;
 	top: 25px;
 	filter: opacity(0%);
+	@include media(m) {
+		left: -40px;
+		top: 95%;
+		z-index: 2;
+	}
 }
 .password_com_ok_re {
   filter: opacity(100);
@@ -252,9 +315,10 @@ input[type="password"] {
 
 .password_com_error {
 	position: absolute;
-	top: 50px;
+	display: block;
 	color: rgba(255, 0, 0, 0.801);
 	filter: opacity(0);
+	top: 200%;
 }
 
 .password_com_errors {
@@ -266,4 +330,8 @@ input[type="password"] {
 	top: 80%;
 	left: 47%;
 	border-radius: 10px;
+	@include media(m) {
+		font-size: 1.5vh;
+		top: 75%;
+	}
 }

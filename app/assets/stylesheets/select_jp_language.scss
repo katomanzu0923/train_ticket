@@ -2,6 +2,15 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 //select_main
+$breakpoints: (
+	m: "only screen and (max-width: 980px)",
+	pc: "only screen and (max-width: 1199px)",
+);
+@mixin media($breakpoint) {
+	@media #{map-get($breakpoints, $breakpoint)} {
+		@content;
+	}
+}
 .select_jp_background {
 	position: relative;
 	width: 100vw;
@@ -23,10 +32,16 @@
 }
 .select_jp_main_message {
 	@include select_jp_message(25%,6vh);
+	@include media(m) {
+		@include select_jp_message(16%,4vh);
+	};
 }
 //
 .select_jp_sub_message {
-  @include select_jp_message(33%,3vh);
+	@include select_jp_message(33%,3vh);
+	@include media(m) {
+		@include select_jp_message(22%,2vh);
+	};
 }
 
 .select_jp_sub_message::before {
@@ -38,8 +53,14 @@
 	height:2px;
   background-color: blue;
 	position:absolute;
-  top:2px;
+	top:2px;
+	@include media(m) {
+		top: -10px;
+		width: 90%;
+		left: 5%;
+	};
 }
+
 
 //select_jp_path_@mixin
 @mixin select_jp_path($z) {
@@ -54,6 +75,10 @@
 .login_jp_path {
 	@include select_jp_path(1);
 	left: 25%;
+	@include media(m) {
+		left: 15%;
+		width: 25%;
+	};
 }
 
 .login_jp_path2 {
@@ -68,17 +93,29 @@
 	@include select_jp_path(0);
   left: 25%;
 	filter: opacity(0%);
+	@include media(m) {
+		left: 15%;
+		width: 25%;
+	};
 }
 
 .registration_jp_path {
 	@include select_jp_path(1);
 	right: 25%;
+	@include media(m) {
+		right: 15%;
+		width: 25%;
+	};
 }
 
 .registration_jp_click_path {
 	@include select_jp_path(0);
-	filter: opacity(0%);
+	filter: opacity(100%);
 	right: 25%;
+	@include media(m) {
+		right: 15%;
+		width: 25%;
+	};
 }
 
 /*
