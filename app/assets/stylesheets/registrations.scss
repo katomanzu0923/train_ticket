@@ -25,7 +25,7 @@ $breakpoints: (
 	filter: opacity(30%);
 }
 
-.private_form {
+.registration_form {
 	position: absolute;
 	width: 50%;
   height: 70%;
@@ -33,7 +33,7 @@ $breakpoints: (
   border-radius: 10px;
 	border: double rgb(255, 255, 255);
 	background-color: rgb(230, 230, 230);
-	top: 20%;
+	top: 15%;
 	left: 25%;
 	display: flex;
 	align-items: center;
@@ -46,133 +46,120 @@ $breakpoints: (
 	}
 }
 
-.private_form_message {
+.registration_form_message {
 	position: absolute;
 	border-bottom: groove rgba(231, 32, 32, 0.603) 5px;
 	top: 5%;
 	width: 50%;
 	left: 25%;
 	font-size: 1.5vw;
-	//background-color: red;
 	text-align: center;
 	@include media(m) {
 		font-size: 2vh;
-		top: 5%;
+		top: 3%;
 		width: 80%;
 		left: 10%;
 	}
-}
-
-input[type="text"] {
-	position: absolute;
-	width: 80%;
-	height: 80%;
 }
 
 .nickname_form {
 	position: absolute;
 	top: 15%;
 	width: 60%;
-	left: 25%;
+	left: 20%;
 	@include media(m) {
 		font-size: 1.5vh;
-		top: 15%;
+		top: 10%;
+    left: 20%;
 	}
+}
+.nickname_ok {
+	display: inline-block;
+	filter: opacity(0%);
+}
+.nickname_ok_dummy {
+	display: inline-block;
+	filter: opacity(0%);
 }
 
-.nickname_ok {
-	position: absolute;
-	display: block;
-	left: -25px;
-	top: 25px;
-	filter: opacity(0%);
-	@include media(m) {
-		left: -40px;
-		top: 95%;
-		z-index: 2;
-	}
-}
 .nickname_ok_re {
-  filter: opacity(100);
+	display: inline-block;
+  filter: opacity(100%);
 }
 
 .nickname_error {
-	position: absolute;
-	display: block;
+	display: inline;
 	color: rgba(255, 0, 0, 0.801);
 	filter: opacity(0%);
-	top: 200%;
+	width: 70%;
 }
 
 .revise_errors {
-	filter: opacity(100);
+	filter: opacity(100%);
 }
 
 .age_form {
 	position: absolute;
-	top: 25%;
-	width: 50%;
-	left: 25%;
+	top: 26%;
+	width: 40%;
+	left: 20%;
 	@include media(m) {
 		font-size: 1.5vh;
-		top: 25%;
+		width: 50%;
+		top: 23%;
 	}
 }
 
 .age_ok {
-	position: absolute;
-	left: -20px;
-	top: 22px;
+	display: inline-block;
 	filter: opacity(0%);
-	@include media(m) {
-		left: -40px;
-		top: 95%;
-		z-index: 2;
-	}
 }
+
+.age_ok_dummy {
+	display: inline-block;
+	filter: opacity(0%);
+}
+
 .age_ok_re {
-  filter: opacity(100);
+  filter: opacity(100%);
 }
 
 .age_error {
-	position: absolute;
-	display: block;
+	display: inline-block;
 	color: rgba(255, 0, 0, 0.801);
-	filter: opacity(0);
-	top: 200%;
-	
+	filter: (opacity(0%));
 }
 
 .age_errors {
-	filter: opacity(100);
+	filter: opacity(100%);
 }
 
 
 .nationality_form {
 	position: absolute;
-	top: 35%;
-	width: 40%;
-	left: 25%;
+	top: 38%;
+	width:90%;
+	left: 20%;
 	@include media(m) {
 		font-size: 1.5vh;
-		top: 35%;
+		top: 36%;
 	}
 }
 
 .nationality_select {
-	position: absolute;
-	top: 100%;
-	width: 80%;
+  top: 100%;
+	width: 30%;
 }
 
 .nationality_error {
 	position: absolute;
+	display: block;
 	top: 25%;
 	width: 60%;
 	left: 35%;
 	color: rgba(255, 0, 0, 0.801);
 	z-index: 2;
-	filter: opacity(0);
+	filter: opacity(80%);
 }
 
 .nationality_errors {
@@ -180,29 +167,25 @@ input[type="text"] {
 }
 
 .nationality_ok {
-	position: absolute;
-	left: -20px;
-	top: 20px;
+	display: inline-block;
 	filter: opacity(0%);
-	@include media(m) {
-		left: -40px;
-		top: 95%;
-		z-index: 2;
-	}
 }
 
+.nationality_ok_dummy {
+	display: inline-block;
+	filter: opacity(0%);
+}
 .nationality_ok_re {
-  filter: opacity(100);
+  filter: opacity(100%);
 }
 
 .email_form {
 	position: absolute;
-	top: 45%;
-	width: 120%;
-	left: 25%;
+	top: 49%;
+	width: 60%;
+	left: 20%;
 	@include media(m) {
 		font-size: 1.5vh;
-		top: 45%;
 	}
 }
 
@@ -212,23 +195,20 @@ input[type="email"] {
 }
 
 .email_ok {
-	position: absolute;
-	left: -20px;
-	top: 25px;
+	display: inline-block;
 	filter: opacity(0%);
-	@include media(m) {
-		left: -40px;
-		top: 35%;
-		z-index: 2;
-	}
+}
+
+.email_ok_dummy {
+	display: inline-block;
+	filter: opacity(0%);
 }
 .email_ok_re {
   filter: opacity(100);
 }
 
 .email_error {
-	position: absolute;
-	display: block;
+	display: inline-block;
 	color: rgba(255, 0, 0, 0.801);
 	filter: opacity(0%);
 	top: 65%;
@@ -240,36 +220,34 @@ input[type="email"] {
 
 .password_form {
 	position: absolute;
-	top: 57%;
-	width: 110%;
-	left: 25%;
+	top: 61%;
+	width: 60%;
+	left: 20%;
 	@include media(m) {
 		font-size: 1.5vh;
-		top: 55%;
 	}
 }
 
 .password_ok {
-	position: absolute;
-	left: -20px;
-	top: 25px;
+	display: inline-block;
 	filter: opacity(0%);
-	@include media(m) {
-		left: -40px;
-		top: 95%;
-		z-index: 2;
-	}
 }
+
+.password_ok_dummy {
+	display: inline-block;
+	filter: opacity(0%);
+}
+
 .password_ok_re {
   filter: opacity(100);
 }
 
 .password_error {
-	position: absolute;
-	display: block;
+	display: inline-block;
 	color: rgba(255, 0, 0, 0.801);
-	filter: opacity(0);
-	top: 200%;
+	filter: opacity(0%);
+	width: 90%;
+	
 }
 
 .password_errors {
@@ -278,47 +256,41 @@ input[type="email"] {
 
 .password_form_con {
 	position: absolute;
-	top: 68%;
-	width: 110%;
-	left: 25%;
+	top: 75%;
+	width: 60%;
+	left: 20%;
 	@include media(m) {
 		font-size: 1.5vh;
-		top: 65%;
 	}
 }
 
 input[type="text"] {
-	position: absolute;
 	width: 80%;
 	height: 80%;
 }
 
 input[type="password"] { 
-	position: absolute;
+	//position: absolute;
 	width: 80%;
 }
 
 .password_com_ok {
-	position: absolute;
-	left: -20px;
-	top: 25px;
+	display: inline-block;
 	filter: opacity(0%);
-	@include media(m) {
-		left: -40px;
-		top: 95%;
-		z-index: 2;
-	}
+}
+
+.password_com_dummy {
+	display: inline-block;
+	filter: opacity(0%);
 }
 .password_com_ok_re {
   filter: opacity(100);
 }
 
 .password_com_error {
-	position: absolute;
-	display: block;
+	display: inline-block;
 	color: rgba(255, 0, 0, 0.801);
 	filter: opacity(0);
-	top: 200%;
 }
 
 .password_com_errors {
@@ -327,11 +299,10 @@ input[type="password"] {
 
 .sign_up_form {
 	position: absolute;
-	top: 80%;
-	left: 47%;
+	top: 90%;
 	border-radius: 10px;
 	@include media(m) {
 		font-size: 1.5vh;
-		top: 75%;
+		top: 90%;
 	}
 }

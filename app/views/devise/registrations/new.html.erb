@@ -3,51 +3,49 @@
   <div class="select_back">
     <%= image_tag 'top_en_background.png', class: "top_jp_background" %>
   </div>
-  <div class="registaration_form">
+  <div class="form">
     <%= form_with model: @user, url: user_registration_path, id: 'new_user', class: 'new_user', local: true do |f| %>
       <%#= devise_error_messages! %>
-      <div class="private_form" >
-        <div class="private_form_message">
+      <div class="registration_form" >
+        <div class="registration_form_message">
           Registration Form
         </div>
         <div class="nickname_form">
-          <%= f.label :nickname %><br/>
-          <div class="nickname_ok">&#x2705;</div><%= f.text_field :nickname, placeholder: "enter the nickname", autofocus: true, class: "nickname_blank" %>
-          <div class="nickname_error">maximum 25characters!</div>
+          <div class="nickname_ok_dummy">&#x2705;</div>  <%= f.label :nickname %><br/>
+          <div class="nickname_ok">&#x2705;</div>  <%= f.text_field :nickname, placeholder: "enter the nickname", autofocus: true, class: "nickname_blank" %><br/>
+          <div class="nickname_ok_dummy">&#x2705;</div>  <div class="nickname_error">maximum 25characters!</div>
         </div>
         <div class="age_form">
-          <%= f.label :age %><br />
-          <%= f.text_field :age, placeholder: "enter the your age", autofocus: true, maxlength: "3", class: "age_blank" %>
-          <div class="age_ok">&#x2705;</div>
-          <div class="age_error">only number !!</div>
+          <div class="age_ok_dummy">&#x2705;</div>  <%= f.label :age %><br/>
+          <div class="age_ok">&#x2705;</div>  <%= f.text_field :age, placeholder: "enter the your age", class: "age_blank" %><br>
+          <div class="age_ok_dummy">&#x2705;</div>  <div class="age_error">only math !</div>
         </div>
         <div class="nationality_form">
-          <%= f.label :nationality %> <em></em><br />
-          <%= f.select :nationality_id, [["japan", 1], ["china", 2], ["other", 3]], {}, { class: 'nationality_select' }  %>
-          <div class="nationality_ok">   &#x2705;</div>
+          <div class="nationality_ok_dummy">&#x2705;</div>  <%= f.label :nationality %><br/>
+          <div class="nationality_ok">&#x2705;</div>  <%= f.select :nationality_id, [["japan", 1], ["china", 2], ["other", 3]], {}, { class: 'nationality_select' } %>
         </div>
         <div class="email_form">
-          <%= f.label :email %>
-          <%= f.email_field :email, placeholder: "enter the your email", class: "email_blank" %>
-          <div class="email_ok">   &#x2705;</div><br/>
-          <div class="email_error">Need @ mark !</div>
+          <div class="email_ok_dummy">&#x2705;</div>  <%= f.label :email %><br/>
+          <div class="email_ok">&#x2705;</div>  <%= f.email_field :email, placeholder: "enter the your email", class: "email_blank" %><br/>
+          <div class="email_ok_dummy">&#x2705;</div>  <div class="email_error">Need @ mark !</div>
         </div>
         <div class="password_form">
-          <%= f.label :password %><div class="password_ok">&#x2705;</div><br/>
-          <%= f.password_field :password, placeholder: "enter the your password", autocomplete: "off", class: "password_blank" %>
-          <div class="password_error">Include a number and english !</div>
+          <div class="password_ok_dummy">&#x2705;</div>  <%= f.label :password %><br/>
+          <div class="password_ok">&#x2705;</div>  <%= f.password_field :password, placeholder: "enter the your password", autocomplete: "off", class: "password_blank" %><br/>
+          <div class="password_ok_dummy">&#x2705;</div>  <div class="password_error">Include a number and english !</div>
         </div>
         
         <div class="password_form_con">
-           <%= f.label :password %><div class="password_com_ok">&#x2705;</div><br/>
-           <%= f.password_field :password_confirmation, placeholder: "enter the your password", autocomplete: "off", class: "password_com_blank" %>
-           <div class="password_com_error">enter the same password !</div>
+           <div class="password_com_dummy">&#x2705;</div>  <%= f.label :password %><br/>
+           <div class="password_com_ok">&#x2705;</div>  <%= f.password_field :password_confirmation, placeholder: "enter the your password", autocomplete: "off", class: "password_com_blank" %><br/>
+           <div class="password_com_dummy">&#x2705;</div>  <div class="password_com_error">enter the same password !</div>
+        </div>
+        <div class="sign_up_form">
+          <%= f.submit "Sign up" %>
         </div>
       </div>
       
-      <div class="sign_up_form">
-        <%= f.submit "Sign up" %>
-      </div>
+      
     <% end %>
   </div>
 </div>

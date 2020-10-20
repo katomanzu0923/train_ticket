@@ -23,7 +23,6 @@
 	background-color: rgb(131, 131, 190);
 }*/
 input[type="text"] {
-  position: absolute;
   width: 80%;
 }
 
