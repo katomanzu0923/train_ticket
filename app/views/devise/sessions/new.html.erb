@@ -10,14 +10,14 @@
           Login
         </div> 
         <div class="email_field">
-          <%= f.label :email %><div class="session_email_ok"> &#x2705;</div><br/>
-          <%= f.email_field :email, placeholder: "enter your Email", autofocus: true, class: "email_blank" %><br/>
-          <div class="session_email_error">英数字と@を含んでください</div>
+          <div class="session_email_ok_d">&#x2705;</div>  <%= f.label :email %><br/>
+          <div class="session_email_ok">&#x2705;</div>  <%= f.email_field :email, placeholder: "enter your Email", autofocus: true, class: "email_blank" %><br/>
+          <div class="session_email_ok_d">&#x2705;</div>  <div class="session_email_error">英数字と@を含んでください</div>
         </div>
         <div class="password_field">
-          <%= f.label :password %><div class="session_password_ok">&#x2705;</div><br/>
-          <%= f.password_field :password, placeholder: "enter your Password", autocomplete: "off", class: "password_blank" %><br/>
-          <div class="session_password_error">8文字以上で英数字を含んでください</div>
+          <div class="session_password_ok_dummy">&#x2705;</div>  <%= f.label :password %><br/>
+          <div class="session_password_ok">&#x2705;</div>  <%= f.password_field :password, placeholder: "enter your Password", autocomplete: "off", class: "password_blank" %><br/>
+          <div class="session_password_ok_dummy">&#x2705;</div>  <div class="session_password_error">8文字以上で英数字を含んでください</div>
         </div>
         <% if devise_mapping.rememberable? %>
           <div class="remember_field">

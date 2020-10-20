@@ -15,7 +15,6 @@ $(function () {
 $(function () {
   //ageバリデーション
   $(".age_blank").on("keyup", function () {
-    //let error;
     let value = $(this).val();
     if (value == "" || !value.match(/^[0-9]+$/)) {
 			$(".age_error").addClass("age_errors");

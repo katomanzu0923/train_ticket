@@ -23,6 +23,7 @@ $breakpoints: (
 	border-bottom: thick double rgba(0, 0, 128, 0.295);
 	text-decoration: none;
 	@include media(m) {
+		height: 120px;
 	}
 }
 .top_jp_icon {
