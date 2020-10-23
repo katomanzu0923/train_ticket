@@ -28,3 +28,4 @@ Tokai.create(jp_name:'駿豆線一日乗り放題乗車券「旅助」', zh_name
 Tokai.create(jp_name:'まわりゃんせ', zh_name:'Mawaryanse', en_name:'Mawaryanse', price: '9900', jp_info: '伊勢神宮や鳥羽', zh_info: 'Isejinngu and Toba', en_info: 'Isejinngu and Toba', jp_area: '四', zh_area: '四', en_area: 'four', jp_day: '通年', zh_day: '毎日', en_day: 'Allways', age: 'all', day_id:'1')
 Tokai.create(jp_name:'伊勢神宮参拝きっぷ', zh_name:'Isejingu ticket', en_name:'Isejingu ticket', price: '5900', jp_info: '伊勢神宮', zh_info: 'Isejingu', en_info: 'Isejingu', jp_area: '三', zh_area: '三', en_area: 'three', jp_day: '通年', zh_day: '毎日', en_day: 'Allways', age: 'all', day_id:'1')
 Tokai.create(jp_name:'伊勢路フリーきっぷ', zh_name:'Iseji free ticket', en_name:'Iseji free ticket', price: '7620', jp_info: '伊勢神宮', zh_info: 'Isejingu', en_info: 'Isejingu', jp_area: '三', zh_area: '三', en_area: 'Three', jp_day: '通年', zh_day: '毎日', en_day: 'Allways', age: 'all', day_id:'1')
+
