@@ -13,10 +13,13 @@ $breakpoints: (
 .info_zh_alert {
 	position: absolute;
 	background-color: rgba(238, 250, 68, 0.733);
-	height: 10%;
+	height: 90px;
 	z-index: 2;
 	box-sizing: border-box;
 	width: 100%;
+	@include media(m) {
+		height: 110px;
+	}
 }
 .info_zh_alert_main {
 	position: absolute;
@@ -60,10 +63,13 @@ $breakpoints: (
 .info_en_alert {
 	position: absolute;
 	background-color: rgba(255, 0, 0, 0.788);
-	height: 85px;
+	height: 90px;
 	z-index: 2;
 	box-sizing: border-box;
 	width: 100%;
+  @include media(m) {
+		height: 110px;
+	}
 }
 .info_en_alert_main {
 	position: absolute;
@@ -85,7 +91,6 @@ $breakpoints: (
 	width: 80px;
 	left: 45%;
 	padding: none;
-	//margin: unset;
 }
 button{
 	background-color: transparent;
@@ -108,8 +113,7 @@ button:hover{
 //インフォメッセージ
 .info_message {
 	position: absolute;
-	top: 17%;
-	padding: 5px;
+	top: 20%;
 	box-sizing: border-box;
 	width: 100%;
 	font-size: 3vw;
@@ -117,8 +121,9 @@ button:hover{
 	text-align: center;
 	color: rgba(0, 0, 128, 0.76);
 	@include media(m) {
-		top: 10%;
 		font-size: 4vw;
+		top: 10%;
+		padding-top: 5%;
 	};
 }
 .info_first_message {
@@ -167,11 +172,13 @@ button:hover{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	padding-top: 5%;
 	@include media(m) {
 		flex-direction: column;
 		align-items: center;
 		align-self: auto;
 		//background-color: navy;
+		padding-top: 0;
 	};
 }
 
@@ -226,7 +233,7 @@ button:hover{
 
 .jp_price_area {
 	display: inline-block;
-	width: 30%;
+	width: 40%;
 	text-align: center;
 	border-right:dotted rgba(18, 25, 156, 0.247);
 
@@ -234,11 +241,11 @@ button:hover{
 .jp_price {
 	@include tokai_info_main(rgba(0, 0, 128, 0.76));
 	display: inline-block;
-	width: 70%;
+	width: 60%;
 	text-align: center;
 }
-.jp_info2 {
-	padding-top: 5%;
+.jp_area2 {
+	padding-top: 2%;
 	display: inline-block;
 	width: 40%;
 	@include tokai_info_main(rgba(0, 0, 128, 0.699));
@@ -249,7 +256,7 @@ button:hover{
 	font-weight: bold;
 }
 
-.jp_info {
+.jp_area {
 	@include tokai_info_main(rgba(0, 0, 128, 0.76));
 	padding: 20px;
 	font-size: 2vw;
@@ -257,20 +264,21 @@ button:hover{
 .info_area {
 	display: flex;
 }
-.jp_areas {
+.jp_info2 {
 	@include tokai_info_main(rgba(0, 0, 128, 0.76));
 	display: inline-block;
-	width: 30%;
+	width: 40%;
+	font-weight: bold;
 	align-items: center;
 	border-bottom: dotted rgba(18, 25, 156, 0.247);
 	border-top: dotted rgba(18, 25, 156, 0.247);
 	border-right: dotted rgba(18, 25, 156, 0.247);
 }
 
-.jp_area {
+.jp_info {
 	@include tokai_info_main(rgba(0, 0, 128, 0.76));
 	display: inline-block;
-	width: 70%;
+	width: 60%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -345,17 +353,9 @@ button:hover{
 	padding-top: 10px;
 	padding-bottom: 10px;
 	display: block;
-	text-align: center;
 	width: 100%;
+	font-weight: bold;
 	background-color: silver;
-	border-bottom: dotted rgba(131, 156, 18, 0.247);
-	//background-image: url(zh_icon_info.png);
-	background-repeat: no-repeat;
-	background-size: 20%;
-	background-position: 100% 15%;
-}
-.zh_jp_name {
-	@include tokai_info_main(rgb(94, 128, 0));
 	padding-top: 10px;
 	padding-bottom: 10px;
 	display: block;
@@ -370,13 +370,14 @@ button:hover{
 }
 
 
+
 .zh_price_area {
 	@include tokai_info_main(rgb(59, 80, 0));
 	display: inline-block;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 30%;
+	width: 40%;
 	text-align: center;
 	border-right:dotted rgba(131, 156, 18, 0.247);
 	font-size: 100%;
@@ -385,52 +386,50 @@ button:hover{
 	@include tokai_info_main(rgb(94, 128, 0));
 	//background-color: rgba(18, 26, 156, 0.473);
 	display: inline-block;
-	width: 70%;
+	width: 60%;
 	text-align: center;
 	
 }
 .zh_info2 {
 	@include tokai_info_main(rgb(59, 80, 0));
-	text-align: center;
-	padding-top: 2%;
 	display: inline-block;
 	width: 40%;
-	border-bottom: groove 3px rgba(131, 156, 18, 0.247);
-	justify-content: center;
-}
-
-.zh_info {
-	@include tokai_info_main(rgb(94, 128, 0));
-	padding: 20px;
-}
-.info_area {
-	display: flex;
-}
-.zh_areas {
-	@include tokai_info_main(rgb(59, 80, 0));
-	display: inline-block;
-	display: flex;
-	width: 30%;
 	align-items: center;
-	justify-content: center;
-	//background-color: navy;
+	padding: 20px;
 	border-bottom: dotted rgba(131, 156, 18, 0.247);
 	border-top: dotted rgba(131, 156, 18, 0.247);
 	border-right: dotted rgba(131, 156, 18, 0.247);
 }
 
-.zh_area {
+.zh_info {
 	@include tokai_info_main(rgb(94, 128, 0));
 	display: inline-block;
+	width: 60%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 70%;
 	text-align: center;
-	//background-color: rgba(18, 26, 156, 0.473);
+	padding: 20px;
 	border-bottom: dotted rgba(131, 156, 18, 0.247);
 	border-top: dotted rgba(131, 156, 18, 0.247);
+}
+.info_area {
+	display: flex;
+}
+.zh_area2 {
+	padding-top: 2%;
+	display: inline-block;
+	width: 40%;
+	color: rgb(59, 80, 0);
+	border-bottom: groove 3px rgba(126, 156, 18, 0.247);
+	justify-content: center;
+	font-size: 1.5vw;
+}
 
+.zh_area {
+	@include tokai_info_main(rgb(94, 128, 0));
+	padding: 20px;
+	font-size: 2vw;
 }
 .zh_day {
 	position: absolute;
@@ -474,6 +473,7 @@ button:hover{
 	text-align: center;
 	filter: drop-shadow();
 	border: solid rgba(0, 0, 0, 0.384);
+	border-radius: 5px;
 	background-color: rgba(255, 255, 255, 0.479);
 	filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.397));
   opacity : 0;
@@ -500,90 +500,67 @@ button:hover{
 	text-align: center;
 	width: 100%;
 	background-color: silver;
-	border-bottom: dotted rgba(156, 18, 18, 0.247);
-	//background-image: url(en_icon_info.png);
-	background-repeat: no-repeat;
-	background-size: 20%;
-	background-position: 100% 15%;
-}
-
-.en_jp_name {
-	@include tokai_info_main(rgba(128, 0, 0, 0.671));
-	padding-top: 10px;
-	padding-bottom: 10px;
-	display: block;
-	text-align: center;
-	width: 100%;
-	background-color: silver;
-	border-bottom: dotted rgba(156, 18, 18, 0.247);
+	border-bottom: dotted rgba(156, 18, 18, 0.514);
 	background-image: url(en_icon_info.png);
 	background-repeat: no-repeat;
 	background-size: 20%;
 	background-position: 100% 15%;
 }
 
-
-
 .en_price_area {
-	@include tokai_info_main(rgb(128, 0, 0));
 	display: inline-block;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 20%;
+	width: 40%;
+	color: rgb(128, 0, 0);
 	text-align: center;
-	border-right:dotted rgba(156, 18, 18, 0.247);
-	font-size: 100%;
+	border-right:dotted rgba(156, 18, 18, 0.514);
 }
 .en_price {
 	@include tokai_info_main(rgba(128, 0, 0, 0.671));
 	display: inline-block;
-	width: 80%;
+	width: 60%;
 	text-align: center;
-}
-.en_info2 {
-	@include tokai_info_main(rgb(128, 0, 0));
-	text-align: center;
-	padding-top: 2%;
-	display: inline-block;
-	width: 80%;
-	border-bottom: solid 3px rgba(156, 18, 18, 0.514);
-	justify-content: center;
 }
 
-.en_info {
-	@include tokai_info_main(rgba(128, 0, 0, 0.671));
-	padding: 20px;
-}
 .info_area {
 	@include tokai_info_main(rgb(128, 0, 0));
 	display: flex;
 }
-.en_areas {
-	@include tokai_info_main(rgb(128, 0, 0));
+.en_info2 {
 	display: inline-block;
+	width: 40%;
+	align-items: center;
+	border-bottom: dotted rgba(156, 18, 18, 0.514);
+	border-top: dotted rgba(156, 18, 18, 0.514);
+	border-right: dotted rgba(156, 18, 18, 0.514);
+}
+
+.en_info {
+	@include tokai_info_main(rgba(128, 0, 0, 0.671));
+	display: inline-block;
+	width: 60%;
 	display: flex;
-	width: 20%;
 	align-items: center;
 	justify-content: center;
+	text-align: center;
+	border-bottom: dotted rgba(156, 18, 18, 0.514);
+	border-top: dotted rgba(156, 18, 18, 0.514);
+}
+.en_area2 {
+	padding-top: 2%;
+	display: inline-block;
+	width: 40%;
+	@include tokai_info_main(rgb(128, 0, 0));
 	//background-color: navy;
-	border-bottom: dotted rgba(156, 18, 18, 0.247);
-	border-top: dotted rgba(156, 18, 18, 0.247);
-	border-right: dotted rgba(156, 18, 18, 0.247);
+	border-bottom: groove 3px rgba(156, 18, 18, 0.247);
+	justify-content: center;
+	font-size: 1.5vw;
+	font-weight: bold;
 }
 
 .en_area {
-	@include tokai_info_main(rgba(128, 0, 0, 0.671));
-	display: inline-block;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 80%;
-	text-align: center;
-	//background-color: rgba(18, 26, 156, 0.473);
-	border-bottom: dotted rgba(156, 18, 18, 0.247);
-	border-top: dotted rgba(147, 156, 18, 0.247);
-
+	@include tokai_info_main(rgb(128, 0, 0));
+	padding: 20px;
+	font-size: 2vw;
 }
 .en_day {
 	position: absolute;

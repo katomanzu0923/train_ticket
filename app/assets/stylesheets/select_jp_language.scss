@@ -20,7 +20,7 @@ $breakpoints: (
 	filter: opacity(80%);
 }
 //select_main_message
-//select_jp_message_@mixin
+//select_jp_message_@mixinを使用
 @mixin select_jp_message($position,$font_size) {
 	position: absolute;
 	top: $position;

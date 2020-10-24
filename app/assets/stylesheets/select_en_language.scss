@@ -2,17 +2,30 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 //select_en_header
+$breakpoints: (
+	m: "only screen and (max-width: 980px)",
+	pc: "only screen and (max-width: 1199px)",
+);
+@mixin media($breakpoint) {
+	@media #{map-get($breakpoints, $breakpoint)} {
+		@content;
+	}
+}
+
 .en_header {
 	position: absolute;
 	width: 100%;
 	left: 0%;
-	height: 70px;
+	height: 90px;
 	z-index: 1;
 	background-color: transparent;
 	display: flex;
 	align-items: center;
 	border-bottom: thick double rgba(255, 0, 0, 0.438);
 	text-decoration: none;
+	@include media(m) {
+		height: 110px;
+	}
 }
 
 .select_en_icon {
