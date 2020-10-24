@@ -148,9 +148,10 @@ $breakpoints: (
 	top: 15%;
 	width: 100%;
 	left: 0%;
+	box-sizing: border-box;
+	text-align: center;
 	color:rgb(180, 180, 0);
 	font-size: 4vw;
-	left: 35%;
 	z-index: 1;
 	@include media(m) {
 		top: 10%;

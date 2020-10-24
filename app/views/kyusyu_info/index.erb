@@ -1,1 +1,164 @@
-test
+<% if current_user.nationality_id == 1 %>
+  <%= render "shared/jp_header" %>
+<% elsif current_user.nationality_id == 2 %>	
+  <%= render "shared/zh_header" %>
+	<div class="info_zh_alert">
+    <div class="info_zh_alert_main">
+	    这张票被翻译成英语。但是，也许名字不正确。因而假如你使用这张票的话，请用日本的名字搜查那个
+	  </div>
+    <div class="info_zh_alert_sub">
+	    <button type="button", class="zh_button" >关闭</button>
+	  </div>
+  </div>
+<% else current_user.nationality_id == 3 %>
+  <%= render "shared/en_header" %>
+	<div class="info_en_alert">
+    <div class="info_en_alert_main">
+	    The tickets are translated into English. However, the name may not be right. Therefore if you use this ticket, please search it in a Japanese name.
+	  </div>
+    <div class="info_en_alert_sub">
+	    <button type="button">close</button>
+	  </div>
+  </div>
+<% end %> 
+
+<div class="info_top">
+  <div class="info_message">
+	  <% if current_user.nationality_id == 1 %>
+	    <div class="info_first_message">
+		    ようこそ <%= current_user.nickname %>さん!
+			</div>
+			<div class="info_second_message">
+			  <%= current_user.nickname %>さんにおすすめなきっぷはこちらです！
+			</div>	
+	  <% elsif current_user.nationality_id == 2 %>
+		  <div class="zh_info_first_message">
+		    欢迎光临 <%= current_user.nickname %>!! 
+			</div>
+			<div class="zh_info_second_message">
+			  是向你推荐这里的信息!
+			</div>	
+		<% else current_user.nationality_id == 3%>
+		  <div class="en_info_first_message">
+		   thanks!!  <%= current_user.nickname %>!!!
+			</div>
+			<div class="en_info_second_message">
+			  this is the reccomended info for you
+			</div>	
+		<% end %>
+	</div>
+  <div class="info_index">
+	  <% if current_user.nationality_id == 1 %>
+		  <div class="jp_info_list">
+			  <div class="lists">
+		      <% @kyusyu.each do |kyusyu| %>
+				   <div class="list">
+              <div class="jp_name">
+                 <%= kyusyu.jp_name %>
+              </div>
+						  <div class="price_area">
+						    <div class="jp_price_area">
+							    金額
+							  </div>
+					      <div class="jp_price">
+                  <span><%= kyusyu.price %>円</span>
+                </div>
+							</div>	
+						  <div class="info_area">
+							  <div class="jp_info2">
+								  利用可能期間
+								</div>
+					      <div class="jp_info">
+                  <span><%= kyusyu.jp_info %>日間</span>
+                </div>
+							</div>
+							<div class="jp_area2">   
+							  利用可能エリア
+							</div>
+					    <div class="jp_area">
+								<span><%= kyusyu.jp_area %></span>
+              </div>
+					    <div class="jp_day">
+                <span><%= kyusyu.jp_day %></span>
+              </div>
+					 </div>
+         <% end %> 
+			  </div>
+			</div>
+		<% elsif current_user.nationality_id == 2 %>
+		  <div class="zh_info_list">
+			  <div class="lists">
+		      <% @kyusyu.each do |kyusyu| %>
+				    <div class="list">
+              <div class="zh_name">
+                <%= kyusyu.jp_name %>
+							</div>	
+						  <div class="price_area">
+						    <div class="zh_price_area">
+							    金额
+							  </div>
+					      <div class="zh_price">
+                  <span><%= kyusyu.price %></span>
+                </div>
+							</div>	
+						  <div class="info_area">
+							  <div class="zh_info2">
+								  能利用期间
+								</div>
+					      <div class="zh_info">
+                  <span><%= kyusyu.zh_info %>天</span>
+                </div>
+							</div>
+							<div class="zh_area2">   
+							  能利用区域
+							</div>
+					    <div class="zh_area">
+								<span><%= kyusyu.zh_area %></span>
+              </div>
+					    <div class="zh_day">
+                <span><%= kyusyu.zh_day %></span>
+              </div>
+				    </div>
+          <% end %> 
+				</div>	
+			</div>
+		<% else current_user.nationality_id == 3 %>	
+		  <div class="en_info_list">
+			  <div class="lists">
+		      <% @kyusyu.each do |kyusyu| %>
+				    <div class="list">
+              <div class="en_name">
+                <%= kyusyu.jp_name %>
+							</div>	
+						  <div class="price_area">
+						    <div class="en_price_area">
+							    price
+							  </div>
+					      <div class="en_price">
+                  <span>＄<%= kyusyu.price %></span>
+                </div>
+							</div>	
+						  <div class="info_area">
+							  <div class="en_info2">
+								  Availabe Day
+								</div>
+					      <div class="en_info">
+                  <span><%= kyusyu.en_info %> day</span>
+                </div>
+							</div>
+							<div class="en_area2">   
+							  Available Area
+							</div>
+					    <div class="en_area">
+								<span><%= kyusyu.en_area %></span>
+              </div>
+					    <div class="en_day">
+                <span><%= kyusyu.en_day %></span>
+              </div>
+				    </div>
+          <% end %> 
+				</div>	
+			</div> 
+		<% end %>	
+  </div>
+</div>

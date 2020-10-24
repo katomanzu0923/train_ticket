@@ -1,0 +1,2 @@
+class Hokuriku < ApplicationRecord
+end

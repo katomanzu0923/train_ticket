@@ -1,17 +1,30 @@
 // Place all the styles related to the select_zh_language controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$breakpoints: (
+	m: "only screen and (max-width: 980px)",
+	pc: "only screen and (max-width: 1199px)",
+);
+@mixin media($breakpoint) {
+	@media #{map-get($breakpoints, $breakpoint)} {
+		@content;
+	}
+}
+
 
 .zh_header {
 	position: absolute;
 	width: 100%;
-	height: 70px;
+	height: 90px;
 	z-index: 1;
 	background-color: rgba(255, 255, 0, 0.1000);
 	display: flex;
 	align-items: center;
 	border-bottom: thick double rgba(255, 255, 0, 0.452);
 	text-decoration: none;
+	@include media(m) {
+		height: 110px;
+	}
 }
 
 .select_zh_icon {
