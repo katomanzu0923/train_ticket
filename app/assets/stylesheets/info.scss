@@ -39,7 +39,6 @@ $breakpoints: (
 	left: 45%;
 	padding: none;
 	margin: unset;
-	//border: solid 1px rgb(255, 255, 255);
 }
 .zh_button{
 	background-color: transparent;
@@ -81,7 +80,6 @@ $breakpoints: (
 	display: inline-block;
 	text-align: center;
 	vertical-align: middle;
-	//background-color: blue;
 	z-index: 3;
 }
 .info_en_alert_sub {
@@ -110,10 +108,11 @@ button:hover{
 	box-sizing: border-box;
 	background-color: rgba(255, 255, 255, 0.726);
 }
+
 //インフォメッセージ
 .info_message {
 	position: absolute;
-	top: 20%;
+	top: 110px;
 	box-sizing: border-box;
 	width: 100%;
 	font-size: 3vw;
@@ -122,13 +121,12 @@ button:hover{
 	color: rgba(0, 0, 128, 0.76);
 	@include media(m) {
 		font-size: 4vw;
-		top: 10%;
+		top: 120px;
 		padding-top: 5%;
 	};
 }
 .info_first_message {
 	display: block;
-	text-align: center;
 	font-weight: bold;
 }
 
@@ -139,7 +137,6 @@ button:hover{
 
 .zh_info_first_message {
 	display: block;
-	text-align: center;
 	font-weight: bold;
 	color:rgb(59, 80, 0);
 }
@@ -150,7 +147,6 @@ button:hover{
 
 .en_info_first_message {
 	display: block;
-	text-align: center;
 	font-weight: bold;
 	color: rgba(110, 7, 7, 0.87);
 }
@@ -158,17 +154,19 @@ button:hover{
 .en_info_second_message {
 	color: rgba(128, 0, 0, 0.411);
 }
+
 //jp_info_main
+
 .jp_info_list {
 	position: absolute;
-	top: 40%;
+	top: 200px;
 	@include media(m) {
-		top: 25%;
+		top: 300px;
 	};
 }
 .lists {
-	//background-color: rgb(233, 196, 196);
 	width: 100%;
+	top: 170px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -177,8 +175,8 @@ button:hover{
 		flex-direction: column;
 		align-items: center;
 		align-self: auto;
-		//background-color: navy;
 		padding-top: 0;
+		top: 300px;
 	};
 }
 
@@ -239,7 +237,7 @@ button:hover{
 
 }
 .jp_price {
-	@include tokai_info_main(rgba(0, 0, 128, 0.76));
+	@include tokai_info_main(rgba(0, 0, 128, 0.61));
 	display: inline-block;
 	width: 60%;
 	text-align: center;
@@ -248,8 +246,7 @@ button:hover{
 	padding-top: 2%;
 	display: inline-block;
 	width: 40%;
-	@include tokai_info_main(rgba(0, 0, 128, 0.699));
-	//background-color: navy;
+	@include tokai_info_main(rgba(0, 0, 128, 0.911));
 	border-bottom: groove 3px rgba(18, 25, 156, 0.247);
 	justify-content: center;
 	font-size: 1.5vw;
@@ -265,10 +262,9 @@ button:hover{
 	display: flex;
 }
 .jp_info2 {
-	@include tokai_info_main(rgba(0, 0, 128, 0.76));
+	@include tokai_info_main(rgba(0, 0, 128, 0.911));
 	display: inline-block;
 	width: 40%;
-	font-weight: bold;
 	align-items: center;
 	border-bottom: dotted rgba(18, 25, 156, 0.247);
 	border-top: dotted rgba(18, 25, 156, 0.247);
@@ -276,14 +272,13 @@ button:hover{
 }
 
 .jp_info {
-	@include tokai_info_main(rgba(0, 0, 128, 0.76));
+	@include tokai_info_main(rgba(0, 0, 128, 0.61));
 	display: inline-block;
 	width: 60%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	//background-color: rgba(18, 26, 156, 0.473);
 	border-bottom: dotted rgba(18, 25, 156, 0.247);
 	border-top: dotted rgba(18, 25, 156, 0.247);
 }
@@ -310,9 +305,13 @@ button:hover{
 }
 
 //中国語info
+
 .zh_info_list {
 	position: absolute;
-	top: 30%;
+	top: 200px;
+	@include media(m) {
+		top: 300px;
+	}
 }
 
 .lists {
@@ -454,9 +453,13 @@ button:hover{
 }
 
 //英語info
+
 .en_info_list {
 	position: absolute;
-	top: 30%;
+	top: 200px;
+	@include media(m) {
+		top: 300px;
+	}
 }
 .lists {
 	width: 100vw;

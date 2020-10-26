@@ -1,16 +1,5 @@
-/*$(function(){
-	$(".men").on("click", function () {
-		var num = $(".price").text();
-		//$(".list").toggleClass("top_men")
-		if (num == 2000){
-			alert("yahoo");
-		}else{
-			$(this).addClass("top_men");
-		}
-	})
-});*/
+//emailバリデーション
 $(function () {
-  //emailバリデーション
   $(".email_blank").on("keyup", function () {
     let value = $(this).val();
     if (value == "" || !value.match(/^([a-zA-Z0-9])+([a-zA-Z0-9\._-])*@([a-zA-Z0-9_-])+$/)) {
@@ -21,6 +10,7 @@ $(function () {
 			$(".session_email_ok").css({"filter": "opacity(100%)"});
 		}
 	});
+	
 	//passwordバリデーション 
 	$(".password_blank").on("keyup", function () {
     let value = $(this).val();

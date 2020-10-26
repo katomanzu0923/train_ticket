@@ -45,12 +45,24 @@ $breakpoints: (
 .session_message {
 	position: absolute;
 	font-size: 3vw;
-	border-bottom: groove rgb(153, 153, 255);
+	//border-bottom: groove rgb(153, 153, 255);
 	top: 10%;
 	@include media(m) {
 		font-size: 6vw;
 		top: 5%;
 	};
+}
+.session_message::before {
+	content:"";
+	background-color: rgba(0, 0, 255, 0.486);
+	position: absolute;
+	height: 2px;
+	width: 175%;
+	top: 100%;
+	left: -33%;
+	@include media(m) {
+		top: 100%;
+	}
 }
 
 .email_field {
@@ -71,7 +83,10 @@ $breakpoints: (
 	color: rgba(255, 0, 0, 0.733);
 	filter: opacity(0%);
 	width: 80%;
-	
+}
+
+.session_email_errors {
+	filter: opacity(100%);
 }
 
 .session_email_ok {
@@ -96,7 +111,6 @@ input[type="email"] {
 	position: absolute;
 	top: 50%;
 	left: 20%;
-	//height: 1%;
 	width: 60%;
 
 	@include media(m) {
