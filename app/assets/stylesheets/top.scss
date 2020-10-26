@@ -1,6 +1,8 @@
 // Place all the styles related to the top controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+//ブレイクポイント
 $breakpoints: (
 
 	m: "only screen and (max-width: 980px)",
@@ -11,123 +13,9 @@ $breakpoints: (
 	@media #{map-get($breakpoints, $breakpoint)} {
 		@content;
 	}
-	
-}
-//ヘッダー
-.jp_header {
-	position: absolute;
-	width: 100%;
-	height: 70px;
-	z-index: 1;
-	background-color: transparent;
-	display: flex;
-	align-items: center;
-	border-bottom: thick double rgba(0, 0, 128, 0.295);
-	text-decoration: none;
-	@include media(m) {
-		height: 120px;
-	}
-}
-.top_jp_icon {
-	position: absolute;
-	top: 0%;
-	left: 0%;
-	width: 15%;
-	height: 100%;
 }
 
-.top_jp_2_icon  {
-	position: absolute;
-	top: 0%;
-	left: 42%;
-	width: 10%;
-	height: 100%;
-	height: 100%;
-}
 
-.top_en_icon {
-	position: absolute;
-	top: 0%;
-	left: 0%;
-	width: 15%;
-	height: 100%;
-	height: 100%;
-	filter: opacity(0);
-}
-
-.top_en_2_icon  {
-	position: absolute;
-	top: 0%;
-	left: 42%;
-	width: 10%;
-	height: 100%;
-	height: 100%;
-	filter: opacity(0);
-}
-
-.top_zh_icon {
-	position: absolute;
-	top: 0%;
-	left: 0%;
-	width: 15%;
-	height: 100%;
-	filter: opacity(0);
-}
-
-.top_zh_2_icon {
-	position: absolute;
-	top: 0%;
-	left: 42%;
-	width: 10%;
-	height: 100%;
-	filter: opacity(0);
-}
-//ヘッダー終わり
-//@ハンバーガーメニュー
-.header_menu_message {
-	text-decoration: none;
-  font-size: 1.5rem;
-	color: navy;
-}
-
-.header_title {
-	position: absolute;
-	left: 0%;
-	z-index: 1;
-	height: 2%;
-	text-decoration: none;
-}
-
-.header_menu {
-	position: absolute;
-	z-index: 1;
-	right: 2%;
-	height: 2%;
-	display: block;
-	text-decoration: none;
-}
-
-.header_quest {
-	position: absolute;
-	margin: 1px;
-	right: 80%;
-}
-
-.top_logout_path {
-	position: absolute;
-	position: fixed;
-	top: 10%;
-	right: 5%;
-	padding: 1%;
-	z-index: 1;
-	margin: 1px;
-	background-color: transparent;
-}
-.top_fil {
-	filter: blur(3px);
-	width: 100vw;
-	height: 100vh;
-}
 //end_hamburger menu
 //top_main
 .top_jp_background {
@@ -156,10 +44,8 @@ $breakpoints: (
 	filter: opacity(0%);
 }
 
-//massage_mixin
+
 //main_message
-
-
 @mixin top_main_message($top_position,$font,$color) {
 	position: absolute;
 	top: $top_position;
@@ -169,16 +55,18 @@ $breakpoints: (
 	left: 0%;
 	color: $color;
 }
+
+//main_message_jp
 .top_jp_main_message {
 	@include top_main_message(25%,6vh,blue);
 	@include media(m) {
-		@include top_main_message(16%,4vh,blue);
+		@include top_main_message(12%,4vh,blue);
 	};
 }
 .top_jp_sub_message {
 	@include top_main_message(33%,3vh,rgba(0, 0, 255, 0.534));
 	@include media(m) {
-		@include top_main_message(22%,2vh,blue);
+		@include top_main_message(18%,2vh,blue);
 	};
 }
 .top_jp_sub_message::before {
@@ -196,14 +84,22 @@ $breakpoints: (
 		left: 5%;
 	};
 }
+
+//main_message_en
 .top_en_main_message {
-	@include top_main_message(26%,4vh,rgb(255, 0, 0));
-  filter: opacity(0%);
+	@include top_main_message(25%,6vh,rgb(255, 0, 0));
+	filter: opacity(0%);
+	@include media(m) {
+		@include top_main_message(12%,4vh,rgb(255, 0, 0));
+	};
 }
 
 .top_en_sub_message {
 	@include top_main_message(33%,2.5vh,rgba(255, 0, 0, 0.753));
 	filter: opacity(0%);
+	@include media(m) {
+		@include top_main_message(18%,2vh,rgba(255, 0, 0, 0.753));
+	};
 }
 
 .top_en_sub_message::before {
@@ -213,7 +109,12 @@ $breakpoints: (
 	height:2px;
   background-color: rgb(255, 0, 0);
 	position:absolute;
-	top:-2px;
+	top:2px;
+	@include media(m) {
+		top: -10px;
+		width: 90%;
+		left: 5%;
+	};
 }
 .top_zh_main_message {
 	@include top_main_message(25%,6vh,yellow);
@@ -229,15 +130,20 @@ $breakpoints: (
 	content:"";
 	text-align: center;
 	width: 60%;
-	//min-width: 80%;
 	left: 20%;
 	height:2px;
   background-color: yellow;
 	position:absolute;
 	top:-2px;
+	@include media(m) {
+		top: -10px;
+		width: 90%;
+		left: 5%;
+	};
 }
 //top_path
 //top_path_mixin
+
 @mixin top_path($value,$left_position,$top_position) {
 	position: absolute;
 	top: $top_position;
