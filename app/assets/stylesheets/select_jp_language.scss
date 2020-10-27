@@ -110,7 +110,7 @@ $breakpoints: (
 
 .registration_jp_click_path {
 	@include select_jp_path(0);
-	filter: opacity(100%);
+	filter: opacity(0%);
 	right: 25%;
 	@include media(m) {
 		right: 15%;

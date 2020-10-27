@@ -23,18 +23,24 @@ $breakpoints: (
 }
 .select_zh_main_message {
 	@include select_zh_message(25%,6vh,yellow);
+	@include media(m) {
+		@include select_zh_message(15%,3.5vh,yellow);
+	};
 }
 
 .select_zh_sub_message {
 	@include select_zh_message(33%,3vh,yellow);
+	@include media(m) {
+		@include select_zh_message(20%,2vh,rgba(255, 238, 0, 0.753));
+	};
 }
 
 .select_zh_sub_message::before {
 	content:"";
 	text-align: center;
-	width: 60%;
+	width: 70%;
 	//min-width: 80%;
-	left: 20%;
+	left: 15%;
 	height:2px;
   background-color: yellow;
 	position:absolute;
