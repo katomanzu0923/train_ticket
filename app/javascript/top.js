@@ -98,6 +98,8 @@ $(function(){
 		$(".nav_toggle, .nav").toggleClass("show")
     $(".nav_toggle").toggleClass("change_color")
 		$(".top").toggleClass("top_fil")
+		$(".info_top").toggleClass("top_fil")
+		$(".area_top").toggleClass("top_fil")
 	})
 });
 
