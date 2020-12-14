@@ -10,7 +10,13 @@ Train Ticket
 
 ## URL
 
-開発中のため非公開
+https://train-ticket-0923.herokuapp.com/
+
+## 認証用パスワード
+
+ユーザー名 : katomanzu	
+
+password : 0337
 
 
 ## テスト用アカウント
@@ -67,8 +73,6 @@ Train Ticket
 ## 実装中の機能
 
 検索機能
-
-モバイルに対応UIの向上
 
 
 
