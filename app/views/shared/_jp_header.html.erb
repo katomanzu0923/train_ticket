@@ -1,13 +1,11 @@
 <div class="jp_header">
   <% if user_signed_in? %>
-    <% if current_user.nationality_id == 1 %>
       <%= link_to (select_jp_language_path) do %> 
         <%= image_tag 'top_jp_icon.png', size: '185x50' ,class: "top_jp_icon" %>
       <% end %>
       <%= link_to (select_jp_language_path) do %> 
         <%= image_tag 'top_jp_icon_2.png', size: '185x50' ,class: "top_jp_2_icon" %>
       <% end %>
-    <% end %>
   <% else %>
     <%= link_to (root_path) do %> 
       <%= image_tag 'top_jp_icon.png', size: '185x50' ,class: "top_jp_icon" %>

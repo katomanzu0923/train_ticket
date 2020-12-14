@@ -1,13 +1,11 @@
 <div class="en_header">
   <% if user_signed_in? %>
-    <% if current_user.nationality_id == 3 %>
       <%= link_to (select_en_language_path) do %> 
 	      <%= image_tag 'top_en_icon.png', size: '185x50' ,class: "select_en_icon" %>
       <% end %>
       <%= link_to (select_en_language_path) do %> 
 		    <%= image_tag 'top_en_icon_2.png', size: '185x50' ,class: "select_en_2_icon" %>
       <% end %>
-    <% end %>  
   <% else %>
     <%= link_to (root_path) do %> 
 		  <%= image_tag 'top_en_icon.png', size: '185x50' ,class: "select_en_icon" %>

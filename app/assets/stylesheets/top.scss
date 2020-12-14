@@ -57,16 +57,19 @@ $breakpoints: (
 }
 
 //main_message_jp
+.top_jp_sub_message {
+	position: relative;
+}
 .top_jp_main_message {
-	@include top_main_message(25%,6vh,blue);
+	@include top_main_message(25%,3rem,blue);
 	@include media(m) {
-		@include top_main_message(12%,4vh,blue);
+		@include top_main_message(15%,3rem,blue);
 	};
 }
 .top_jp_sub_message {
-	@include top_main_message(33%,3vh,rgba(0, 0, 255, 0.534));
+	@include top_main_message(33%,2rem,rgba(0, 0, 255, 0.534));
 	@include media(m) {
-		@include top_main_message(18%,2vh,blue);
+		@include top_main_message(18%,2rem,blue);
 	};
 }
 .top_jp_sub_message::before {
@@ -79,7 +82,7 @@ $breakpoints: (
 	position:absolute;
 	top:2px;
 	@include media(m) {
-		top: -10px;
+		top: 0;
 		width: 90%;
 		left: 5%;
 	};

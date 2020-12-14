@@ -39,17 +39,17 @@ $breakpoints: (
 	text-align: center;
 }
 .select_en_main_message {
-	@include select_en_message(26%,5vh,rgb(255, 0, 0));
+	@include select_en_message(26%,3rem,rgb(255, 0, 0));
 	@include media(m) {
-		@include select_en_message(16%,2.5vh,red);
+		@include select_en_message(15%,3rem,red);
 	};
 	
 }
 
 .select_en_sub_message {
-	@include select_en_message(33%,2.5vh,rgba(255, 0, 0, 0.753));
+	@include select_en_message(33%,3rem,rgba(255, 0, 0, 0.753));
 	@include media(m) {
-		@include select_en_message(20%,2vh,rgba(255, 0, 0, 0.753));
+		@include select_en_message(18%,3rem,rgba(255, 0, 0, 0.753));
 	};
 }
 
@@ -82,21 +82,37 @@ $breakpoints: (
 .login_en_path {
 	@include select_en_path(1);
 	left: 25%;
+	@include media(m) {
+		left: 15%;
+		width: 25%;
+	};
 }
 
 .login_en_click_path {
 	@include select_en_path(0);
 	left: 25%;
+	@include media(m) {
+		left: 15%;
+		width: 25%;
+	};
 }
 
 .registration_en_path {
 	@include select_en_path(1);
 	right: 25%;
+	@include media(m) {
+		right: 15%;
+		width: 25%;
+	};
 }
 
 .registration_en_click_path {
 	@include select_en_path(0);
 	right: 25%;
+	@include media(m) {
+		right: 15%;
+		width: 25%;
+	};
 }
 /*
 .no_login_en_path {

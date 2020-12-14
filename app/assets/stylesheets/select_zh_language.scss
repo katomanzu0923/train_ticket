@@ -22,16 +22,16 @@ $breakpoints: (
 	color: $font_color;
 }
 .select_zh_main_message {
-	@include select_zh_message(25%,6vh,yellow);
+	@include select_zh_message(25%,3rem,yellow);
 	@include media(m) {
-		@include select_zh_message(15%,3.5vh,yellow);
+		@include select_zh_message(14%,4rem,yellow);
 	};
 }
 
 .select_zh_sub_message {
-	@include select_zh_message(33%,3vh,yellow);
+	@include select_zh_message(33%,3rem,yellow);
 	@include media(m) {
-		@include select_zh_message(20%,2vh,rgba(255, 238, 0, 0.753));
+		@include select_zh_message(18%,3rem,rgba(255, 238, 0, 0.753));
 	};
 }
 
@@ -59,21 +59,37 @@ $breakpoints: (
 .login_zh_path {
 	@include select_zh_path(1);
 	left: 25%;
+	@include media(m) {
+		left: 15%;
+		width: 25%;
+	};
 }
 
 .login_zh_click_path {
 	@include select_zh_path(0);
 	left: 25%;
+	@include media(m) {
+		left: 15%;
+		width: 25%;
+	};
 }
 
 .registration_zh_path {
 	@include select_zh_path(1);
 	right: 25%;
+	@include media(m) {
+		right: 15%;
+		width: 25%;
+	};
 }
 
 .registration_zh_click_path {
 	@include select_zh_path(0);
 	right: 25%;
+	@include media(m) {
+		right: 15%;
+		width: 25%;
+	};
 }
 
 //ハンバーグメニュー

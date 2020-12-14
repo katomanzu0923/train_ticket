@@ -176,6 +176,7 @@ button:hover{
 		align-items: center;
 		align-self: auto;
 		padding-top: 0;
+		width: 90%;
 		top: 300px;
 	};
 }
@@ -192,6 +193,9 @@ button:hover{
   opacity : 0;
   transform : translate(0, 50px);
 	transition:all 0.5s;
+	@include media(m) {
+		width: 80%;
+	}
 }
 .list.scrollin {
     opacity : 1;
@@ -334,6 +338,9 @@ button:hover{
   opacity : 100;
   transform : translate(0, 50px);
 	transition:all 0.5s;
+	@include media(m) {
+		width: 80%;
+	}
 }
 .list.scrollin {
     opacity : 1;
@@ -480,6 +487,9 @@ button:hover{
   opacity : 0;
   transform : translate(0, 50px);
 	transition:all 0.5s;
+	@include media(m) {
+		width: 80%;
+	}
 }
 .list.scrollin {
     opacity : 1;

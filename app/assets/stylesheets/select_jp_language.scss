@@ -31,16 +31,16 @@ $breakpoints: (
 	color: blue;
 }
 .select_jp_main_message {
-	@include select_jp_message(25%,6vh);
+	@include select_jp_message(25%,3rem);
 	@include media(m) {
-		@include select_jp_message(16%,4vh);
+		@include select_jp_message(15%,3rem);
 	};
 }
 //
 .select_jp_sub_message {
-	@include select_jp_message(33%,3vh);
+	@include select_jp_message(33%,3rem);
 	@include media(m) {
-		@include select_jp_message(22%,2vh);
+		@include select_jp_message(18%,3rem);
 	};
 }
 
@@ -55,7 +55,7 @@ $breakpoints: (
 	position:absolute;
 	top:2px;
 	@include media(m) {
-		top: -10px;
+		top: 0;
 		width: 90%;
 		left: 5%;
 	};
