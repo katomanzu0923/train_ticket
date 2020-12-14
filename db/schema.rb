@@ -75,10 +75,8 @@ ActiveRecord::Schema.define(version: 2020_10_24_005906) do
     t.string "zh_day", null: false
     t.string "en_day", null: false
     t.string "age", null: false
-    t.bigint "day_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["day_id"], name: "index_hokurikus_on_day_id"
   end
 
   create_table "kansais", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -224,7 +222,6 @@ ActiveRecord::Schema.define(version: 2020_10_24_005906) do
 
   add_foreign_key "chugokus", "days"
   add_foreign_key "hokkaidos", "days"
-  add_foreign_key "hokurikus", "days"
   add_foreign_key "kansais", "days"
   add_foreign_key "kantos", "days"
   add_foreign_key "kyusyus", "days"

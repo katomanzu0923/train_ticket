@@ -15,8 +15,7 @@ class CreateKyusyus < ActiveRecord::Migration[6.0]
       t.string   :zh_day,   null: false
       t.string   :en_day,   null: false
       t.string   :age,      null: false
-      t.references  :day, foreign_key: true
-
+      
       t.timestamps
     end
   end
