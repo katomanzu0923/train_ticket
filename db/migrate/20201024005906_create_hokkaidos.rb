@@ -2,8 +2,6 @@ class CreateHokkaidos < ActiveRecord::Migration[6.0]
   def change
     create_table :hokkaidos do |t|
       t.string   :jp_name,  null: false
-      t.string   :zh_name,  null: false
-      t.string   :en_name,  null: false 
       t.string   :price,    null: false
       t.string   :jp_info,  null: false
       t.string   :zh_info,  null: false
