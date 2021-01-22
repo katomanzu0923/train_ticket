@@ -21,11 +21,11 @@ password : 0337
 
 ## テスト用アカウント
 
-日本: mail address＝ j@j
+日本: mail address＝ j@j	
 
-中国: mail address＝ c@c
+中国: mail address＝ cha@cha
 
-英語: mail address＝ e@e
+英語: mail address＝ us@us
 
 日本: password ＝ AARK2088	
 
